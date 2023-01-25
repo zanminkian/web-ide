@@ -8,5 +8,7 @@ git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-m
 git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 omz plugin enable zsh-autosuggestions zsh-syntax-highlighting
 
+echo 'DISABLE_AUTO_UPDATE="true"' >> ~/.zshrc
+
 cat ~/.zshrc_tmp >> ~/.zshrc
 rm -rf ~/.zshrc_tmp
