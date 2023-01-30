@@ -24,7 +24,7 @@ code-server --install-extension shardulm94.trailing-spaces
 code-server --install-extension saber2pr.file-git-history
 
 # vscode setting
-echo '{"workbench.colorTheme":"Default Dark+","extensions.autoCheckUpdates":false,"extensions.autoUpdate":false,"extensions.ignoreRecommendations":true}' > ~/.local/share/code-server/User/settings.json
+echo '{"workbench.colorTheme":"Default Dark+","extensions.autoCheckUpdates":false,"extensions.autoUpdate":false,"extensions.ignoreRecommendations":true,"workbench.startupEditor":"none"}' > ~/.local/share/code-server/User/settings.json
 
 # code-server config
 echo 'bind-addr: 0.0.0.0:8080' > ~/.config/code-server/config.yaml
