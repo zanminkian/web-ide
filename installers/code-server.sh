@@ -40,5 +40,6 @@ echo 'disable-telemetry: true' >> ~/.config/code-server/config.yaml
 # env
 echo '\n# code-server' >> ~/.zshrc
 echo "export EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}'" >> ~/.zshrc # https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace
+echo 'export CODESPACES="true"' >>  ~/.zshrc # Disable golang extension's welcome page. Check https://github.com/golang/vscode-go/issues/1246
 echo 'alias code="code-server"' >> ~/.zshrc
 
