@@ -22,6 +22,7 @@ code-server --install-extension wmaurer.change-case
 code-server --install-extension njzy.stats-bar
 code-server --install-extension shardulm94.trailing-spaces
 code-server --install-extension saber2pr.file-git-history
+code-server --install-extension oderwat.indent-rainbow
 
 # vscode setting
 echo '{"workbench.colorTheme":"Default Dark+","extensions.autoCheckUpdates":false,"extensions.autoUpdate":false,"extensions.ignoreRecommendations":true,"workbench.startupEditor":"none"}' > ~/.local/share/code-server/User/settings.json
