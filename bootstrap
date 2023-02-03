@@ -12,13 +12,21 @@ if [ "$SSH_ID_ED25519_PUB" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519.pub" ]; then
 fi
 
 # for git
-username=$(git config --list | grep user.name)
-useremail=$(git config --list | grep user.email)
-if [ "$GIT_GLOBAL_USER_NAME" != "" ] && [ "$username" -eq "" ]; then
+if [ ! -f "$HOME/.gitconfig" ]; then
+  if [ "$GIT_GLOBAL_USER_NAME" != "" ]; then
     git config --global user.name "$GIT_GLOBAL_USER_NAME"
-fi
-if [ "$GIT_GLOBAL_USER_EMAIL" != "" ] && [ "$useremail" -eq "" ]; then
+  fi
+  if [ "$GIT_GLOBAL_USER_EMAIL" != "" ]; then
     git config --global user.email "$GIT_GLOBAL_USER_EMAIL"
+  fi
+  if [ "$GIT_GLOBAL_URL" != "" ]; then
+    array=(${=GIT_GLOBAL_URL}) # string to array
+    for i in $array; do
+      inner_str=$(echo $i | tr ',' ' ')
+      inner_array=(${=inner_str}) # string to array
+      git config --global ${inner_array[1]} ${inner_array[2]}
+    done
+  fi
 fi
 
 code-server "$@"
