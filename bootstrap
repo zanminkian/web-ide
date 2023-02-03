@@ -5,6 +5,7 @@
 if [ "$SSH_ID_ED25519" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519" ]; then
     mkdir -p $HOME/.ssh
     echo $SSH_ID_ED25519 > $HOME/.ssh/id_ed25519
+    chmod 600 $HOME/.ssh/id_ed25519
 fi
 if [ "$SSH_ID_ED25519_PUB" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519.pub" ]; then
     mkdir -p $HOME/.ssh
