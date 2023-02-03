@@ -14,6 +14,6 @@ COPY installers /tmp/installers
 RUN ls /tmp/installers | xargs -I {} sh -c /tmp/installers/{} && rm -rf /tmp/installers
 
 # 3. specify the entry
-RUN echo '#!/usr/bin/env zsh\n. ~/.zshrc\ncode-server "$@"' > /usr/bin/bootstrap && chmod +x /usr/bin/bootstrap
+COPY bootstrap /usr/bin
 CMD []
 ENTRYPOINT ["bootstrap"]
