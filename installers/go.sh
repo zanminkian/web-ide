@@ -11,7 +11,9 @@ echo 'export GOPATH="${HOME}/go"' >> ~/.zshrc
 echo 'export GO111MODULE="on"' >> ~/.zshrc
 echo 'export GOPROXY="https://goproxy.cn,direct"' >> ~/.zshrc
 
-/usr/local/bin/g install 1.17.13
+/usr/local/bin/g install 1.19.4
 . ~/.zshrc
 
-# go get -v golang.org/x/tools/gopls
+go install -v golang.org/x/tools/gopls
+go install -v github.com/go-delve/delve/cmd/dlv@latest
+go install -v honnef.co/go/tools/cmd/staticcheck@latest
