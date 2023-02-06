@@ -11,6 +11,10 @@ if [ "$SSH_ID_ED25519_PUB" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519.pub" ]; then
     mkdir -p $HOME/.ssh
     echo $SSH_ID_ED25519_PUB > $HOME/.ssh/id_ed25519.pub
 fi
+if [ "$SSH_KEYSCAN" != "" ] && [ ! -f "$HOME/.ssh/known_hosts" ]; then
+    mkdir -p $HOME/.ssh
+    echo $SSH_KEYSCAN | tr ',' ' ' | tr ' ', '\n' | xargs -I {} ssh-keyscan {} >> $HOME/.ssh/known_hosts
+fi
 
 # for git
 if [ ! -f "$HOME/.gitconfig" ]; then
