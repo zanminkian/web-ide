@@ -28,7 +28,7 @@ if [ ! -f "$HOME/.gitconfig" ]; then
         for i in $array; do
             inner_str=$(echo $i | tr ',' ' ')
             inner_array=(${=inner_str}) # string to array
-            git config --global ${inner_array[1]} ${inner_array[2]}
+            git config --global --add "url.${inner_array[1]}.insteadOf" "${inner_array[2]}"
         done
     fi
 fi
