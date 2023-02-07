@@ -14,6 +14,6 @@ COPY installers /tmp/installers
 RUN ls /tmp/installers | xargs -I {} sh -c /tmp/installers/{} && rm -rf /tmp/installers
 
 # 3. specify the entry
-COPY bootstrap /usr/bin
+COPY init bootstrap /usr/bin
 CMD []
 ENTRYPOINT ["bootstrap"]
