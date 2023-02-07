@@ -7,6 +7,10 @@ touch $HOME/.codeserverrc
 if [ "$CODE_SERVER_INITED" != "true" ]; then
     dir=$(cd "$(dirname "$0")"; pwd)
     $dir/init
+
+    mkdir -p $HOME/.code-server-init
+    ls $HOME/.code-server-init | xargs -I {} sh -c $HOME/.code-server-init/{}
+
     echo "export CODE_SERVER_INITED=true" >> $HOME/.codeserverrc
 fi
 
