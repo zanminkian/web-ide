@@ -25,7 +25,14 @@ code-server --install-extension saber2pr.file-git-history
 code-server --install-extension oderwat.indent-rainbow
 
 # vscode setting
-echo '{"workbench.colorTheme":"Default Dark+","extensions.autoCheckUpdates":false,"extensions.autoUpdate":false,"extensions.ignoreRecommendations":true,"workbench.startupEditor":"none"}' > ~/.local/share/code-server/User/settings.json
+echo '{
+  "workbench.colorTheme":"Default Dark+",
+  "extensions.autoCheckUpdates":false,
+  "extensions.autoUpdate":false,
+  "extensions.ignoreRecommendations":true,
+  "workbench.startupEditor":"none",
+  "editor.tabSize": 2,
+}' > ~/.local/share/code-server/User/settings.json
 
 # code-server config
 echo 'bind-addr: 0.0.0.0:8080' > ~/.config/code-server/config.yaml
