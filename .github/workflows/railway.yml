@@ -3,7 +3,7 @@ name: Railway cli
 on:
   push:
     tags:
-      - v*
+      - '[0-9]+.[0-9]+.[0-9]+'
 jobs:
   railway:
     runs-on: ubuntu-latest
