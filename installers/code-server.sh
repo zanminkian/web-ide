@@ -23,6 +23,7 @@ code-server --install-extension njzy.stats-bar
 code-server --install-extension shardulm94.trailing-spaces
 code-server --install-extension saber2pr.file-git-history
 code-server --install-extension oderwat.indent-rainbow
+code-server --install-extension pbkit.vscode-pbkit
 
 # vscode setting
 echo '{
