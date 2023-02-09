@@ -1,5 +1,12 @@
 # code-server
 
+## 0.0.6
+
+### Patch Changes
+
+- 297e1df: fix: fix dockerfile
+- d8b5818: ci: remove docker image workflow
+
 ## 0.0.5
 
 ### Patch Changes
