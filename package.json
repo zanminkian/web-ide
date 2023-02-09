@@ -1,6 +1,6 @@
 {
   "name": "code-server",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "devDependencies": {
     "@changesets/cli": "^2.26.0"
