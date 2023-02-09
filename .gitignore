@@ -1,2 +1,3 @@
 *.tar
 *.tmp.*
+node_modules
