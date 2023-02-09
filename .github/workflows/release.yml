@@ -26,10 +26,10 @@ jobs:
       - name: Install Deps
         run: npm ci
 
-      - name: Create Release Pull Request
+      - name: Create Release Pull Request or Publish to Docker hub
         uses: changesets/action@v1
         with:
-          publish: docker login -u $USERNAME -p $PASSWORD && docker build -t zengmingjian/code-server:$(node -e "console.log(require('./package.json').version)") . && docker push zengmingjian/code-server:$(node -e "console.log(require('./package.json').version)")
+          publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ secrets.DOCKER_USERNAME }}
