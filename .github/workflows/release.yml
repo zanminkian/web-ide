@@ -28,5 +28,9 @@ jobs:
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
+        with:
+          publish: docker login -u $USERNAME -p $PASSWORD && docker build -t zengmingjian/code-server:$(node -e "console.log(require('./package.json').version)") . && docker push zengmingjian/code-server:$(node -e "console.log(require('./package.json').version)")
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
