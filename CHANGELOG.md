@@ -1,5 +1,11 @@
 # code-server
 
+## 0.0.8
+
+### Patch Changes
+
+- 10a7f3f: ci: add `echo 'New tag:'` to fix that won't create github release
+
 ## 0.0.7
 
 ### Patch Changes
