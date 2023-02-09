@@ -1,5 +1,11 @@
 # code-server
 
+## 0.0.7
+
+### Patch Changes
+
+- 00024a4: ci: fix publish problem
+
 ## 0.0.6
 
 ### Patch Changes
