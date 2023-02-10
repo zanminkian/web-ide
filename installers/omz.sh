@@ -9,6 +9,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
+rm -rf ~/.zshrc
 echo '\n# omz' >> ~/.zshrc
 echo 'export ZSH="$HOME/.oh-my-zsh"' >> ~/.zshrc
 echo 'export DISABLE_AUTO_UPDATE="true"' >> ~/.zshrc
