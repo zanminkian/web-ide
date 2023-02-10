@@ -3,7 +3,9 @@ name: Railway
 on:
   push:
     branches:
-      - railway
+      - master
+    paths:
+      - Dockerfile
 jobs:
   railway:
     runs-on: ubuntu-latest
