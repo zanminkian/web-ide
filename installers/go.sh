@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -ex
+set -e
 
 wget https://github.com/voidint/g/releases/download/v1.3.0/g1.3.0.linux-amd64.tar.gz -P /usr/local/bin
 tar -xf /usr/local/bin/g1.3.0.linux-amd64.tar.gz -C /usr/local/bin

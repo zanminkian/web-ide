@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -ex
+set -e
 
 curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o /usr/local/bin/n
 chmod +x /usr/local/bin/n

@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -ex
+set -e
 
 # for ssh
 if [ "$SSH_ID_ED25519" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519" ]; then

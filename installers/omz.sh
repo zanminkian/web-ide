@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -ex
+set -e
 
 touch ~/.zshrc
 mv ~/.zshrc ~/.zshrc_tmp
