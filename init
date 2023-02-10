@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+set -ex
+
 # for ssh
 if [ "$SSH_ID_ED25519" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519" ]; then
     mkdir -p $HOME/.ssh
