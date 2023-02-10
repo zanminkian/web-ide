@@ -11,7 +11,7 @@ if [ "$CODE_SERVER_INITED" != "true" ]; then
     $dir/init
 
     mkdir -p $HOME/.code-server-init
-    ls $HOME/.code-server-init | xargs -I {} sh -c $HOME/.code-server-init/{}
+    ls $HOME/.code-server-init | grep .sh | xargs -I {} sh -c $HOME/.code-server-init/{}
 
     echo "export CODE_SERVER_INITED=true" >> $HOME/.codeserverrc
 fi
