@@ -10,14 +10,11 @@ jobs:
   railway:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v3
-      -
-        name: Install Railway CLI
+      - name: Install Railway CLI
         run: curl -fsSL https://railway.app/install.sh | sh
-      -
-        name: Deploy to Railway
+      - name: Deploy to Railway
         run: railway up --detach
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
