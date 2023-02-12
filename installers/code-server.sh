@@ -40,10 +40,10 @@ echo '{
 }' > ~/.local/share/code-server/User/settings.json
 
 # code-server config
-echo 'bind-addr: 0.0.0.0:8080' > ~/.config/code-server/config.yaml
-echo 'auth: password' >> ~/.config/code-server/config.yaml
-echo 'password: default' >> ~/.config/code-server/config.yaml
-echo 'cert: false' >> ~/.config/code-server/config.yaml
+# echo 'bind-addr: 0.0.0.0:8080' > ~/.config/code-server/config.yaml
+# echo 'auth: password' >> ~/.config/code-server/config.yaml
+# echo 'password: default' >> ~/.config/code-server/config.yaml
+# echo 'cert: false' >> ~/.config/code-server/config.yaml
 # echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
 # echo 'disable-getting-started-override: true' >> ~/.config/code-server/config.yaml
 # echo 'disable-workspace-trust: true' >> ~/.config/code-server/config.yaml
