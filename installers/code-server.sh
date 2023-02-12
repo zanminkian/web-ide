@@ -35,6 +35,8 @@ echo '{
   "extensions.ignoreRecommendations":true,
   "workbench.startupEditor":"none",
   "editor.tabSize": 2,
+  "security.workspace.trust.enabled": false,
+  "update.mode": "none",
 }' > ~/.local/share/code-server/User/settings.json
 
 # code-server config
@@ -42,10 +44,10 @@ echo 'bind-addr: 0.0.0.0:8080' > ~/.config/code-server/config.yaml
 echo 'auth: password' >> ~/.config/code-server/config.yaml
 echo 'password: default' >> ~/.config/code-server/config.yaml
 echo 'cert: false' >> ~/.config/code-server/config.yaml
-echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
-echo 'disable-getting-started-override: true' >> ~/.config/code-server/config.yaml
-echo 'disable-workspace-trust: true' >> ~/.config/code-server/config.yaml
-echo 'disable-telemetry: true' >> ~/.config/code-server/config.yaml
+# echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
+# echo 'disable-getting-started-override: true' >> ~/.config/code-server/config.yaml
+# echo 'disable-workspace-trust: true' >> ~/.config/code-server/config.yaml
+# echo 'disable-telemetry: true' >> ~/.config/code-server/config.yaml
 
 # env
 echo '\n# code-server' >> ~/.zshrc
