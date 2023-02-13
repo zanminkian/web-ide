@@ -1,14 +1,14 @@
-# code-server
+# web-ide
 
 ![1](./cover.jpeg)
 
 ## What is it?
 
-A web IDE including all tools what you need. For Developer!
+A web IDE including all tools what you need. Enjoy coding out-of-box.
 
 ## Feature
 
-- Start the env with one line of command. Powered by docker.
+- Start the IDE in one line of command. Powered by docker.
 - Access IDE in browser. Code in any machine any where.
 - A wealth of development tools make you enjoy coding out-of-box.
   - [x] Go
@@ -19,7 +19,7 @@ A web IDE including all tools what you need. For Developer!
 ## Usage
 
 ```sh
-docker run -itd --net host -e PASSWORD=you_password --name code-server zengmingjian/code-server
+docker run -itd --net host -e PASSWORD=you_password --name web-ide zengmingjian/web-ide
 ```
 
 After that, open `http://127.0.0.1:8080` in your browser and input your password. Then, have fun with coding!
@@ -28,12 +28,12 @@ After that, open `http://127.0.0.1:8080` in your browser and input your password
 
 ## Advanced usage
 
-- Add more cli options for `code-server` at the end of command.
-    ```sh
-    docker run -itd --net host -e PASSWORD=you_password --name code-server zengmingjian/code-server --bind-addr 0.0.0.0:9090
-    ```
+- Add more cli options for `web-ide` at the end of command.
+  ```sh
+  docker run -itd --net host -e PASSWORD=you_password --name web-ide zengmingjian/web-ide --bind-addr 0.0.0.0:9090
+  ```
 
-- Run `docker run -it --rm zengmingjian/code-server --help` for more information.
+- Run `docker run -it --rm zengmingjian/web-ide --help` for more information.
 
 - Run `cat ~/.zshrc` inside a container to check the env config. Feel free to edit it.
 

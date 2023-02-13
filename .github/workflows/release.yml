@@ -15,7 +15,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: zengmingjian/code-server
+          images: zengmingjian/web-ide
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:

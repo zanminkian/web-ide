@@ -3,17 +3,17 @@
 
 set -e
 
-touch $HOME/.codeserverrc
-. $HOME/.codeserverrc
+touch $HOME/.webiderc
+. $HOME/.webiderc
 
-if [ "$CODE_SERVER_INITED" != "true" ]; then
+if [ "$WEB_IDE_INITED" != "true" ]; then
     dir=$(cd "$(dirname "$0")"; pwd)
     $dir/init
 
-    mkdir -p $HOME/.code-server-init
-    ls $HOME/.code-server-init | grep .sh | xargs -I {} sh -c $HOME/.code-server-init/{}
+    mkdir -p $HOME/.web-ide-init
+    ls $HOME/.web-ide-init | grep .sh | xargs -I {} sh -c $HOME/.web-ide-init/{}
 
-    echo "export CODE_SERVER_INITED=true" >> $HOME/.codeserverrc
+    echo "export WEB_IDE_INITED=true" >> $HOME/.webiderc
 fi
 
 code-server "$@"
