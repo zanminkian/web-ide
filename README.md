@@ -4,55 +4,38 @@
 
 ## What is it?
 
-Build you developing environment in docker and access VSCode in browser.
+A web IDE including all tools what you need. For Developer!
 
-The developing environment includes the following tool chain:
-- [x] Go
-- [x] Node
-- [x] React
-- [ ] Java
+## Feature
 
-Build docker image -> Run as docker container -> Enjoy developing in browser.
+- Start the env with one line of command. Powered by docker.
+- Access IDE in browser. Code in any machine any where.
+- A wealth of development tools make you enjoy coding out-of-box.
+  - [x] Go
+  - [x] Node
+  - [x] React
+  - [ ] Java
 
 ## Usage
 
-### 1. Build docker image
-
-1. Clone this repo.
-2. Enter the dir of this repo.
-3. Build it. The build script looks like this:
-
-```bash
-docker build -t code-server:1.0.0 .
-```
-
-### 2. Run docker container
-
-After building image, you can run it.
-
 ```sh
-docker run -itd --net host -e PASSWORD=xxx --name code-server code-server:1.0.0
+docker run -itd --net host -e PASSWORD=you_password --name code-server zengmingjian/code-server
 ```
 
-Add `-v` if you need it. For example:
-
-```sh
-docker run -itd --net host -e PASSWORD=xxx -v $HOME/projects:/root/projects -v $HOME/.ssh:/root/.ssh -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.zsh_history:/root/.zsh_history -v $HOME/.go:/root/go --name code-server code-server:1.0.0
-```
+After that, open `http://127.0.0.1:8080` in your browser and input your password. Then, have fun with coding!
 
 > Note that docker in macOS do not support host networking. You need to change `--net host` to `-p 8080:8080`.
 
-### 3. Access web VSCode in browser
-
-Visit `http://localhost:8080` , you can open the VSCode editor in your browser.
-
 ## Advanced usage
 
-- You can add more cli options for `code-server` at the end of command in __Step 2__.
+- Add more cli options for `code-server` at the end of command.
     ```sh
-    docker run -itd --net host -e PASSWORD=xxx -v $HOME/projects:/root/projects -v $HOME/.ssh:/root/.ssh -v $HOME/.gitconfig:/root/.gitconfig -v $HOME/.zsh_history:/root/.zsh_history -v $HOME/.go:/root/go --name code-server code-server:1.0.0 --bind-addr 0.0.0.0:8080 --disable-update-check --disable-getting-started-override --disable-workspace-trust
+    docker run -itd --net host -e PASSWORD=you_password --name code-server zengmingjian/code-server --bind-addr 0.0.0.0:9090
     ```
-- Just add more installer scripts to `installers` folder or remove any built-in installer scripts in `installers` folder as you want.
+
+- Run `docker run -it --rm zengmingjian/code-server --help` for more information.
+
+- Run `cat ~/.zshrc` inside a container to check the env config. Feel free to edit it.
 
 ## FAQ
 
@@ -60,7 +43,7 @@ Visit `http://localhost:8080` , you can open the VSCode editor in your browser.
 
 A: Change web vscode to a PWA.
 
-> Q: Some extensions, which use iframe to render UI, works not properly. Such as `git graph`. How to fix it.
+> Q: Some extensions, which use iframe to render UI, works not properly. Such as `git graph`. How to fix it?
 
 A: The reason is that you are accessing vscode in the browser while the website address is not `localhost` and protocol is not `https`. Here are some solutions.
 - Run command `ssh -CqTnNfL 8080:127.0.0.1:8080 my-remote-server` to forward proxy. And then access vscode via `http://localhost:8080`.
