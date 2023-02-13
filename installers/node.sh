@@ -7,5 +7,5 @@ chmod +x /usr/local/bin/n
 n 16
 npm i -g pnpm ts-node tsx loadtest http-server pm2 cloc npm-check-updates
 
-echo '\n# node' >> ~/.zshrc
-echo 'alias cnpm="npm --registry=https://registry.npmmirror.com"' >> ~/.zshrc
+echo '# node
+alias cnpm="npm --registry=https://registry.npmmirror.com"' >> ~/.zshrc

@@ -10,12 +10,12 @@ git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-m
 git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 rm -rf ~/.zshrc
-echo '\n# omz' >> ~/.zshrc
-echo 'export ZSH="$HOME/.oh-my-zsh"' >> ~/.zshrc
-echo 'export DISABLE_AUTO_UPDATE="true"' >> ~/.zshrc
-echo 'ZSH_THEME="robbyrussell"' >> ~/.zshrc
-echo 'plugins=(git zsh-autosuggestions zsh-syntax-highlighting)' >> ~/.zshrc
-echo 'source $ZSH/oh-my-zsh.sh' >> ~/.zshrc
+echo '# omz
+export ZSH="$HOME/.oh-my-zsh"
+export DISABLE_AUTO_UPDATE="true"
+ZSH_THEME="robbyrussell"
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh' >> ~/.zshrc
 
 cat ~/.zshrc_tmp >> ~/.zshrc
 rm -rf ~/.zshrc_tmp
