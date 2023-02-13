@@ -15,7 +15,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export DISABLE_AUTO_UPDATE="true"
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-source $ZSH/oh-my-zsh.sh' >> ~/.zshrc
+source $ZSH/oh-my-zsh.sh
+' >> ~/.zshrc
 
 cat ~/.zshrc_tmp >> ~/.zshrc
 rm -rf ~/.zshrc_tmp

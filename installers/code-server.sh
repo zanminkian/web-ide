@@ -43,4 +43,5 @@ echo '{
 echo "# code-server
 export EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' # https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace
 export CODESPACES='true' # Disable golang extension's welcome page. Check https://github.com/golang/vscode-go/issues/1246
-alias code='code-server'" >> ~/.zshrc
+alias code='code-server'
+" >> ~/.zshrc

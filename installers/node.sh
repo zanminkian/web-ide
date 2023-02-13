@@ -8,4 +8,5 @@ n 16
 npm i -g pnpm ts-node tsx loadtest http-server pm2 cloc npm-check-updates
 
 echo '# node
-alias cnpm="npm --registry=https://registry.npmmirror.com"' >> ~/.zshrc
+alias cnpm="npm --registry=https://registry.npmmirror.com"
+' >> ~/.zshrc

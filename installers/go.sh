@@ -12,7 +12,8 @@ export PATH="${HOME}/.g/go/bin:$PATH"
 export GOROOT="${HOME}/.g/go"
 export GOPATH="${HOME}/go"
 export GO111MODULE="on"
-export GOPROXY="https://goproxy.cn,direct"' >> ~/.zshrc
+export GOPROXY="https://goproxy.cn,direct"
+' >> ~/.zshrc
 
 /usr/local/bin/g install 1.19.4
 . ~/.zshrc
