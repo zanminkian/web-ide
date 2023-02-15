@@ -16,7 +16,7 @@ code-server --install-extension golang.Go
 code-server --install-extension humao.rest-client
 code-server --install-extension mhutchie.git-graph
 code-server --install-extension mrkou47.thrift-syntax-support
-code-server --install-extension ppz.ppz
+# code-server --install-extension ppz.ppz
 code-server --install-extension ryu1kn.partial-diff
 code-server --install-extension steoates.autoimport
 code-server --install-extension streetsidesoftware.code-spell-checker
