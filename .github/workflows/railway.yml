@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - railway
     paths:
       - Dockerfile
 jobs:
