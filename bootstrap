@@ -1,19 +1,5 @@
 #!/usr/bin/env zsh
 . ~/.zshrc
-
 set -e
-
-touch $HOME/.webiderc
-. $HOME/.webiderc
-
-if [ "$WEB_IDE_INITED" != "true" ]; then
-  dir=$(cd "$(dirname "$0")"; pwd)
-  $dir/init
-
-  mkdir -p $HOME/.web-ide-init
-  ls $HOME/.web-ide-init | grep .sh | xargs -I {} sh -c $HOME/.web-ide-init/{}
-
-  echo "export WEB_IDE_INITED=true" >> $HOME/.webiderc
-fi
 
 code-server "$@"

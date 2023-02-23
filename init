@@ -2,6 +2,13 @@
 
 set -e
 
+touch $HOME/.webiderc
+. $HOME/.webiderc
+
+if [ "$WEB_IDE_INITED" = "true" ]; then
+  exit 0
+fi
+
 # for ssh
 if [ "$SSH_ID_ED25519" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519" ]; then
   mkdir -p $HOME/.ssh
@@ -37,3 +44,10 @@ fi
 
 # create a dir
 mkdir -p $HOME/projects
+
+# init
+if [ -d "$HOME/.web-ide-init" ]; then
+  ls $HOME/.web-ide-init | grep .sh | xargs -I {} sh -c $HOME/.web-ide-init/{}
+fi
+
+echo "export WEB_IDE_INITED=true" >> $HOME/.webiderc
