@@ -7,6 +7,7 @@ wget https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSI
 dpkg -i code-server_${CODE_SERVER_VERSION}_amd64.deb
 rm -rf code-server_${CODE_SERVER_VERSION}_amd64.deb
 
+# Lock extensions' version once https://github.com/microsoft/vscode/issues/172917 has been resolved.
 export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery"}'
 code-server --install-extension GraphQL.vscode-graphql-syntax
 code-server --install-extension IronGeek.vscode-env
