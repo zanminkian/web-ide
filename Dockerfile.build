@@ -14,8 +14,8 @@ COPY installers /tmp/installers
 RUN ls /tmp/installers | xargs -I {} sh -c /tmp/installers/{} && rm -rf /tmp/installers
 
 # 3. init
-COPY init /usr/bin/
-RUN echo '# web-ide\n/usr/bin/init\n' >> $HOME/.zshrc
+COPY web-ide-init /usr/bin/
+RUN echo '# web-ide\nweb-ide-init\n' >> $HOME/.zshrc
 
 # 4. entry
 COPY bootstrap /usr/bin/
