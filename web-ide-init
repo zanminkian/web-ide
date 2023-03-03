@@ -49,5 +49,8 @@ mkdir -p $HOME/projects
 if [ -d "$HOME/.web-ide-init" ]; then
   ls $HOME/.web-ide-init | grep .sh | xargs -I {} sh -c $HOME/.web-ide-init/{}
 fi
+if [ "$WEB_IDE_INTI_CMD" != "" ]; then
+  sh -c "$WEB_IDE_INTI_CMD"
+fi
 
 echo "export WEB_IDE_INITED=true" >> $HOME/.webiderc
