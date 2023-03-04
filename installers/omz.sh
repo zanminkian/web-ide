@@ -12,7 +12,7 @@ git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.
 rm -rf ~/.zshrc
 echo '# omz
 export ZSH="$HOME/.oh-my-zsh"
-export DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
