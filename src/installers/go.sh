@@ -18,6 +18,6 @@ export GOPROXY="https://goproxy.cn,direct"
 /usr/local/bin/g install 1.19.4
 . ~/.zshrc
 
-go install -v golang.org/x/tools/gopls@latest
-go install -v github.com/go-delve/delve/cmd/dlv@latest
-go install -v honnef.co/go/tools/cmd/staticcheck@latest
+go install -v golang.org/x/tools/gopls@v0.11.0
+go install -v github.com/go-delve/delve/cmd/dlv@v1.20.1
+go install -v honnef.co/go/tools/cmd/staticcheck@v0.4.3
