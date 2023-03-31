@@ -34,6 +34,7 @@ echo '{
   "extensions.autoUpdate":false,
   "extensions.ignoreRecommendations":true,
   "workbench.startupEditor":"none",
+  "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
