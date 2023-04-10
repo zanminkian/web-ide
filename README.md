@@ -47,7 +47,7 @@ A: Change web vscode to a PWA.
 
 A: The reason is that you are accessing vscode in the browser while the website address is not `localhost` and protocol is not `https`. Here are some solutions.
 - Run command `ssh -CqTnNfL 8080:127.0.0.1:8080 my-remote-server` to forward proxy. And then access vscode via `http://localhost:8080`.
-- Open link `edge://flags/#unsafely-treat-insecure-origin-as-secure` in browser to trust insecure origin. And then access vscode via `http://some-ip-or-domain:8080`.
+- Open link `chrome://flags/#unsafely-treat-insecure-origin-as-secure` in browser to trust insecure origin. And then access vscode via `http://some-ip-or-domain:8080`.
 - Use `https` protocol instead of `http` protocol.
 
 
