@@ -1,5 +1,3 @@
 #!/usr/bin/env zsh
 . ~/.zshrc
-set -e
-
 code-server "$@"
