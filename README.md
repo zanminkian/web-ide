@@ -1,16 +1,16 @@
-# web-ide
+# Web-IDE
 
 ![1](./cover.jpeg)
 
 ## What is it?
 
-A web IDE including all tools what you need. Enjoy coding out-of-box.
+Web-IDE is a comprehensive web-based integrated development environment (IDE) that includes all the tools you need for an enjoyable coding experience, out-of-the-box.
 
-## Feature
+## Features
 
-- Start the IDE in one line of command. Powered by docker.
-- Access IDE in browser. Code in any machine any where.
-- A wealth of development tools make you enjoy coding out-of-box.
+- Start the IDE with a single command line, powered by Docker.
+- Access IDE through your browser and code from any machine, anywhere.
+- A wealth of pre-installed development tools for an out-of-the-box coding experience:
   - [x] Go
   - [x] Node
   - [x] React
@@ -19,43 +19,42 @@ A web IDE including all tools what you need. Enjoy coding out-of-box.
 ## Usage
 
 ```sh
-docker run -itd --net host -e PASSWORD=you_password --name web-ide zengmingjian/web-ide
+docker run -itd --net host -e PASSWORD=your_password --name web-ide zengmingjian/web-ide
 ```
 
-After that, open `http://127.0.0.1:8080` in your browser and input your password. Then, have fun with coding!
+After running the command, open `http://127.0.0.1:8080` in your browser, enter your password and start coding!
 
-> Note that docker in macOS do not support host networking. You need to change `--net host` to `-p 8080:8080`.
+> Note: Docker on macOS does not support host networking. Replace `--net host` with `-p 8080:8080`.
 
-## Advanced usage
+## Advanced Usage
 
-- Add more cli options for `web-ide` at the end of command.
+- Add more CLI options for `web-ide` at the end of the command.
   ```sh
-  docker run -itd --net host -e PASSWORD=you_password --name web-ide zengmingjian/web-ide --bind-addr 0.0.0.0:9090
+  docker run -itd --net host -e PASSWORD=your_password --name web-ide zengmingjian/web-ide --bind-addr 0.0.0.0:9090
   ```
 
 - Run `docker run -it --rm zengmingjian/web-ide --help` for more information.
 
-- Run `cat ~/.zshrc` inside a container to check the env config. Feel free to edit it.
+- To check the environment configuration, run `cat ~/.zshrc` inside a container. Feel free to edit it.
 
 ## FAQ
 
-> Q: There are some shortcut conflicts between web vscode and browser. How to avoid it?
+> Q: Some shortcuts conflict between web-vscode and the browser. How can I avoid this?
 
-A: Change web vscode to a PWA.
+A: Convert web-vscode into a Progressive Web App (PWA).
 
-> Q: Some extensions, which use iframe to render UI, works not properly. Such as `git graph`. How to fix it?
+> Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I fix this?
 
-A: The reason is that you are accessing vscode in the browser while the website address is not `localhost` and protocol is not `https`. Here are some solutions.
-- Run command `ssh -CqTnNfL 8080:127.0.0.1:8080 my-remote-server` to forward proxy. And then access vscode via `http://localhost:8080`.
-- Open link `chrome://flags/#unsafely-treat-insecure-origin-as-secure` in browser to trust insecure origin. And then access vscode via `http://some-ip-or-domain:8080`.
-- Use `https` protocol instead of `http` protocol.
-
+A: This issue occurs when you access vscode in the browser with a website address that is not `localhost` and a protocol that is not `https`. Here are some solutions:
+- Set up a forward proxy with the command `ssh -CqTnNfL 8080:127.0.0.1:8080 my-remote-server`. Then access vscode via `http://localhost:8080`.
+- Open `chrome://flags/#unsafely-treat-insecure-origin-as-secure` in your browser to trust insecure origins. Then access vscode via `http://some-ip-or-domain:8080`.
+- Use an `https` protocol instead of `http`.
 
 ## Note
 
-The image built by this repo do not support `rsa` algorithm because it unsafe. There are 2 methods can help.
-- Generate your ssh key in `ed25519` algorithm. For example, `ssh-keygen -t ed25519`.
-- Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example, `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
+The image built by this repository does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
+- Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
+- Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
 
 ## License
 
