@@ -42,14 +42,8 @@ if [ ! -f "$HOME/.gitconfig" ]; then
 fi
 
 # init
-if [ -d "$HOME/.web-ide-init" ]; then
-  ls $HOME/.web-ide-init | grep .sh | xargs -I {} sh -c $HOME/.web-ide-init/{}
-fi
 if [ "$WEB_IDE_INIT_CMD" != "" ]; then
   sh -c "$WEB_IDE_INIT_CMD"
 fi
-
-# other
-# mkdir -p $HOME/projects
 
 echo "export WEB_IDE_INITED=true" >> $HOME/.webiderc
