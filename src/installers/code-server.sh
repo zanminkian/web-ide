@@ -26,6 +26,7 @@ code-server --install-extension shardulm94.trailing-spaces
 # code-server --install-extension saber2pr.file-git-history # Vscode has integrated time-line. It's unnecessary.
 code-server --install-extension oderwat.indent-rainbow
 code-server --install-extension pbkit.vscode-pbkit
+code-server --install-extension usernamehw.errorlens
 
 # vscode setting
 echo '{
