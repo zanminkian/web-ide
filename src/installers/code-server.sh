@@ -12,12 +12,12 @@ export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_
 code-server --install-extension GraphQL.vscode-graphql-syntax
 code-server --install-extension IronGeek.vscode-env
 code-server --install-extension christian-kohler.path-intellisense
-code-server --install-extension golang.Go
-code-server --install-extension humao.rest-client # hard to use. change to httpYac one day
-code-server --install-extension mhutchie.git-graph
+code-server --install-extension golang.Go@0.38.0
+code-server --install-extension humao.rest-client@0.25.1 # hard to use. change to httpYac one day
+code-server --install-extension mhutchie.git-graph@1.30.0
 code-server --install-extension mrkou47.thrift-syntax-support
 # code-server --install-extension ppz.ppz # some error logs appear
-code-server --install-extension ryu1kn.partial-diff
+code-server --install-extension ryu1kn.partial-diff@1.4.3
 code-server --install-extension steoates.autoimport # hard to use. remove it one day
 code-server --install-extension streetsidesoftware.code-spell-checker
 code-server --install-extension wmaurer.change-case
