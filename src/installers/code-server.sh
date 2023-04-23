@@ -41,6 +41,12 @@ echo '{
   "update.mode": "none",
 }' > ~/.local/share/code-server/User/settings.json
 
+# code-server config
+sed -i '/^bind-addr:/d' ~/.config/code-server/config.yaml
+echo 'bind-addr: 0.0.0.0:8080' >> ~/.config/code-server/config.yaml
+sed -i '/^disable-update-check:/d' ~/.config/code-server/config.yaml
+echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
+
 # env
 echo "# code-server
 export EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' # https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace
