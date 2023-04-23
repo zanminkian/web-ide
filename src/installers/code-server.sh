@@ -16,17 +16,17 @@ code-server --install-extension golang.Go@0.38.0
 code-server --install-extension humao.rest-client@0.25.1 # hard to use. change to httpYac one day
 code-server --install-extension mhutchie.git-graph@1.30.0
 code-server --install-extension mrkou47.thrift-syntax-support
-# code-server --install-extension ppz.ppz # some error logs appear
 code-server --install-extension ryu1kn.partial-diff@1.4.3
 code-server --install-extension steoates.autoimport # hard to use. remove it one day
 code-server --install-extension streetsidesoftware.code-spell-checker
 code-server --install-extension wmaurer.change-case
 code-server --install-extension njzy.stats-bar
 code-server --install-extension shardulm94.trailing-spaces
-# code-server --install-extension saber2pr.file-git-history # Vscode has integrated time-line. It's unnecessary.
 code-server --install-extension oderwat.indent-rainbow
 code-server --install-extension pbkit.vscode-pbkit
 code-server --install-extension usernamehw.errorlens
+# code-server --install-extension ppz.ppz # some error logs appear
+# code-server --install-extension saber2pr.file-git-history # Vscode has integrated time-line. It's unnecessary.
 
 # vscode setting
 echo '{
