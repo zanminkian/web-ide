@@ -2,9 +2,9 @@
 
 set -e
 
-wget https://github.com/voidint/g/releases/download/v1.3.0/g1.3.0.linux-amd64.tar.gz -P /usr/local/bin
-tar -xf /usr/local/bin/g1.3.0.linux-amd64.tar.gz -C /usr/local/bin
-rm -rf /usr/local/bin/g1.3.0.linux-amd64.tar.gz
+wget https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-amd64.tar.gz -P /usr/local/bin
+tar -xf /usr/local/bin/g1.5.0.linux-amd64.tar.gz -C /usr/local/bin
+rm -rf /usr/local/bin/g1.5.0.linux-amd64.tar.gz
 
 /usr/local/bin/g install 1.19.4
 "${HOME}/.g/go/bin/go" install -v golang.org/x/tools/gopls@v0.11.0
