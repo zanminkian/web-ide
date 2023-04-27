@@ -44,7 +44,7 @@ After running the command, open `http://127.0.0.1:8080` in your browser, enter y
 
 > Q: Some shortcuts conflict between web-vscode and the browser. How can I avoid this?
 
-A: Convert web-vscode into a Progressive Web App (PWA).
+A: Convert this web vscode into a Progressive Web App (PWA).
 
 > Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I fix this?
 
@@ -53,7 +53,7 @@ A: This issue occurs when you access vscode in the browser with a website addres
 - Open `chrome://flags/#unsafely-treat-insecure-origin-as-secure` in your browser to trust insecure origins. Then access vscode via `http://some-ip-or-domain:8080`.
 - Use an `https` protocol instead of `http`.
 
-## Note
+> Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?
 
 The image built by this repository does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
 - Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
