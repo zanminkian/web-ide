@@ -30,10 +30,10 @@ code-server --install-extension usernamehw.errorlens
 
 # vscode setting
 echo '{
-  "workbench.colorTheme":"Default Dark+",
   "extensions.autoCheckUpdates":false,
   "extensions.autoUpdate":false,
   "extensions.ignoreRecommendations":true,
+  "workbench.colorTheme":"Default Dark+",
   "workbench.startupEditor":"none",
   "workbench.tree.renderIndentGuides": "always",
   "editor.renderWhitespace": "all",
