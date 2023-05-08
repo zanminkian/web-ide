@@ -22,14 +22,14 @@ Web-IDE is a comprehensive web-based integrated development environment (IDE) th
 ## Usage
 
 ```sh
-docker run -itd --net host -e PASSWORD=your_password -v $HOME/projects:/root/projects:cached --name web-ide zengmingjian/web-ide
+docker run -itd --net host -e PASSWORD=your_password -v $HOME/projects:/root/projects --name web-ide zengmingjian/web-ide
 ```
 
 After running the command, open `http://127.0.0.1:8080` in your browser, enter your password and start coding!
 
 > Note: Docker on macOS does not support host networking. Replace `--net host` with `-p 8080:8080`.
 
-> Note: If you are using macOS, we suggest you add `:cached` at the end of `-v` option to avoid some issues, like [this](https://github.com/pnpm/pnpm/issues/5803).
+> Note: If you are using macOS, mounting volume will be unstable to use pnpm, check [this](https://github.com/pnpm/pnpm/issues/5803).
 
 ## Advanced Usage
 
