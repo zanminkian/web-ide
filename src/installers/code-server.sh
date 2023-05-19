@@ -31,14 +31,18 @@ code-server --install-extension wwm.better-align
 
 # vscode setting
 echo '{
-  "extensions.autoCheckUpdates":false,
-  "extensions.autoUpdate":false,
-  "extensions.ignoreRecommendations":true,
-  "workbench.colorTheme":"Default Dark+",
-  "workbench.startupEditor":"none",
-  "workbench.tree.renderIndentGuides": "always",
+  // extension
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  // workbench
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.startupEditor": "none",
+  // editor
+  "editor.guides.bracketPairs": "active",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
+  // other
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
 }' > ~/.local/share/code-server/User/settings.json
