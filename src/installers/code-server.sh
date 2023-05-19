@@ -34,7 +34,6 @@ echo '{
   // extension
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
-  "extensions.ignoreRecommendations": true,
   // workbench
   "workbench.colorTheme": "Default Dark+",
   "workbench.startupEditor": "none",
