@@ -36,6 +36,7 @@ echo '{
   "extensions.autoUpdate": false,
   // workbench
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Default Dark Modern",
   // editor
   "editor.guides.bracketPairs": "active",
   "editor.renderWhitespace": "all",
