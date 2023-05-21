@@ -2,7 +2,7 @@
 
 set -e
 
-CODE_SERVER_VERSION=4.12.0
+CODE_SERVER_VERSION=4.13.0
 wget https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSION}/code-server_${CODE_SERVER_VERSION}_amd64.deb
 dpkg -i code-server_${CODE_SERVER_VERSION}_amd64.deb
 rm -rf code-server_${CODE_SERVER_VERSION}_amd64.deb
@@ -35,7 +35,6 @@ echo '{
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
   // workbench
-  "workbench.colorTheme": "Default Dark+",
   "workbench.startupEditor": "none",
   // editor
   "editor.guides.bracketPairs": "active",
