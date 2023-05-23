@@ -2,7 +2,7 @@
   "name": "web-ide",
   "private": true,
   "packageManager": "pnpm@8.5.1",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "author": "hellozmj@qq.com",
   "license": "MIT",
   "scripts": {
