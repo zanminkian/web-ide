@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.13
+
+### Patch Changes
+
+- a58cbf1: ci: fix github action again
+
 ## 0.2.12
 
 ### Patch Changes
