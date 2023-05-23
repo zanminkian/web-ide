@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-
 set -e
 
 wget https://github.com/voidint/g/releases/download/v1.5.0/g1.5.0.linux-amd64.tar.gz -P /usr/local/bin

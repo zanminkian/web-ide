@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-
 set -e
 
 CODE_SERVER_VERSION=4.13.0
