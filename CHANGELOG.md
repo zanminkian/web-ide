@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.14
+
+### Patch Changes
+
+- f0e16aa: ci: add release.sh
+
 ## 0.2.13
 
 ### Patch Changes
