@@ -3,7 +3,7 @@ name: Railway
 on:
   push:
     branches:
-      - master
+      - main
       - railway
     paths:
       - Dockerfile
