@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.15
+
+### Patch Changes
+
+- 2a20190: feat(code-server): set `editor.guides.bracketPairs` to true
+
 ## 0.2.14
 
 ### Patch Changes
