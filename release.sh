@@ -8,4 +8,4 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 TAG_NAME=$(node -e 'console.log(require("./package.json").version)')
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 docker build -f Dockerfile.build -t $IMAGE_NAME:$TAG_NAME .
-docker push $IMAGE_NAME:$TAG_NAME
+docker push zengmingjian/web-ide:$TAG_NAME
