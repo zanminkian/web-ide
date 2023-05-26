@@ -37,7 +37,7 @@ echo '{
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Dark Modern",
   // editor
-  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairs": true,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   // other
