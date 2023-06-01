@@ -36,8 +36,10 @@ echo '{
   // workbench
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Dark Modern",
+  "workbench.tree.renderIndentGuides": "always",
   // editor
   "editor.guides.bracketPairs": true,
+  "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   // other
