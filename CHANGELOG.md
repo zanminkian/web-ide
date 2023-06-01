@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.16
+
+### Patch Changes
+
+- 50f42bb: feat(code-server): update default config
+
 ## 0.2.15
 
 ### Patch Changes
