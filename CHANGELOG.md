@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.17
+
+### Patch Changes
+
+- fbce734: chore: simplify the release script
+
 ## 0.2.16
 
 ### Patch Changes
