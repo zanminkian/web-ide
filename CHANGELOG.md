@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.18
+
+### Patch Changes
+
+- a1f8709: feat(go): upgrade go
+
 ## 0.2.17
 
 ### Patch Changes
