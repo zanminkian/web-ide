@@ -1,4 +1,4 @@
-FROM zengmingjian/web-ide:0.1.9
+FROM zengmingjian/web-ide:0.2.18
 
-CMD ["--bind-addr=0.0.0.0:8080", "--disable-update-check"]
+CMD []
 ENTRYPOINT ["bootstrap"]
