@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.20
+
+### Patch Changes
+
+- e5896c9: feat(code-server): readonly from permission
+
 ## 0.2.19
 
 ### Patch Changes
