@@ -42,6 +42,7 @@ echo '{
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   // other
+  "files.readonlyFromPermissions": true,
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
 }' > ~/.local/share/code-server/User/settings.json
