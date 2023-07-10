@@ -26,10 +26,10 @@ if [ ! -f "$HOME/.gitconfig" ]; then
     git config --global user.email "$GIT_GLOBAL_USER_EMAIL"
   fi
   if [ "$GIT_GLOBAL_URL" != "" ]; then
-    array=(${=GIT_GLOBAL_URL}) # string to array
+    array=(${=GIT_GLOBAL_URL}) # string to array. split by white space
     for i in $array; do
       inner_str=$(echo $i | tr ',' ' ')
-      inner_array=(${=inner_str}) # string to array
+      inner_array=(${=inner_str}) # string to array. split by white space
       git config --global --add "url.${inner_array[1]}.insteadOf" "${inner_array[2]}"
     done
   fi
