@@ -41,8 +41,13 @@ echo '{
   "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
-  // other
+  // file readonly
   "files.readonlyFromPermissions": true,
+  "files.readonlyInclude": {
+    "**/node_modules/**/*": true,
+    "**/.pnpm-store/**/*": true,
+  },
+  // others
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
 }' > ~/.local/share/code-server/User/settings.json
