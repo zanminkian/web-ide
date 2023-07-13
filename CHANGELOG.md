@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.21
+
+### Patch Changes
+
+- a3a6df3: feat(code-server): make some files readonly
+
 ## 0.2.20
 
 ### Patch Changes
