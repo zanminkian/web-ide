@@ -6,7 +6,7 @@ chmod +x /usr/local/bin/n
 n 16
 corepack enable
 corepack prepare --all
-npm i -g ts-node tsx http-server pm2 npm-check-updates degit loadtest cloc
+npm i -g ts-node tsx http-server pm2 npm-check-updates degit @arethetypeswrong/cli loadtest cloc
 
 echo '# node
 alias cnpm="npm --registry=https://registry.npmmirror.com"
