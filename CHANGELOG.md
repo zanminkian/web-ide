@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.2.22
+
+### Patch Changes
+
+- 0b4dc15: refactor: remove useless ubuntu package
+- 4f8d345: feat(node): add `@arethetypeswrong/cli`
+
 ## 0.2.21
 
 ### Patch Changes
