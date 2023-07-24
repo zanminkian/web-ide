@@ -44,6 +44,7 @@ echo '{
   // file readonly
   "files.readonlyFromPermissions": true,
   "files.readonlyInclude": {
+    "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
     "**/node_modules/**/*": true,
     "**/.pnpm-store/**/*": true,
   },
