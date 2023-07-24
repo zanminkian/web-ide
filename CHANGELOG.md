@@ -1,5 +1,13 @@
 # web-ide
 
+## 0.2.23
+
+### Patch Changes
+
+- 17a232e: feat(code-server): make go.mod file readonly
+- 09c6429: feat(code-server): make lock file readonly
+- fce8a08: feat(node): replace `ncu` with `taze`
+
 ## 0.2.22
 
 ### Patch Changes
