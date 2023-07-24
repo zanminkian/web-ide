@@ -6,7 +6,7 @@
   "author": "hellozmj@qq.com",
   "license": "MIT",
   "scripts": {
-    "release": "bash release.sh && changeset tag"
+    "release": "./release.sh && changeset tag"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1"

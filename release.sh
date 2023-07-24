@@ -1,3 +1,4 @@
+#!/bin/sh
 curl -fLsS https://get.docker.com/ | sh
 
 TAG_NAME=$(node -e 'console.log(require("./package.json").version)')
