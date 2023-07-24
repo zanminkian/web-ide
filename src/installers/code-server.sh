@@ -47,6 +47,7 @@ echo '{
     "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
     "**/node_modules/**/*": true,
     "**/.pnpm-store/**/*": true,
+    "**/go.sum": true,
   },
   // others
   "security.workspace.trust.enabled": false,
