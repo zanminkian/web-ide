@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.24
+
+### Patch Changes
+
+- 1bc896d: feat(code-server&node): docked debug tool bar and replace taze with ncu
+
 ## 0.2.23
 
 ### Patch Changes
