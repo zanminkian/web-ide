@@ -50,6 +50,7 @@ echo '{
     "**/go.sum": true,
   },
   // others
+  "debug.toolBarLocation": "docked",
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
 }' > ~/.local/share/code-server/User/settings.json
