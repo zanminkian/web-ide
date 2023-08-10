@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.2.25
+
+### Patch Changes
+
+- 6cf8034: feat(code-server): upgrade code-server to 4.16.1
+- 9570f29: feat(code-server): remove extension `errorlens` as it's noisy
+
 ## 0.2.24
 
 ### Patch Changes
