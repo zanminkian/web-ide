@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -e
 
-CODE_SERVER_VERSION=4.14.1
+CODE_SERVER_VERSION=4.16.1
 wget https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSION}/code-server_${CODE_SERVER_VERSION}_amd64.deb
 dpkg -i code-server_${CODE_SERVER_VERSION}_amd64.deb
 rm -rf code-server_${CODE_SERVER_VERSION}_amd64.deb
