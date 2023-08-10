@@ -23,8 +23,8 @@ code-server --install-extension njzy.stats-bar
 code-server --install-extension shardulm94.trailing-spaces
 code-server --install-extension oderwat.indent-rainbow
 code-server --install-extension pbkit.vscode-pbkit
-code-server --install-extension usernamehw.errorlens
 code-server --install-extension wwm.better-align
+# code-server --install-extension usernamehw.errorlens # too noisy
 # code-server --install-extension ppz.ppz # some error logs appear
 
 # vscode setting
