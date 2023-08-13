@@ -1,7 +1,8 @@
 #!/bin/sh
 curl -fLsS https://get.docker.com/ | sh
 
-TAG_NAME=$(node -e 'console.log(require("./package.json").version)')
+VERSION=$(node -e 'console.log(require("./package.json").version)')
+TAG=$(node -e 'console.log(require("./package.json").version.match(/^[0-9]+\.[0-9]+\.[0-9]+-(.+)\.[0-9]+$/)?.[1] || "latest")')
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-docker build -f src/Dockerfile -t zengmingjian/web-ide:latest -t zengmingjian/web-ide:$TAG_NAME src
+docker build -f src/Dockerfile -t zengmingjian/web-ide:$TAG -t zengmingjian/web-ide:$VERSION src
 docker push -a zengmingjian/web-ide
