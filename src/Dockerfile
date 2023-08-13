@@ -10,12 +10,12 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 SHELL ["/usr/bin/zsh", "-c"]
 
 # 2. install
-COPY src/installers /tmp/installers
+COPY installers /tmp/installers
 RUN ls /tmp/installers | xargs -I {} sh -c /tmp/installers/{}
 RUN rm -rf /tmp/installers
 
 # 3. init
-COPY src/web-ide-init /usr/bin/
+COPY web-ide-init /usr/bin/
 RUN echo '# web-ide\n\
 if [ -f "/usr/bin/web-ide-init" ]\n\
 then\n\
@@ -25,6 +25,6 @@ fi\n\
 ' >> $HOME/.zshrc
 
 # 4. entry
-COPY src/bootstrap /usr/bin/
+COPY bootstrap /usr/bin/
 CMD []
 ENTRYPOINT ["bootstrap"]
