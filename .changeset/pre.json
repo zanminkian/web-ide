@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "web-ide": "0.2.25"
+  },
+  "changesets": [
+    "dull-dancers-add",
+    "stupid-maps-fold"
+  ]
+}

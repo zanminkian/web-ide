@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.26-beta.0
+
+### Patch Changes
+
+- fee081e: feat(go,ttyd): upgrade
+
 ## 0.2.25
 
 ### Patch Changes
