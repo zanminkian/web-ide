@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.27
+
+### Patch Changes
+
+- f97777c: feat(dev-tools): replace mycli with mysql-client
+
 ## 0.2.26
 
 ### Patch Changes
