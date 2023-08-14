@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.2.26
+
+### Patch Changes
+
+- fee081e: feat(go,ttyd): upgrade
+- ce75bf5: feat(cli-tools): instal mycli
+
 ## 0.2.25
 
 ### Patch Changes
