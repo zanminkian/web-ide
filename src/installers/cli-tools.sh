@@ -7,4 +7,4 @@ chmod +x /usr/local/bin/ttyd
 
 ## install nginx and mysql client
 apt update
-apt install -y nginx mycli
+apt install -y nginx mysql-client
