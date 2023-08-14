@@ -5,7 +5,7 @@ ENV LANG="C.utf8"
 # 1. install common
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt update \
-  && apt install -y zsh wget curl git vim unzip tree nginx krb5-user \
+  && apt install -y zsh wget curl git vim unzip tree krb5-user \
   && chsh -s /usr/bin/zsh
 SHELL ["/usr/bin/zsh", "-c"]
 
