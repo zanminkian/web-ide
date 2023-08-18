@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.28
+
+### Patch Changes
+
+- d04f73e: feat(node): install `del-cli` to global
+
 ## 0.2.27
 
 ### Patch Changes
