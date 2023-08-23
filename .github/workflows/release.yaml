@@ -32,8 +32,8 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: pnpm release
-          commit: 'chore: release'
-          title: 'chore: release'
+          commit: "chore: release"
+          title: "chore: release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
