@@ -29,7 +29,7 @@ After running the command, open `http://127.0.0.1:8080` in your browser, enter y
 
 > Note: Docker on macOS does not support host networking. Replace `--net host` with `-p 8080:8080`.
 
-> Note: If you are using macOS, mounting volume will be unstable to use pnpm. Check [this issue](https://github.com/pnpm/pnpm/issues/5803). The workaround is setting the container file sharing to `osxfs` implementation. Check [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1538996095).
+> Note: If you are using macOS, mounting volume will be unstable to use pnpm. Check [this issue](https://github.com/pnpm/pnpm/issues/5803). The workaround is setting the container file sharing to `gRPC FUSE` implementation. Check [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
 
 ## Advanced Usage
 
