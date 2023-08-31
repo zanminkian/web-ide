@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.29
+
+### Patch Changes
+
+- db11967: feat(code-server): install tailwind extension
+
 ## 0.2.28
 
 ### Patch Changes
