@@ -9,6 +9,7 @@ rm -rf code-server_${CODE_SERVER_VERSION}_amd64.deb
 export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery"}'
 code-server --install-extension golang.Go@0.38.0
 code-server --install-extension mhutchie.git-graph@1.30.0
+code-server --install-extension bradlc.vscode-tailwindcss
 code-server --install-extension ryu1kn.partial-diff
 code-server --install-extension GraphQL.vscode-graphql-syntax
 code-server --install-extension IronGeek.vscode-env
