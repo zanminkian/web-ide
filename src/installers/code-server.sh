@@ -7,23 +7,29 @@ dpkg -i code-server_${CODE_SERVER_VERSION}_amd64.deb
 rm -rf code-server_${CODE_SERVER_VERSION}_amd64.deb
 
 export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery"}'
-code-server --install-extension golang.Go@0.38.0
-code-server --install-extension mhutchie.git-graph@1.30.0
-code-server --install-extension bradlc.vscode-tailwindcss
+# common
+code-server --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
 code-server --install-extension ryu1kn.partial-diff
-code-server --install-extension GraphQL.vscode-graphql-syntax
-code-server --install-extension IronGeek.vscode-env
 code-server --install-extension christian-kohler.path-intellisense
 code-server --install-extension streetsidesoftware.code-spell-checker
 code-server --install-extension wmaurer.change-case
-code-server --install-extension njzy.stats-bar
 code-server --install-extension shardulm94.trailing-spaces
 code-server --install-extension oderwat.indent-rainbow
-code-server --install-extension pbkit.vscode-pbkit
 code-server --install-extension wwm.better-align
+code-server --install-extension njzy.stats-bar
 code-server --install-extension humao.rest-client # not perfect
+# go
+code-server --install-extension golang.Go@0.38.0
+# js
+code-server --install-extension bradlc.vscode-tailwindcss
+code-server --install-extension formulahendry.auto-rename-tag
 code-server --install-extension steoates.autoimport # hard to use. remove it one day
+# sytax
+code-server --install-extension IronGeek.vscode-env
+code-server --install-extension GraphQL.vscode-graphql-syntax
+code-server --install-extension pbkit.vscode-pbkit
 code-server --install-extension mrkou47.thrift-syntax-support
+# removed
 # code-server --install-extension usernamehw.errorlens # too noisy
 # code-server --install-extension ppz.ppz # some error logs appear
 
@@ -37,6 +43,7 @@ echo '{
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.tree.renderIndentGuides": "always",
   // editor
+  // "editor.linkedEditing": true, // There are some bugs in tsx file when enabling this. Use `Auto Rename Tag` extension intead.
   "editor.guides.bracketPairs": true,
   "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",
