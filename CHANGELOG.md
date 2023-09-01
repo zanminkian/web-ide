@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.30
+
+### Patch Changes
+
+- 7f91ae9: feat(code-server): add `auto-rename-tag` extension
+
 ## 0.2.29
 
 ### Patch Changes
