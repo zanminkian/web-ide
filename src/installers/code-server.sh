@@ -48,6 +48,9 @@ echo '{
   "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   // file readonly
   "files.readonlyFromPermissions": true,
   "files.readonlyInclude": {
