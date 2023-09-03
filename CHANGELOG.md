@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.31
+
+### Patch Changes
+
+- 8a83506: feat(code-server): enable quick suggestions on strings
+
 ## 0.2.30
 
 ### Patch Changes
