@@ -16,13 +16,6 @@ RUN rm -rf /tmp/installers
 
 # 3. init
 COPY web-ide-init /usr/bin/
-RUN echo '# web-ide\n\
-if [ -f "/usr/bin/web-ide-init" ]\n\
-then\n\
-  /usr/bin/web-ide-init\n\
-  rm -rf /usr/bin/web-ide-init\n\
-fi\n\
-' >> $HOME/.zshrc
 
 # 4. entry
 COPY bootstrap /usr/bin/
