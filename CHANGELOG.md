@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.2.32
+
+### Patch Changes
+
+- 84dea5d: feat: clean `.zshrc` file
+
 ## 0.2.31
 
 ### Patch Changes
