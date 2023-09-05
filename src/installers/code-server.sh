@@ -23,7 +23,6 @@ code-server --install-extension golang.Go@0.38.0
 # js
 code-server --install-extension bradlc.vscode-tailwindcss
 code-server --install-extension formulahendry.auto-rename-tag
-code-server --install-extension steoates.autoimport # hard to use. remove it one day
 # sytax
 code-server --install-extension IronGeek.vscode-env
 code-server --install-extension GraphQL.vscode-graphql-syntax
@@ -32,6 +31,7 @@ code-server --install-extension mrkou47.thrift-syntax-support
 # removed
 # code-server --install-extension usernamehw.errorlens # too noisy
 # code-server --install-extension ppz.ppz # some error logs appear
+# code-server --install-extension steoates.autoimport # it seems that it have some bugs
 
 # vscode setting
 echo '{
