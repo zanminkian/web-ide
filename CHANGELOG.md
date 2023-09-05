@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.3.0
+
+### Minor Changes
+
+- ad5dddc: feat(code-server): remove auto-import extension
+
 ## 0.2.32
 
 ### Patch Changes
