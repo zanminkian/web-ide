@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.3.1
+
+### Patch Changes
+
+- 406d94d: feat(node): add `cpnpm` command
+
 ## 0.3.0
 
 ### Minor Changes
