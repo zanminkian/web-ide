@@ -10,4 +10,5 @@ npm i -g ts-node tsx npm-check-updates del-cli http-server pm2 degit @arethetype
 
 echo '# node
 alias cnpm="npm --registry=https://registry.npmmirror.com"
+alias cpnpm="pnpm --registry=https://registry.npmmirror.com"
 ' >> ~/.zshrc
