@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.3.2
+
+### Patch Changes
+
+- 75929a4: refactor(node): replace n with fnm
+- 635d733: feat(node): add `cnpx` command
+
 ## 0.3.1
 
 ### Patch Changes
