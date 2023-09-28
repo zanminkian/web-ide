@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.3.3
+
+### Patch Changes
+
+- dd2cbd2: feat: support `GIT_CONFIG` env to init `.gitconfig`
+
 ## 0.3.2
 
 ### Patch Changes
