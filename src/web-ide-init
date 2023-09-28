@@ -12,12 +12,19 @@ if [ "$SSH_ID_ED25519_PUB" != "" ] && [ ! -f "$HOME/.ssh/id_ed25519.pub" ]; then
   mkdir -p $HOME/.ssh
   echo $SSH_ID_ED25519_PUB > $HOME/.ssh/id_ed25519.pub
 fi
-if [ "$SSH_KEYSCAN" != "" ] && [ ! -f "$HOME/.ssh/known_hosts" ]; then
+if [ "$SSH_KEYSCAN" != "" ] && [ ! -f "$HOME/.ssh/known_hosts" ]; then # Host names seperated by comma. eg `github.com,gitee.com`
   mkdir -p $HOME/.ssh
   echo $SSH_KEYSCAN | tr ',' ' ' | tr ' ', '\n' | xargs -I {} ssh-keyscan {} >> $HOME/.ssh/known_hosts
 fi
 
 # for git
+if [ ! -f "$HOME/.gitconfig" ]; then
+  if [ "$GIT_CONFIG" != "" ]; then
+    echo $GIT_CONFIG > "$HOME/.gitconfig"
+  fi
+fi
+
+# TODO deprecated remove it later
 if [ ! -f "$HOME/.gitconfig" ]; then
   if [ "$GIT_GLOBAL_USER_NAME" != "" ]; then
     git config --global user.name "$GIT_GLOBAL_USER_NAME"
