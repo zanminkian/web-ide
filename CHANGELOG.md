@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.4.0
+
+### Minor Changes
+
+- c06815c: refactor: drop support some env
+- 5d2af0e: feat: upgrade code-server to v4.17.1
+
 ## 0.3.3
 
 ### Patch Changes
