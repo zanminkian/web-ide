@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.4.1
+
+### Patch Changes
+
+- eef43ca: fix(code-server): hide command center
+
 ## 0.4.0
 
 ### Minor Changes
