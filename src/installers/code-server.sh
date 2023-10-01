@@ -60,6 +60,7 @@ echo '{
     "**/go.sum": true,
   },
   // others
+  "window.commandCenter": false,
   "debug.toolBarLocation": "docked",
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
