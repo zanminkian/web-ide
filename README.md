@@ -57,7 +57,7 @@ A: This issue occurs when you access vscode in the browser with a website addres
 
 > Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?
 
-The image built by this repository does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
+A: The image built by this repository does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
 - Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
 - Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
 
