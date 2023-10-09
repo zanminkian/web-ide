@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.5.0
+
+### Minor Changes
+
+- 969d63e: refactor(node): remove some global pkgs
+- 200b342: refactor: remove wget
+
 ## 0.4.1
 
 ### Patch Changes
