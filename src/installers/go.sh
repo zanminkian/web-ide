@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -e
 
-wget https://github.com/voidint/g/releases/download/v1.5.1/g1.5.1.linux-amd64.tar.gz -P /usr/local/bin
+curl -L https://github.com/voidint/g/releases/download/v1.5.1/g1.5.1.linux-amd64.tar.gz -o /usr/local/bin/g1.5.1.linux-amd64.tar.gz
 tar -xf /usr/local/bin/g1.5.1.linux-amd64.tar.gz -C /usr/local/bin
 rm -rf /usr/local/bin/g1.5.1.linux-amd64.tar.gz
 mv /usr/local/bin/g /usr/local/bin/gvm
