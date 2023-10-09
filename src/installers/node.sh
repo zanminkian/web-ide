@@ -11,7 +11,7 @@ eval "`fnm env`"
 fnm use 16 --install-if-missing
 corepack enable
 corepack prepare --all
-npm i -g ts-node tsx npm-check-updates del-cli http-server pm2 degit @arethetypeswrong/cli loadtest cloc
+npm i -g ts-node tsx npm-check-updates del-cli http-server pm2 degit # @arethetypeswrong/cli loadtest cloc
 
 echo '# node
 eval "`fnm env`" # for fnm
