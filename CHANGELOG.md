@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.1
+
+### Patch Changes
+
+- e24b259: feat(go): add go path bin to PATH
+
 ## 0.5.0
 
 ### Minor Changes
