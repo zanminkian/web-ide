@@ -13,9 +13,9 @@ gvm install 1.19.9
 
 echo '# go
 export G_MIRROR=https://golang.google.cn/dl/
-export PATH="${HOME}/.g/go/bin:$PATH"
 export GOROOT="${HOME}/.g/go"
 export GOPATH="${HOME}/go"
 export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn,direct"
+export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 ' >> ~/.zshrc
