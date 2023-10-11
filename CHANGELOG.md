@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.5.3
+
+### Patch Changes
+
+- b6e4e8a: refactor(go): remove some downloads to decrease the image size
+- 7fc6396: refactor(code-server): decrease the image size
+
 ## 0.5.2
 
 ### Patch Changes
