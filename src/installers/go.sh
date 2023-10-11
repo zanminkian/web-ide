@@ -7,9 +7,12 @@ rm -rf /usr/local/bin/g1.5.1.linux-amd64.tar.gz
 mv /usr/local/bin/g /usr/local/bin/gvm
 
 gvm install 1.19.9
-"${HOME}/.g/go/bin/go" install -v golang.org/x/tools/gopls@v0.12.2
-"${HOME}/.g/go/bin/go" install -v github.com/go-delve/delve/cmd/dlv@v1.20.2
-"${HOME}/.g/go/bin/go" install -v honnef.co/go/tools/cmd/staticcheck@v0.4.3
+rm -rf $HOME/.g/downloads/* # clean something useless to decrease the image sise
+
+# https://github.com/golang/vscode-go/wiki/tools
+$HOME/.g/go/bin/go install golang.org/x/tools/gopls@v0.12.2
+$HOME/.g/go/bin/go install github.com/go-delve/delve/cmd/dlv@v1.20.2
+$HOME/.g/go/bin/go install honnef.co/go/tools/cmd/staticcheck@v0.4.3
 
 echo '# go
 export G_MIRROR=https://golang.google.cn/dl/
