@@ -2,32 +2,33 @@
 set -e
 
 CODE_SERVER_VERSION=4.17.1
-curl -L https://github.com/coder/code-server/releases/download/v${CODE_SERVER_VERSION}/code-server_${CODE_SERVER_VERSION}_amd64.deb -o /tmp/code-server.deb
-dpkg -i /tmp/code-server.deb
-rm -rf /tmp/code-server.deb
+curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz -o /usr/lib/code-server.tgz
+tar -xf /usr/lib/code-server.tgz -C /usr/lib
+mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-amd64 /usr/lib/code-server
+rm -rf /usr/lib/code-server.tgz
 
 export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery"}'
 # common
-code-server --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
-code-server --install-extension ryu1kn.partial-diff
-code-server --install-extension christian-kohler.path-intellisense
-code-server --install-extension streetsidesoftware.code-spell-checker
-code-server --install-extension wmaurer.change-case
-code-server --install-extension shardulm94.trailing-spaces
-code-server --install-extension oderwat.indent-rainbow
-code-server --install-extension wwm.better-align
-code-server --install-extension njzy.stats-bar
-code-server --install-extension humao.rest-client # not perfect
+/usr/lib/code-server/bin/code-server --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
+/usr/lib/code-server/bin/code-server --install-extension ryu1kn.partial-diff
+/usr/lib/code-server/bin/code-server --install-extension christian-kohler.path-intellisense
+/usr/lib/code-server/bin/code-server --install-extension streetsidesoftware.code-spell-checker
+/usr/lib/code-server/bin/code-server --install-extension wmaurer.change-case
+/usr/lib/code-server/bin/code-server --install-extension shardulm94.trailing-spaces
+/usr/lib/code-server/bin/code-server --install-extension oderwat.indent-rainbow
+/usr/lib/code-server/bin/code-server --install-extension wwm.better-align
+/usr/lib/code-server/bin/code-server --install-extension njzy.stats-bar
+/usr/lib/code-server/bin/code-server --install-extension humao.rest-client # not perfect
 # go
-code-server --install-extension golang.Go@0.38.0
+/usr/lib/code-server/bin/code-server --install-extension golang.Go@0.38.0
 # js
-code-server --install-extension bradlc.vscode-tailwindcss
-code-server --install-extension formulahendry.auto-rename-tag
+/usr/lib/code-server/bin/code-server --install-extension bradlc.vscode-tailwindcss
+/usr/lib/code-server/bin/code-server --install-extension formulahendry.auto-rename-tag
 # sytax
-code-server --install-extension IronGeek.vscode-env
-code-server --install-extension GraphQL.vscode-graphql-syntax
-code-server --install-extension pbkit.vscode-pbkit
-code-server --install-extension mrkou47.thrift-syntax-support
+/usr/lib/code-server/bin/code-server --install-extension IronGeek.vscode-env
+/usr/lib/code-server/bin/code-server --install-extension GraphQL.vscode-graphql-syntax
+/usr/lib/code-server/bin/code-server --install-extension pbkit.vscode-pbkit
+/usr/lib/code-server/bin/code-server --install-extension mrkou47.thrift-syntax-support
 # removed
 # code-server --install-extension usernamehw.errorlens # too noisy
 # code-server --install-extension ppz.ppz # some error logs appear
@@ -74,6 +75,7 @@ echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
 
 # env
 echo "# code-server
+export PATH=$PATH:/usr/lib/code-server/bin
 export EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' # https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace
 export CODESPACES='true' # Disable golang extension's welcome page. Check https://github.com/golang/vscode-go/issues/1246
 alias code='code-server'
