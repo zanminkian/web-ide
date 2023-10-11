@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.2
+
+### Patch Changes
+
+- a33f2c3: feat(python): support python env
+
 ## 0.5.1
 
 ### Patch Changes
