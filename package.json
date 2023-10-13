@@ -1,14 +1,17 @@
 {
   "name": "web-ide",
-  "private": true,
-  "packageManager": "pnpm@8.5.1",
   "version": "0.5.3",
-  "author": "hellozmj@qq.com",
+  "private": true,
   "license": "MIT",
+  "author": "hellozmj@qq.com",
+  "type": "module",
   "scripts": {
+    "postinstall": "git-validator install",
     "release": "./release.sh && changeset tag"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2"
-  }
+    "@changesets/cli": "^2.26.2",
+    "git-validator": "^0.10.18"
+  },
+  "packageManager": "pnpm@8.5.1"
 }
