@@ -49,7 +49,7 @@ After running the command, open `http://127.0.0.1:8080` in your browser, enter y
 
 A: Convert this web vscode into a Progressive Web App (PWA).
 
-> Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I fix this?
+> Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I solve this problem?
 
 A: This issue occurs when you access vscode in the browser with a website address that is not `localhost` and a protocol that is not `https`. Here are some solutions:
 
@@ -59,10 +59,16 @@ A: This issue occurs when you access vscode in the browser with a website addres
 
 > Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?
 
-A: The image built by this repository does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
+A: The container environment does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
 
 - Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
 - Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+[![Stargazers](https://reporoster.com/stars/zanminkian/web-ide)](https://github.com/zanminkian/web-ide/stargazers)
 
 ## License
 
