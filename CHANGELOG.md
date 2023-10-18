@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.4
+
+### Patch Changes
+
+- e5f14c5: fix(code-server): fix env
+
 ## 0.5.3
 
 ### Patch Changes
