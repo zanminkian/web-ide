@@ -14,10 +14,8 @@ COPY installers /tmp/installers
 RUN ls /tmp/installers | xargs -I {} sh -c /tmp/installers/{}
 RUN rm -rf /tmp/installers
 
-# 3. init
-COPY web-ide-init /usr/bin/
+# 3. entry & init
+COPY bootstrap web-ide-init /usr/bin/
 
-# 4. entry
-COPY bootstrap /usr/bin/
 CMD []
 ENTRYPOINT ["bootstrap"]
