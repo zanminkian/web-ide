@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.5.5
+
+### Patch Changes
+
+- e34b595: refactor: remove useless `. ~/.zshrc`
+- 120e57a: refactor(code-server): optimize code-server zshrc
+
 ## 0.5.4
 
 ### Patch Changes
