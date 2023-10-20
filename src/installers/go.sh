@@ -16,8 +16,8 @@ $HOME/.g/go/bin/go install honnef.co/go/tools/cmd/staticcheck@v0.4.3
 
 echo '# go
 export G_MIRROR=https://golang.google.cn/dl/
-export GOROOT="${HOME}/.g/go"
-export GOPATH="${HOME}/go"
+export GOROOT="$HOME/.g/go"
+export GOPATH="$HOME/go"
 export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn,direct"
 export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
