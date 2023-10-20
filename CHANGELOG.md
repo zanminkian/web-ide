@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.6
+
+### Patch Changes
+
+- a980f78: revert: add `. ~/.zshrc` back
+
 ## 0.5.5
 
 ### Patch Changes
