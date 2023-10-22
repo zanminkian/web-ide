@@ -4,11 +4,15 @@ set -e
 CODE_SERVER_VERSION=4.17.1
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
-mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-amd64 /usr/lib/code-server
-ln -s /usr/lib/code-server/bin/code-server /usr/bin/code
 rm -rf /usr/lib/code-server.tgz
+mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-amd64 /usr/lib/code-server
+# Custom marketepkace. Refer https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace.
+# Disable golang extension's welcome page. Refer https://github.com/golang/vscode-go/issues/1246.
+echo "#!/usr/bin/env sh
+EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' CODESPACES='true' /usr/lib/code-server/bin/code-server \"\$@\"
+" > /usr/bin/code
+chmod +x /usr/bin/code
 
-export EXTENSIONS_GALLERY='{"serviceUrl":"https://marketplace.visualstudio.com/_apis/public/gallery"}'
 # common
 code --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
 code --install-extension ryu1kn.partial-diff
@@ -73,9 +77,3 @@ sed -i '/^bind-addr:/d' ~/.config/code-server/config.yaml
 echo 'bind-addr: 0.0.0.0:8080' >> ~/.config/code-server/config.yaml
 sed -i '/^disable-update-check:/d' ~/.config/code-server/config.yaml
 echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
-
-# env
-echo "# code
-export EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' # https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace
-export CODESPACES='true' # Disable golang extension's welcome page. Check https://github.com/golang/vscode-go/issues/1246
-" >> ~/.zshrc

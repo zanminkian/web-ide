@@ -1,6 +1,4 @@
 #!/usr/bin/env zsh
-. ~/.zshrc
-
 current_dir=$(cd "$(dirname "$0")"; pwd)
 if [ -f $current_dir/web-ide-init ]; then
   $current_dir/web-ide-init
