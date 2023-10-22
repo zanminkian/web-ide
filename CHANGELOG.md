@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.7
+
+### Patch Changes
+
+- 545a378: refactor(code-server): optimize the installation
+
 ## 0.5.6
 
 ### Patch Changes
