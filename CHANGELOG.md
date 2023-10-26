@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.8
+
+### Patch Changes
+
+- b1737b2: fix: rename `GIT_CONFIG` env to `GIT_CONFIG_CONTENT`
+
 ## 0.5.7
 
 ### Patch Changes
