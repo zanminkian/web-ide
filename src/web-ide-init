@@ -16,8 +16,8 @@ if [ ! -f "$HOME/.ssh/known_hosts" ] && [ "$SSH_KEYSCAN" != "" ]; then # Host na
 fi
 
 # for git
-if [ ! -f "$HOME/.gitconfig" ] && [ "$GIT_CONFIG" != "" ]; then
-  echo $GIT_CONFIG > "$HOME/.gitconfig"
+if [ ! -f "$HOME/.gitconfig" ] && [ "$GIT_CONFIG_CONTENT" != "" ]; then
+  echo $GIT_CONFIG_CONTENT > "$HOME/.gitconfig"
 fi
 
 # init

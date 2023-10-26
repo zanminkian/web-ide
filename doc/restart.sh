@@ -14,7 +14,7 @@ docker run -itd \
   -e SSH_ID_ED25519_PUB="MY_PUBLICK_KEY" \
   -e SSH_ID_ED25519="MY_PRIVATE_KEY" \
   -e SSH_KEYSCAN="github.com" \
-  -e GIT_CONFIG="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n" \
+  -e GIT_CONFIG_CONTENT="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n" \
   -e WEB_IDE_INIT_CMD="sed -i 's/Default Dark Modern/Default Dark\+/g' /root/.local/share/code-server/User/settings.json" \
   -v $HOME/web-ide-root/projects:/root/projects \
   -v $HOME/web-ide-root/go/src:/root/go/src \
