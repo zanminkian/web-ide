@@ -22,3 +22,7 @@ export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn,direct"
 export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 ' >> ~/.zshrc
+
+if which code >/dev/null 2>&1; then
+  code --install-extension golang.Go@0.38.0
+fi
