@@ -19,3 +19,8 @@ alias cnpx="npx --registry=https://registry.npmmirror.com"
 alias cnpm="npm --registry=https://registry.npmmirror.com"
 alias cpnpm="pnpm --registry=https://registry.npmmirror.com"
 ' >> ~/.zshrc
+
+if which code >/dev/null 2>&1; then
+  code --install-extension bradlc.vscode-tailwindcss
+  code --install-extension formulahendry.auto-rename-tag
+fi

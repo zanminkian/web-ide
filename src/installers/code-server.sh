@@ -24,9 +24,6 @@ code --install-extension oderwat.indent-rainbow
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
 code --install-extension humao.rest-client # not perfect
-# js
-code --install-extension bradlc.vscode-tailwindcss
-code --install-extension formulahendry.auto-rename-tag
 # sytax
 code --install-extension IronGeek.vscode-env
 code --install-extension GraphQL.vscode-graphql-syntax
