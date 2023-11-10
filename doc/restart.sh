@@ -19,6 +19,7 @@ docker run -itd \
   -v $HOME/web-ide-root/projects:/root/projects \
   -v $HOME/web-ide-root/go/src:/root/go/src \
   -v $HOME/web-ide-root/.zsh_history:/root/.zsh_history \
+  --restart always \
   --name web-ide \
   zengmingjian/web-ide
 
