@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.10
+
+### Patch Changes
+
+- 52ae2d0: build: add `--platform` option
+
 ## 0.5.9
 
 ### Patch Changes
