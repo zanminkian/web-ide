@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.9
+
+### Patch Changes
+
+- dc32a75: feat: enable command center
+
 ## 0.5.8
 
 ### Patch Changes
