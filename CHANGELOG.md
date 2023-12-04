@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.5.9
+
+### Patch Changes
+
+- 5ad073b: feat: enable command center
+
 ## 0.5.8
 
 ### Patch Changes
