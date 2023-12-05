@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.6.0-beta.1
+
+### Patch Changes
+
+- d241e52: feat: support arm64 platform
+
 ## 0.6.0-beta.0
 
 ### Minor Changes
