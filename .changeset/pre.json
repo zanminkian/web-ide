@@ -4,5 +4,9 @@
   "initialVersions": {
     "web-ide": "0.5.9"
   },
-  "changesets": []
+  "changesets": [
+    "mighty-falcons-refuse",
+    "moody-boats-flash",
+    "shaggy-owls-tease"
+  ]
 }

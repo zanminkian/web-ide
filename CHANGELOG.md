@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.6.0-beta.0
+
+### Minor Changes
+
+- e515b86: refactor!: remove go, kerberos, python and ttyd
+- 9cf9cb8: refactor!: migrate to arm64 arch
+
 ## 0.5.9
 
 ### Patch Changes
