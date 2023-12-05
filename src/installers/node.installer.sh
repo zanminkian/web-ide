@@ -2,9 +2,9 @@
 set -e
 
 # install fnm
-curl -L https://github.com/Schniz/fnm/releases/latest/download/fnm-linux.zip -o /usr/local/bin/fnm-linux.zip
-unzip /usr/local/bin/fnm-linux.zip -d /usr/local/bin
-rm -rf /usr/local/bin/fnm-linux.zip
+curl -L https://github.com/Schniz/fnm/releases/latest/download/fnm-arm64.zip -o /usr/local/bin/fnm-arm64.zip
+unzip /usr/local/bin/fnm-arm64.zip -d /usr/local/bin
+rm -rf /usr/local/bin/fnm-arm64.zip
 chmod +x /usr/local/bin/fnm
 eval "`fnm env`"
 
