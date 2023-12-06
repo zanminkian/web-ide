@@ -22,12 +22,10 @@ Web-IDE is a comprehensive web-based integrated development environment (IDE) th
 ## Usage
 
 ```sh
-docker run -itd --net host -e PASSWORD=your_password -v $HOME/projects:/root/projects --name web-ide zengmingjian/web-ide
+docker run -itd -p 8080:8080 -e PASSWORD=your_password --name web-ide zengmingjian/web-ide
 ```
 
 After running the command, open `http://127.0.0.1:8080` in your browser, enter your password and start coding!
-
-> Note: Docker on macOS does not support host networking. Replace `--net host` with `-p 8080:8080`.
 
 > Note: If you are using macOS, mounting volume will be unstable to use pnpm. Check [this issue](https://github.com/pnpm/pnpm/issues/5803). The workaround is setting the container file sharing to `gRPC FUSE` implementation. Check [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
 
@@ -59,7 +57,7 @@ A: This issue occurs when you access vscode in the browser with a website addres
 
 > Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?
 
-A: The container environment does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
+A: Probably, the remote server does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
 
 - Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
 - Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
@@ -67,8 +65,6 @@ A: The container environment does not support the `rsa` algorithm due to securit
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-[![Stargazers](https://reporoster.com/stars/zanminkian/web-ide)](https://github.com/zanminkian/web-ide/stargazers)
 
 ## License
 

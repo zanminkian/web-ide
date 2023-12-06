@@ -1,11 +1,19 @@
 #!/usr/bin/env zsh
 set -e
 
+ARCH=$(arch)
+echo "code-server: current arch is $ARCH"
+if [ $ARCH = "x86_64" ]; then
+  ARCH="amd64"
+else
+  ARCH="arm64"
+fi
+
 CODE_SERVER_VERSION=4.17.1
-curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz -o /usr/lib/code-server.tgz
+curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
-mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-amd64 /usr/lib/code-server
+mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-$ARCH /usr/lib/code-server
 # Custom marketepkace. Refer https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace.
 # Disable golang extension's welcome page. Refer https://github.com/golang/vscode-go/issues/1246.
 echo "#!/usr/bin/env sh
@@ -71,3 +79,5 @@ sed -i '/^bind-addr:/d' ~/.config/code-server/config.yaml
 echo 'bind-addr: 0.0.0.0:8080' >> ~/.config/code-server/config.yaml
 sed -i '/^disable-update-check:/d' ~/.config/code-server/config.yaml
 echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
+
+echo "install code-server success"
