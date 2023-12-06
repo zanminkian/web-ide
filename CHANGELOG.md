@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.6.0
+
+### Minor Changes
+
+- 52a8a08: feat!: support arm64 and remove go, kerberos, python and ttyd
+
 ## 0.5.9
 
 ### Patch Changes
