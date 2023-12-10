@@ -13,5 +13,5 @@
     "@changesets/cli": "^2.27.1",
     "git-validator": "^0.10.25"
   },
-  "packageManager": "pnpm@8.5.1"
+  "packageManager": "pnpm@8.11.0"
 }
