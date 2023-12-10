@@ -34,3 +34,5 @@ export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 if which code >/dev/null 2>&1; then
   code --install-extension golang.Go@0.38.0
 fi
+
+echo "install go success"
