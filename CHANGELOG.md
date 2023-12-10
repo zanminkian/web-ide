@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.6.1-alpha.0
+
+### Patch Changes
+
+- 7b9223d: feat: support go
+
 ## 0.6.0
 
 ### Minor Changes

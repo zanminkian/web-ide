@@ -4,5 +4,8 @@
   "initialVersions": {
     "web-ide": "0.6.0"
   },
-  "changesets": []
+  "changesets": [
+    "ninety-kangaroos-reply",
+    "perfect-starfishes-tell"
+  ]
 }
