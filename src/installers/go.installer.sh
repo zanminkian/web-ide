@@ -1,9 +1,17 @@
 #!/usr/bin/env zsh
 set -e
 
-curl -L https://github.com/voidint/g/releases/download/v1.5.1/g1.5.1.linux-amd64.tar.gz -o /usr/local/bin/g1.5.1.linux-amd64.tar.gz
-tar -xf /usr/local/bin/g1.5.1.linux-amd64.tar.gz -C /usr/local/bin
-rm -rf /usr/local/bin/g1.5.1.linux-amd64.tar.gz
+ARCH=$(arch)
+echo "go: current arch is $ARCH"
+if [ $ARCH = "x86_64" ]; then
+  ARCH="amd64"
+else
+  ARCH="arm64"
+fi
+
+curl -L https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-$ARCH.tar.gz -o /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz
+tar -xf /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz -C /usr/local/bin
+rm -rf /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz
 mv /usr/local/bin/g /usr/local/bin/gvm
 
 gvm install 1.19.9
