@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.7.0
+
+### Minor Changes
+
+- 0b1b243: feat(code-server): upgrade code-server to 4.19.1
+
 ## 0.6.1
 
 ### Patch Changes
