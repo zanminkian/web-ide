@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.7.1
+
+### Patch Changes
+
+- 02681ca: feat: install python
+
 ## 0.7.0
 
 ### Minor Changes
