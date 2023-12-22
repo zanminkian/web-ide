@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.8.0
+
+### Minor Changes
+
+- e85a91a: feat(code-server): upgrade code-server to v4.20.0
+
 ## 0.7.1
 
 ### Patch Changes
