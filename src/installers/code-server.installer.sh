@@ -9,7 +9,7 @@ else
   ARCH="arm64"
 fi
 
-CODE_SERVER_VERSION=4.19.1
+CODE_SERVER_VERSION=4.20.0
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
@@ -50,6 +50,7 @@ echo '{
   // workbench
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Dark Modern",
+  "workbench.tree.enableStickyScroll": true,
   "workbench.tree.renderIndentGuides": "always",
   // editor
   // "editor.linkedEditing": true, // There are some bugs in tsx file when enabling this. Use `Auto Rename Tag` extension intead.
