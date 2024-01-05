@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.8.1
+
+### Patch Changes
+
+- b94d1cd: feat(code-server): enable `workbench.editor.pinnedTabsOnSeparateRow`
+
 ## 0.8.0
 
 ### Minor Changes
