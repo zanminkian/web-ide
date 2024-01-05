@@ -48,6 +48,7 @@ echo '{
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
   // workbench
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.tree.enableStickyScroll": true,
