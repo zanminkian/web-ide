@@ -7,4 +7,5 @@ set -e
 
 ## install tools via apt
 apt update
-apt install -y nginx mysql-client tree
+apt install -y mysql-client redis-tools tree
+# apt install -y nginx
