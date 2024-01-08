@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.9.0
+
+### Minor Changes
+
+- a2e933f: feat: add redis-tools cli tool and remove nginx
+
 ## 0.8.1
 
 ### Patch Changes
