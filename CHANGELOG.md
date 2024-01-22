@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.9.1
+
+### Patch Changes
+
+- e334c04: feat(code-server): add region viewer plugin
+
 ## 0.9.0
 
 ### Minor Changes
