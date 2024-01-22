@@ -23,6 +23,7 @@ chmod +x /usr/bin/code
 
 # common
 code --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
+code --install-extension SantaCodes.santacodes-region-viewer
 code --install-extension ryu1kn.partial-diff
 code --install-extension christian-kohler.path-intellisense
 code --install-extension streetsidesoftware.code-spell-checker
