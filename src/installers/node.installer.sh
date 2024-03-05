@@ -16,7 +16,7 @@ rm -rf /usr/local/bin/fnm-$ARCH.zip
 chmod +x /usr/local/bin/fnm
 eval "`fnm env --shell zsh`"
 
-fnm use 16 --install-if-missing
+fnm use 18 --install-if-missing
 corepack enable
 corepack prepare --all
 npm i -g ts-node tsx npm-check-updates del-cli http-server pm2 degit # @arethetypeswrong/cli loadtest cloc
