@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.9.2
+
+### Patch Changes
+
+- 00d6306: feat(node): use node 18
+
 ## 0.9.1
 
 ### Patch Changes
