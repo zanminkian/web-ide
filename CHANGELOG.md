@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.9.3
+
+### Patch Changes
+
+- 560ca4f: feat(node): auto switch node version
+
 ## 0.9.2
 
 ### Patch Changes
