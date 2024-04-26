@@ -1,5 +1,15 @@
 # web-ide
 
+## 0.10.0
+
+### Minor Changes
+
+- 001d830: refactor: remove python
+
+### Patch Changes
+
+- 560ca4f: feat(node): auto switch node version
+
 ## 0.9.2
 
 ### Patch Changes
