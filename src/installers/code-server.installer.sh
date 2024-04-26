@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-set -e
+set -ex
 
 ARCH=$(arch)
 echo "code-server: current arch is $ARCH"

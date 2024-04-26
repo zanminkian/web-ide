@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-set -e
+set -ex
 
 ARCH=$(arch)
 echo "node: current arch is $ARCH"
@@ -14,7 +14,7 @@ curl -L https://github.com/Schniz/fnm/releases/latest/download/fnm-$ARCH.zip -o 
 unzip /usr/local/bin/fnm-$ARCH.zip -d /usr/local/bin
 rm -rf /usr/local/bin/fnm-$ARCH.zip
 chmod +x /usr/local/bin/fnm
-eval "`fnm env --shell zsh`"
+eval "$(fnm env --shell=zsh)"
 
 fnm install 16
 fnm install 18

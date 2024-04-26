@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-set -e
+set -ex
 
 touch ~/.zshrc
 mv ~/.zshrc ~/.zshrc_tmp

@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-set -e
+set -ex
 
 ARCH=$(arch)
 echo "go: current arch is $ARCH"
