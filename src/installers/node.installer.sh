@@ -16,13 +16,17 @@ rm -rf /usr/local/bin/fnm-$ARCH.zip
 chmod +x /usr/local/bin/fnm
 eval "`fnm env --shell zsh`"
 
-fnm use 18 --install-if-missing
+fnm install 16
+fnm install 18
+fnm install 20
+fnm install 22
+fnm use 18
 corepack enable
 corepack prepare --all
 npm i -g ts-node tsx npm-check-updates del-cli http-server pm2 degit # @arethetypeswrong/cli loadtest cloc
 
 echo '# node
-eval "`fnm env --shell zsh`" # for fnm
+eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
 alias cnpx="npx --registry=https://registry.npmmirror.com"
 alias cnpm="npm --registry=https://registry.npmmirror.com"
 alias cpnpm="pnpm --registry=https://registry.npmmirror.com"
