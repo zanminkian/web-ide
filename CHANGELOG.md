@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.10.0-alpha.0
+
+### Minor Changes
+
+- 06d87b0: refactor(node): do not prepare for pnpm and yarn
+
 ## 0.9.2
 
 ### Patch Changes
