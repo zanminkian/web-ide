@@ -18,7 +18,6 @@ eval "`fnm env --shell zsh`"
 
 fnm use 18 --install-if-missing
 corepack enable
-corepack prepare --all
 npm i -g ts-node tsx npm-check-updates del-cli http-server pm2 degit # @arethetypeswrong/cli loadtest cloc
 
 echo '# node
