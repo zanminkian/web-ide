@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.9.3-alpha.0
+
+### Patch Changes
+
+- 712a97a: chore: no thing change, just do release for test
+
 ## 0.9.2
 
 ### Patch Changes
