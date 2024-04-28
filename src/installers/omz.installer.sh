@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 set -e
 
+echo "omz: install begin. $(arch)"
+
 touch ~/.zshrc
 mv ~/.zshrc ~/.zshrc_tmp
 
@@ -20,4 +22,4 @@ source $ZSH/oh-my-zsh.sh
 cat ~/.zshrc_tmp >> ~/.zshrc
 rm -rf ~/.zshrc_tmp
 
-echo "install omz success"
+echo "omz: install success. $(arch)"

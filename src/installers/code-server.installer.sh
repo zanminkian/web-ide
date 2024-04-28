@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh
 set -e
 
+echo "code-server: install begin. $(arch)"
+
 ARCH=$(arch)
-echo "code-server: current arch is $ARCH"
 if [ $ARCH = "x86_64" ]; then
   ARCH="amd64"
 else
@@ -84,4 +85,4 @@ echo 'bind-addr: 0.0.0.0:8080' >> ~/.config/code-server/config.yaml
 sed -i '/^disable-update-check:/d' ~/.config/code-server/config.yaml
 echo 'disable-update-check: true' >> ~/.config/code-server/config.yaml
 
-echo "install code-server success"
+echo "code-server: install success. $(arch)"
