@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh
 set -e
 
+echo "node: install begin. $(arch)"
+
 ARCH=$(arch)
-echo "node: current arch is $ARCH"
 if [ $ARCH = "x86_64" ]; then
   ARCH="linux"
 else
@@ -33,4 +34,4 @@ if which code >/dev/null 2>&1; then
   code --install-extension formulahendry.auto-rename-tag
 fi
 
-echo "install node success"
+echo "node: install success. $(arch)"

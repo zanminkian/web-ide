@@ -6,6 +6,8 @@ set -e
 # chmod +x /usr/local/bin/ttyd
 
 ## install tools via apt
+echo "cli-tools: install begin. $(arch)"
 apt update
 apt install -y mysql-client redis-tools tree
+echo "cli-tools: install success. $(arch)"
 # apt install -y nginx
