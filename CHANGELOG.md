@@ -1,5 +1,15 @@
 # web-ide
 
+## 0.10.0-alpha.0
+
+### Minor Changes
+
+- aff7914: feat(node)!: remove pm2
+
+### Patch Changes
+
+- cd8ee01: feat(node): auto switch node version
+
 ## 0.9.2
 
 ### Patch Changes
