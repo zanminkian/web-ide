@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.10.0-alpha.0
+
+### Minor Changes
+
+- 2568b73: feat(node)!: remove pm2
+
 ## 0.9.2
 
 ### Patch Changes
