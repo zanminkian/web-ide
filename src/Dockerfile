@@ -10,9 +10,9 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 SHELL ["/usr/bin/zsh", "-c"]
 
 # 2. install
-COPY installers /tmp/installers
-RUN ls /tmp/installers | grep installer.sh | xargs -I {} sh -c /tmp/installers/{}
-RUN rm -rf /tmp/installers
+COPY installers install.sh /tmp/installers
+RUN /tmp/install.sh
+RUN rm -rf /tmp/installers /tmp/install.sh
 
 # 3. entry & init
 COPY bootstrap web-ide-init /usr/bin/
