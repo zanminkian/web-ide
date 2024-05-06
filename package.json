@@ -6,7 +6,7 @@
   "author": "hellozmj@qq.com",
   "type": "module",
   "scripts": {
-    "postinstall": "git-validator install",
+    "prepare": "git-validator install",
     "release": "./release.sh && changeset tag"
   },
   "devDependencies": {

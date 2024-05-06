@@ -16,11 +16,9 @@ rm -rf /usr/local/bin/fnm-$ARCH.zip
 chmod +x /usr/local/bin/fnm
 eval "$(fnm env --shell=zsh)"
 
-fnm install 16
 fnm install 18
 fnm install 20
 fnm install 22
-fnm use 18
 corepack enable
 corepack install -g pnpm
 corepack install -g yarn
@@ -36,8 +34,8 @@ echo "installing http-server"
 npm i -g http-server
 echo "installing degit"
 npm i -g degit
-echo "installing npm-check-updates"
-npm i -g npm-check-updates
+# echo "installing npm-check-updates"
+# npm i -g npm-check-updates
 
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
