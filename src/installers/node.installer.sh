@@ -37,7 +37,7 @@ npm i -g http-server
 echo "installing degit"
 npm i -g degit
 echo "installing npm-check-updates"
-npm i -g npm-check-updates
+npm i -g npm-check-updates@16.14.15
 
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
