@@ -1,5 +1,16 @@
 # web-ide
 
+## 0.10.0-beta.0
+
+### Minor Changes
+
+- 4e459c0: feat(node)!: remove pm2
+
+### Patch Changes
+
+- cc5c828: feat(node): auto switch node version
+- c268ca1: feat(code-server): add drawio
+
 ## 0.9.2
 
 ### Patch Changes
