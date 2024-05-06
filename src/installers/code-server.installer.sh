@@ -38,6 +38,8 @@ code --install-extension IronGeek.vscode-env
 code --install-extension GraphQL.vscode-graphql-syntax
 code --install-extension pbkit.vscode-pbkit
 code --install-extension mrkou47.thrift-syntax-support
+# tools
+code --install-extension hediet.vscode-drawio
 # removed
 # code --install-extension usernamehw.errorlens # too noisy
 # code --install-extension ppz.ppz # some error logs appear
