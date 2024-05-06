@@ -2,7 +2,6 @@
 set -e
 
 ARCH=$(arch)
-echo "go: current arch is $ARCH"
 if [ $ARCH = "x86_64" ]; then
   ARCH="amd64"
 else
@@ -34,5 +33,3 @@ export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 if which code >/dev/null 2>&1; then
   code --install-extension golang.Go@0.38.0
 fi
-
-echo "install go success"

@@ -19,5 +19,3 @@ source $ZSH/oh-my-zsh.sh
 
 cat ~/.zshrc_tmp >> ~/.zshrc
 rm -rf ~/.zshrc_tmp
-
-echo "install omz success"
