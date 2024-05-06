@@ -52,7 +52,6 @@ echo '{
   // workbench
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Default Dark Modern",
   "workbench.tree.enableStickyScroll": true,
   "workbench.tree.renderIndentGuides": "always",
   // editor
@@ -77,6 +76,8 @@ echo '{
   "debug.toolBarLocation": "docked",
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
+  // third-party
+  "rest-client.rememberCookiesForSubsequentRequests": false,
 }' > ~/.local/share/code-server/User/settings.json
 
 # code-server config
