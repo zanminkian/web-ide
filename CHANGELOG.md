@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.10.1
+
+### Patch Changes
+
+- 50f4170: feat(code-server): use light theme
+
 ## 0.10.0
 
 ### Minor Changes
