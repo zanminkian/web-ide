@@ -22,7 +22,7 @@ corepack enable
 corepack install -g pnpm
 corepack install -g yarn
 
-# @arethetypeswrong/cli loadtest cloc pm2
+# @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates
 echo "installing ts-node"
 npm i -g ts-node
 echo "installing tsx"
@@ -33,8 +33,6 @@ echo "installing http-server"
 npm i -g http-server
 echo "installing degit"
 npm i -g degit
-# echo "installing npm-check-updates"
-# npm i -g npm-check-updates
 
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
