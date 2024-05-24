@@ -70,6 +70,9 @@ echo '{
     "**/.pnpm-store/**/*": true,
     "**/go.sum": true,
   },
+  // language
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
   // others
   "window.menuBarVisibility": "visible",
   "debug.toolBarLocation": "docked",
