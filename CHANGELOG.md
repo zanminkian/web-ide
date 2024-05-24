@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.11.0
+
+### Minor Changes
+
+- 55e7874: feat(code-server): upgrade code-server to v4.22.1
+
 ## 0.10.1
 
 ### Patch Changes
