@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.11.1
+
+### Patch Changes
+
+- a7e161e: feat(code-server): hint param name
+
 ## 0.11.0
 
 ### Minor Changes
