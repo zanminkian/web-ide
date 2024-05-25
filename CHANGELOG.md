@@ -1,5 +1,13 @@
 # web-ide
 
+## 0.11.2
+
+### Patch Changes
+
+- 1cf39c9: feat(omz): optimize zsh theme
+- ecc4f99: feat(omz): remove git plugin
+- fce33b9: feat(code-server): optimize code-server window title
+
 ## 0.11.1
 
 ### Patch Changes
