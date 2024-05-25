@@ -49,6 +49,9 @@ echo '{
   // extension
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
+  // window
+  "window.menuBarVisibility": "visible",
+  "window.title": "${rootName}",
   // workbench
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.startupEditor": "none",
@@ -74,7 +77,6 @@ echo '{
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   // others
-  "window.menuBarVisibility": "visible",
   "debug.toolBarLocation": "docked",
   "security.workspace.trust.enabled": false,
   "update.mode": "none",
