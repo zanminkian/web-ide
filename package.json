@@ -10,10 +10,11 @@
     "release": "./release.sh && changeset tag",
     "style": "git-validator",
     "style:update": "git-validator -u",
-    "test": "pnpm style"
+    "test": "node --test **/*.spec.js"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.1",
+    "@types/node": "20.12.12",
     "git-validator": "0.17.1"
   },
   "packageManager": "pnpm@8.11.0",
