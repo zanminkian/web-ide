@@ -7,7 +7,10 @@
   "type": "module",
   "scripts": {
     "prepare": "git-validator install",
-    "release": "./release.sh && changeset tag"
+    "release": "./release.sh && changeset tag",
+    "style": "git-validator",
+    "style:update": "git-validator -u",
+    "test": "pnpm style"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.1",
