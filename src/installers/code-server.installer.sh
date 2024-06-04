@@ -28,7 +28,6 @@ code --install-extension christian-kohler.path-intellisense
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension wmaurer.change-case
 code --install-extension shardulm94.trailing-spaces
-code --install-extension oderwat.indent-rainbow
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
 code --install-extension humao.rest-client # not perfect
@@ -40,6 +39,7 @@ code --install-extension mrkou47.thrift-syntax-support
 # tools
 code --install-extension hediet.vscode-drawio
 # removed
+# code --install-extension oderwat.indent-rainbow # not significant
 # code --install-extension usernamehw.errorlens # too noisy
 # code --install-extension ppz.ppz # some error logs appear
 # code --install-extension steoates.autoimport # it seems that it have some bugs
