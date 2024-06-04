@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.11.3
+
+### Patch Changes
+
+- 93cfeda: chore(code-server): remove indent-rainbow extension
+
 ## 0.11.2
 
 ### Patch Changes
