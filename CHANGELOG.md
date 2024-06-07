@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.11.4
+
+### Patch Changes
+
+- 7c523b9: fix: remove env variable after initialized
+
 ## 0.11.3
 
 ### Patch Changes
