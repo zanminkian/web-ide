@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.11.5
+
+### Patch Changes
+
+- 2620d15: chore: add version comment in bootstrap
+
 ## 0.11.4
 
 ### Patch Changes
