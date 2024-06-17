@@ -4,5 +4,10 @@
   "initialVersions": {
     "web-ide": "0.11.5"
   },
-  "changesets": []
+  "changesets": [
+    "few-ads-end",
+    "nasty-rockets-sort",
+    "new-guests-type",
+    "silver-dolphins-rest"
+  ]
 }
