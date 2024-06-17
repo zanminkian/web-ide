@@ -1,10 +1,7 @@
 #!/usr/bin/env zsh
 
 # web-ide v{{version}}
-current_dir=$(cd "$(dirname "$0")"; pwd)
-if [ -f $current_dir/web-ide-init ]; then
-  $current_dir/web-ide-init
-  rm -rf $current_dir/web-ide-init
-fi
+web-ide-init > /dev/null 2>&1 || true
+rm -f "$(which web-ide-init)"
 
 code "$@"
