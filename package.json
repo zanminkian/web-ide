@@ -1,7 +1,7 @@
 {
   "name": "web-ide",
   "version": "0.11.5",
-  "private": true,
+  "repository": "https://github.com/zanminkian/web-ide",
   "license": "MIT",
   "author": "hellozmj@qq.com",
   "type": "module",
@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "@changesets/cli": "2.27.5",
-    "@types/node": "20.13.0",
-    "git-validator": "0.17.5"
+    "@types/node": "20.14.2",
+    "git-validator": "0.17.6"
   },
   "packageManager": "pnpm@8.11.0",
   "engines": {
