@@ -4,32 +4,32 @@ set -e
 
 # for ssh
 mkdir -p $HOME/.ssh
-if [ ! -f "$HOME/.ssh/id_ed25519" ] && [ "$SSH_ID_ED25519" != "" ]; then
-  echo $SSH_ID_ED25519 > $HOME/.ssh/id_ed25519
+if [ ! -f "$HOME/.ssh/id_ed25519" ] && [ "$WI_SSH_ID_ED25519" != "" ]; then
+  echo $WI_SSH_ID_ED25519 > $HOME/.ssh/id_ed25519
   chmod 600 $HOME/.ssh/id_ed25519
 fi
-if [ ! -f "$HOME/.ssh/id_ed25519.pub" ] && [ "$SSH_ID_ED25519_PUB" != "" ]; then
-  echo $SSH_ID_ED25519_PUB > $HOME/.ssh/id_ed25519.pub
+if [ ! -f "$HOME/.ssh/id_ed25519.pub" ] && [ "$WI_SSH_ID_ED25519_PUB" != "" ]; then
+  echo $WI_SSH_ID_ED25519_PUB > $HOME/.ssh/id_ed25519.pub
 fi
 
-if [ ! -f "$HOME/.ssh/id_rsa" ] && [ "$SSH_ID_RSA" != "" ]; then
-  echo $SSH_ID_RSA > $HOME/.ssh/id_rsa
+if [ ! -f "$HOME/.ssh/id_rsa" ] && [ "$WI_SSH_ID_RSA" != "" ]; then
+  echo $WI_SSH_ID_RSA > $HOME/.ssh/id_rsa
   chmod 600 $HOME/.ssh/id_rsa
 fi
-if [ ! -f "$HOME/.ssh/id_rsa.pub" ] && [ "$SSH_ID_RSA_PUB" != "" ]; then
-  echo $SSH_ID_RSA_PUB > $HOME/.ssh/id_rsa.pub
+if [ ! -f "$HOME/.ssh/id_rsa.pub" ] && [ "$WI_SSH_ID_RSA_PUB" != "" ]; then
+  echo $WI_SSH_ID_RSA_PUB > $HOME/.ssh/id_rsa.pub
 fi
 
-if [ ! -f "$HOME/.ssh/known_hosts" ] && [ "$SSH_KEYSCAN" != "" ]; then # Host names seperated by comma. eg `github.com,gitee.com`
-  echo $SSH_KEYSCAN | tr ',' ' ' | tr ' ', '\n' | xargs -I {} ssh-keyscan {} >> $HOME/.ssh/known_hosts
+if [ ! -f "$HOME/.ssh/known_hosts" ] && [ "$WI_SSH_KEYSCAN" != "" ]; then # Host names seperated by comma. eg `github.com,gitee.com`
+  echo $WI_SSH_KEYSCAN | tr ',' ' ' | tr ' ', '\n' | xargs -I {} ssh-keyscan {} >> $HOME/.ssh/known_hosts
 fi
 
 # for git
-if [ ! -f "$HOME/.gitconfig" ] && [ "$GIT_CONFIG_CONTENT" != "" ]; then
-  echo $GIT_CONFIG_CONTENT > "$HOME/.gitconfig"
+if [ ! -f "$HOME/.gitconfig" ] && [ "$WI_GIT_CONFIG" != "" ]; then
+  echo $WI_GIT_CONFIG > "$HOME/.gitconfig"
 fi
 
 # init
-if [ "$WEB_IDE_INIT_CMD" != "" ]; then
-  sh -c "$WEB_IDE_INIT_CMD"
+if [ "$WI_INIT_CMD" != "" ]; then
+  sh -c "$WI_INIT_CMD"
 fi
