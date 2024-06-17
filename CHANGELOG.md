@@ -1,5 +1,16 @@
 # web-ide
 
+## 0.12.0-beta.0
+
+### Minor Changes
+
+- 0c4dfb3: refactor: change env name
+
+### Patch Changes
+
+- d2d5fed: fix: remove WI env when running for safety
+- ceba6cd: feat(omz): no need to place omz at the top
+
 ## 0.11.5
 
 ### Patch Changes
