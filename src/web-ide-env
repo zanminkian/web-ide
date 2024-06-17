@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+printenv | grep '^WI_' | while read line
+do
+  echo "unset $(echo $line | cut -d '=' -f1)"
+done

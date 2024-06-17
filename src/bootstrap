@@ -4,4 +4,6 @@
 web-ide-init > /dev/null 2>&1 || true
 rm -f "$(which web-ide-init)"
 
+eval "$(web-ide-env)"
+
 code "$@"
