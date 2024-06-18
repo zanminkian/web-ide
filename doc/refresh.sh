@@ -11,11 +11,11 @@ docker run -itd \
   -p 3000:3000 \
   -p 8080:8080 \
   -e PASSWORD="MY_PASSWORD" \
-  -e SSH_ID_ED25519_PUB="MY_PUBLICK_KEY" \
-  -e SSH_ID_ED25519="MY_PRIVATE_KEY" \
-  -e SSH_KEYSCAN="github.com" \
-  -e GIT_CONFIG_CONTENT="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n" \
-  -e WEB_IDE_INIT_CMD="echo 'registry=https://registry.npmmirror.com' >> ~/.npmrc" \
+  -e WI_SSH_ID_ED25519_PUB="MY_PUBLICK_KEY" \
+  -e WI_SSH_ID_ED25519="MY_PRIVATE_KEY" \
+  -e WI_SSH_KEYSCAN="github.com" \
+  -e WI_GIT_CONFIG="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n" \
+  -e WI_INIT_CMD="echo 'registry=https://registry.npmmirror.com' >> ~/.npmrc" \
   -v $HOME/web-ide-root/projects:/root/projects \
   -v $HOME/web-ide-root/go/src:/root/go/src \
   -v $HOME/web-ide-root/.zsh_history:/root/.zsh_history \
