@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.12.0-beta.1
+
+### Patch Changes
+
+- fix: fix .zshrc
+
 ## 0.12.0-beta.0
 
 ### Minor Changes
