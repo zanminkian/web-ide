@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # web-ide v{{version}}
-web-ide-init > /dev/null 2>&1 || true
+web-ide-init >/dev/null 2>&1 || true
 rm -f "$(which web-ide-init)"
 
 eval "$(web-ide-env)"
