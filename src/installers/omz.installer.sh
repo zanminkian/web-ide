@@ -12,8 +12,7 @@ cp ~/.oh-my-zsh/themes/robbyrussell.zsh-theme ~/.oh-my-zsh/themes/simple-robbyru
 sed -i 's/%c/%~/' ~/.oh-my-zsh/themes/simple-robbyrussell.zsh-theme
 sed -i 's/git://' ~/.oh-my-zsh/themes/simple-robbyrussell.zsh-theme
 
-cat ~/.zshrc_tmp > ~/.zshrc
-rm -rf ~/.zshrc_tmp
+mv ~/.zshrc_tmp ~/.zshrc
 echo '# omz
 export ZSH="$HOME/.oh-my-zsh"
 DISABLE_AUTO_UPDATE="true" # https://stackoverflow.com/questions/11378607/oh-my-zsh-disable-would-you-like-to-check-for-updates-prompt
