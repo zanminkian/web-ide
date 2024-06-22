@@ -8,7 +8,7 @@ else
   ARCH="arm64"
 fi
 
-CODE_SERVER_VERSION=4.22.1
+CODE_SERVER_VERSION=4.89.1
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
@@ -22,7 +22,6 @@ chmod +x /usr/bin/code
 
 # common
 code --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
-code --install-extension SantaCodes.santacodes-region-viewer
 code --install-extension ryu1kn.partial-diff
 code --install-extension christian-kohler.path-intellisense
 code --install-extension streetsidesoftware.code-spell-checker
@@ -43,6 +42,7 @@ code --install-extension hediet.vscode-drawio
 # code --install-extension usernamehw.errorlens # too noisy
 # code --install-extension ppz.ppz # some error logs appear
 # code --install-extension steoates.autoimport # it seems that it have some bugs
+# code --install-extension SantaCodes.santacodes-region-viewer # code 1.88 built-in support it
 
 # vscode setting
 echo '{
