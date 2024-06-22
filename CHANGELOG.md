@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.13.0
+
+### Minor Changes
+
+- fd26071: feat(code-server): upgrade code-server
+
 ## 0.12.0
 
 ### Minor Changes
