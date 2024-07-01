@@ -43,7 +43,7 @@ jobs:
       - name: Upload assets
         if: ${{ steps.changesets.outputs.published == 'true' }}
         run: |
-          version=$(echo ${{ steps.changesets.outputs.publishedPackages }} | jq -r '.[0].version')
+          version=$(echo '${{ steps.changesets.outputs.publishedPackages }}' | jq -r '.[0].version')
           echo "version is $version"
           # 1. pull tar files by tag (ref name)
           curl -fLsS https://get.docker.com/ | sh
