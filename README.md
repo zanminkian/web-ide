@@ -14,7 +14,7 @@ Web-IDE is a comprehensive web-based integrated development environment (IDE) th
 - Start the IDE with a single command line, powered by Docker and [code-server](https://github.com/coder/code-server).
 - Access IDE through your browser and code from any machine, anywhere.
 - A wealth of pre-installed development tools for an out-of-the-box coding experience:
-  - [x] Node (including frontend development tool chain)
+  - [x] Node (Frontend)
   - [x] Go
   - [ ] Python
   - [ ] Java
@@ -26,6 +26,8 @@ docker run -itd -p 8080:8080 -e PASSWORD=your_password --name web-ide zengmingji
 ```
 
 After running the command, open `http://127.0.0.1:8080` in your browser, enter your password and start coding!
+
+> Note: 中国用户因为 Docker Hub 被墙，如果不能拉取镜像，可以从 [Github Releases](https://github.com/zanminkian/web-ide/releases) 页面下载镜像文件，然后使用 `docker load -i xxx.tgz` 命令加载镜像。
 
 > Note: If you are using macOS, mounting volume will be unstable to use pnpm. Check [this issue](https://github.com/pnpm/pnpm/issues/5803). The workaround is setting the container file sharing to `gRPC FUSE` implementation. Check [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
 

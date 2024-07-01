@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-#set -ex
+# set -ex
 
 mkdir -p $HOME/web-ide-root/projects $HOME/web-ide-root/go/src
 touch $HOME/web-ide-root/.zsh_history
 
-docker pull zengmingjian/web-ide
 docker stop web-ide
 docker container rm -v web-ide
 docker run -itd \
