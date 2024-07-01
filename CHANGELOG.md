@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.13.2
+
+### Patch Changes
+
+- 51515c8: build: merge into one github workflow
+
 ## 0.13.1
 
 ### Patch Changes
