@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.13.3
+
+### Patch Changes
+
+- b2ede7d: build: fix uploading assets problem
+
 ## 0.13.2
 
 ### Patch Changes
