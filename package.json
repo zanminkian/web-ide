@@ -13,7 +13,7 @@
     "test": "node --test **/*.spec.js && git-validator"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.6",
+    "@changesets/cli": "2.27.7",
     "@types/node": "20.14.9",
     "git-validator": "0.17.9"
   },
