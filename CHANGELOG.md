@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.13.4
+
+### Patch Changes
+
+- ac0d7d1: chore: nothing change, just rebuild
+
 ## 0.13.3
 
 ### Patch Changes
