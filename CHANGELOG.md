@@ -1,5 +1,15 @@
 # web-ide
 
+## 0.14.0
+
+### Minor Changes
+
+- 66e1fdf: feat(code-server): upgrade code-server to v4.19.0
+
+### Patch Changes
+
+- f24d58f: feat(code-server): install code-runner
+
 ## 0.13.4
 
 ### Patch Changes
