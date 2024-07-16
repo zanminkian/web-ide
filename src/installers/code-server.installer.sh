@@ -29,7 +29,6 @@ code --install-extension wmaurer.change-case
 code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
-code --install-extension formulahendry.code-runner
 code --install-extension humao.rest-client # not perfect
 # sytax
 code --install-extension IronGeek.vscode-env
@@ -44,6 +43,7 @@ code --install-extension hediet.vscode-drawio
 # code --install-extension ppz.ppz # some error logs appear
 # code --install-extension steoates.autoimport # it seems that it have some bugs
 # code --install-extension SantaCodes.santacodes-region-viewer # code 1.88 built-in support it
+# code --install-extension formulahendry.code-runner
 
 # vscode setting
 echo '{
