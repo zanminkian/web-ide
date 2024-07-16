@@ -29,6 +29,7 @@ code --install-extension wmaurer.change-case
 code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
+code --install-extension formulahendry.code-runner
 code --install-extension humao.rest-client # not perfect
 # sytax
 code --install-extension IronGeek.vscode-env
