@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.14.2
+
+### Patch Changes
+
+- 238efb4: feat(code-server): upgrade code-server to 4.91.1
+
 ## 0.14.1
 
 ### Patch Changes
