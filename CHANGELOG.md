@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.14.1
+
+### Patch Changes
+
+- 205bfa2: chore(code-server): remove code runner ext
+
 ## 0.14.0
 
 ### Minor Changes
