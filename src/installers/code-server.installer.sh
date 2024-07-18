@@ -47,9 +47,6 @@ code --install-extension hediet.vscode-drawio
 
 # vscode setting
 echo '{
-  // extension
-  "extensions.autoCheckUpdates": false,
-  "extensions.autoUpdate": false,
   // window
   "window.menuBarVisibility": "visible",
   "window.title": "${rootName}",
@@ -78,9 +75,11 @@ echo '{
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   // others
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "update.mode": "none",
   "debug.toolBarLocation": "docked",
   "security.workspace.trust.enabled": false,
-  "update.mode": "none",
   // third-party
   "rest-client.rememberCookiesForSubsequentRequests": false,
 }' > ~/.local/share/code-server/User/settings.json
