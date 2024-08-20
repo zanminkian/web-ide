@@ -8,7 +8,7 @@ else
   ARCH="arm64"
 fi
 
-CODE_SERVER_VERSION=4.91.1
+CODE_SERVER_VERSION=4.92.2
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
@@ -48,7 +48,6 @@ code --install-extension hediet.vscode-drawio
 # vscode setting
 echo '{
   // window
-  "window.menuBarVisibility": "visible",
   "window.title": "${rootName}",
   // workbench
   "workbench.editor.pinnedTabsOnSeparateRow": true,
