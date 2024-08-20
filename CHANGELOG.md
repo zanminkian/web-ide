@@ -1,5 +1,16 @@
 # web-ide
 
+## 0.15.0
+
+### Minor Changes
+
+- 7822632: feat(code-server): upgrade to v4.92.2
+
+### Patch Changes
+
+- cd529b9: fix: ignore network errors when initializing
+- 7bc14a2: feat(node): add `COREPACK_NPM_REGISTRY` env variable to let corepack use the same registry as npm
+
 ## 0.14.2
 
 ### Patch Changes
