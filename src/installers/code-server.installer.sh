@@ -59,7 +59,7 @@ echo '{
   "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
-  "editor.quickSuggestions": {
+  "editor.quickSuggestions": { // For tailwind extension. https://github.com/tailwindlabs/tailwindcss-intellisense
     "strings": "on"
   },
   // file readonly
