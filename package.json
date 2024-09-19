@@ -1,7 +1,10 @@
 {
   "name": "web-ide",
   "version": "0.15.0",
-  "repository": "https://github.com/zanminkian/web-ide",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanminkian/web-ide.git"
+  },
   "license": "MIT",
   "author": "hellozmj@qq.com",
   "type": "module",
@@ -13,9 +16,9 @@
     "test": "node --test **/*.spec.js && git-validator"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.7",
-    "@types/node": "22.4.0",
-    "git-validator": "0.20.0"
+    "@changesets/cli": "2.27.8",
+    "@types/node": "22.5.5",
+    "git-validator": "0.20.9"
   },
   "packageManager": "pnpm@9.5.0",
   "engines": {
