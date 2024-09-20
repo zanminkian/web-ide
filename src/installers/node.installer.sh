@@ -22,7 +22,7 @@ corepack enable
 corepack install -g pnpm
 corepack install -g yarn
 
-# @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates
+# @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli
 echo "installing ts-node"
 npm i -g ts-node
 echo "installing tsx"
