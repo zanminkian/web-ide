@@ -1,9 +1,10 @@
 #!/bin/sh
+set -e
 curl -fLsS https://get.docker.com/ | sh
 
 VERSION=$(node -e 'console.log(require("./package.json").version)')
 TAG=$(node -e 'console.log(require("./package.json").version.match(/^[0-9]+\.[0-9]+\.[0-9]+-(.+)\.[0-9]+$/)?.[1] || "latest")')
-sed -i "s/{{version}}/$VERSION/g" src/bootstrap
+sed -i "s/{{version}}/$VERSION/g" src/scripts/bootstrap
 
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 docker buildx create --use --name mybuilder
