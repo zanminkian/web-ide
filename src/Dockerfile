@@ -16,7 +16,7 @@ RUN /tmp/install.sh
 RUN rm -rf /tmp/installers /tmp/install.sh
 
 # 3. entry & init
-COPY bootstrap web-ide-env web-ide-init /usr/bin/
+COPY scripts /usr/bin
 
 CMD []
 ENTRYPOINT ["bootstrap"]
