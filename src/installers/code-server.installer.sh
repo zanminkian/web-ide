@@ -52,7 +52,6 @@ echo '{
   // workbench
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.startupEditor": "none",
-  "workbench.tree.renderIndentGuides": "always",
   // editor
   // "editor.linkedEditing": true, // There are some bugs in tsx file when enabling this. Use `Auto Rename Tag` extension intead.
   "editor.guides.bracketPairs": true,
