@@ -9,16 +9,16 @@
   "author": "hellozmj@qq.com",
   "type": "module",
   "scripts": {
-    "prepare": "git-validator install",
+    "prepare": "fenge install",
     "release": "./release.sh && changeset tag",
-    "style": "git-validator",
-    "style:update": "git-validator -u",
-    "test": "node --test **/*.spec.js && git-validator"
+    "style": "fenge",
+    "style:update": "fenge -u",
+    "test": "node --test **/*.spec.js && fenge"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.8",
-    "@types/node": "22.5.5",
-    "git-validator": "0.20.9"
+    "@changesets/cli": "2.27.9",
+    "@types/node": "22.7.6",
+    "fenge": "0.1.0-beta.0"
   },
   "packageManager": "pnpm@9.5.0",
   "engines": {
