@@ -1,5 +1,16 @@
 # web-ide
 
+## 0.16.0
+
+### Minor Changes
+
+- 2001ea1: feat(code-server): upgrade to 4.93.1
+- 73e6df1: chore!: remove `tree`
+
+### Patch Changes
+
+- 65fee12: feat(code-server): remove `workbench.tree.renderIndentGuides` config
+
 ## 0.15.0
 
 ### Minor Changes
