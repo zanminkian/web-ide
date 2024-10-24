@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.16.1
+
+### Patch Changes
+
+- 6cdb962: chore: corrector version in bootstrap script
+- 2466d3d: feat: allow `**/.pnpm-store/**/*` file editing
+
 ## 0.16.0
 
 ### Minor Changes
