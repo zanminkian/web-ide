@@ -1,5 +1,6 @@
 FROM ubuntu
 
+ARG VERSION
 ENV LANG="C.utf8"
 
 # 1. install common
@@ -17,6 +18,7 @@ RUN rm -rf /tmp/installers /tmp/install.sh
 
 # 3. entry & init
 COPY scripts /usr/bin
+RUN sed -i "s/{{version}}/$VERSION/g" /usr/bin/bootstrap
 
 CMD []
 ENTRYPOINT ["bootstrap"]
