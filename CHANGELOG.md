@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.16.3
+
+### Patch Changes
+
+- ce91915: chore: upgrade code-server
+
 ## 0.16.2
 
 ### Patch Changes
