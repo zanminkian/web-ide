@@ -6,6 +6,5 @@ set -e
 # chmod +x /usr/local/bin/ttyd
 
 ## install tools via apt
-apt update
 apt install -y mysql-client redis-tools
 # apt install -y nginx
