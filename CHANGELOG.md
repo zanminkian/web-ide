@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.16.4
+
+### Patch Changes
+
+- ec99ecc: chore: refresh. no significant changes
+
 ## 0.16.3
 
 ### Patch Changes
