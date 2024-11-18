@@ -14,7 +14,7 @@ rm -rf /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz
 mv /usr/local/bin/g /usr/local/bin/gvm
 
 gvm install 1.19.9
-rm -rf $HOME/.g/downloads/* # clean something useless to decrease the image sise
+rm -rf $HOME/.g/downloads/* # clean something useless to decrease the image size
 
 # https://github.com/golang/vscode-go/wiki/tools
 $HOME/.g/go/bin/go install golang.org/x/tools/gopls@v0.12.2

@@ -13,7 +13,7 @@ curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VER
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
 mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-$ARCH /usr/lib/code-server
-# Custom marketepkace. Refer https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace.
+# Custom marketplace. Refer https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace.
 # Setting `CODESPACES` for disabling golang extension's welcome page. Refer https://github.com/golang/vscode-go/issues/1246.
 echo "#!/usr/bin/env sh
 EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' CODESPACES='true' /usr/lib/code-server/bin/code-server \"\$@\"
@@ -30,7 +30,7 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
 code --install-extension humao.rest-client # not perfect
-# sytax
+# syntax
 code --install-extension IronGeek.vscode-env
 code --install-extension GraphQL.vscode-graphql-syntax
 code --install-extension pbkit.vscode-pbkit
