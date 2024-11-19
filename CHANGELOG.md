@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.16.5
+
+### Patch Changes
+
+- 5a9ada1: chore: upgrade code-server and lock code-spell-checker extension version
+
 ## 0.16.4
 
 ### Patch Changes
