@@ -8,7 +8,7 @@ else
   ARCH="arm64"
 fi
 
-CODE_SERVER_VERSION=4.95.2
+CODE_SERVER_VERSION=4.95.3
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
@@ -24,7 +24,7 @@ chmod +x /usr/bin/code
 code --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
 code --install-extension ryu1kn.partial-diff
 code --install-extension christian-kohler.path-intellisense
-code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker@3.0.1
 code --install-extension wmaurer.change-case
 code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align
