@@ -16,9 +16,9 @@
     "test": "node --test \"**/*.spec.js\" && fenge"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.9",
-    "@types/node": "22.9.0",
-    "fenge": "0.1.2"
+    "@changesets/cli": "2.27.10",
+    "@types/node": "22.10.1",
+    "fenge": "0.1.8"
   },
   "packageManager": "pnpm@9.5.0",
   "engines": {
