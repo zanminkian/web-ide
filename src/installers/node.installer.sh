@@ -23,15 +23,11 @@ corepack install -g pnpm
 corepack install -g yarn
 
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli
-echo "installing ts-node"
 npm i -g ts-node
-echo "installing tsx"
 npm i -g tsx
-echo "installing del-cli"
 npm i -g del-cli
-echo "installing http-server"
+npm i -g @antfu/ni
 npm i -g http-server
-echo "installing degit"
 npm i -g degit
 
 echo '# node
