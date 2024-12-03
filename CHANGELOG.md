@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.16.6
+
+### Patch Changes
+
+- a39fa87: feat(node): install `@antfu/ni`
+
 ## 0.16.5
 
 ### Patch Changes
