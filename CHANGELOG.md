@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.16.7
+
+### Patch Changes
+
+- 3f8cb81: feat(code-server): print version when passing `-v` or `--version` to `code` command
+
 ## 0.16.6
 
 ### Patch Changes
