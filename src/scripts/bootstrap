@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-# web-ide v{{version}}
 web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
 eval "$(web-ide-env)"
 
