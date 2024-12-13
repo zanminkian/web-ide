@@ -50,11 +50,13 @@ code --install-extension hediet.vscode-drawio
 
 # vscode setting
 echo '{
-  // window
-  "window.title": "${rootName}",
-  // workbench
-  "workbench.editor.pinnedTabsOnSeparateRow": true,
-  "workbench.startupEditor": "none",
+  // file readonly
+  "files.readonlyFromPermissions": true,
+  "files.readonlyInclude": {
+    "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
+    "**/node_modules/**/*": true,
+    "**/go.sum": true,
+  },
   // editor
   // "editor.linkedEditing": true, // There are some bugs in tsx file when enabling this. Use `Auto Rename Tag` extension intead.
   "editor.guides.bracketPairs": true,
@@ -64,21 +66,20 @@ echo '{
   "editor.quickSuggestions": { // For tailwind extension. https://github.com/tailwindlabs/tailwindcss-intellisense
     "strings": "on"
   },
-  // file readonly
-  "files.readonlyFromPermissions": true,
-  "files.readonlyInclude": {
-    "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
-    "**/node_modules/**/*": true,
-    "**/go.sum": true,
-  },
   // language
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
-  // others
+
+  // appearance
+  "debug.toolBarLocation": "docked",
+  "window.title": "${rootName}",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.startupEditor": "none",
+  // update
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
   "update.mode": "none",
-  "debug.toolBarLocation": "docked",
+  // security
   "security.workspace.trust.enabled": false,
   // third-party
   "rest-client.rememberCookiesForSubsequentRequests": false,
