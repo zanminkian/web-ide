@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.17.0
+
+### Minor Changes
+
+- 2e87ec9: feat: upgrade code-verver to v4.96.1
+
 ## 0.16.7
 
 ### Patch Changes
