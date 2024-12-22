@@ -1,6 +1,14 @@
 #!/usr/bin/env zsh
 
+# 1. init
 web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
-eval "$(web-ide-env)"
 
+# 2. remove environment variables
+printenv | grep '^WI_' | while read line
+do
+  # echo "unset $(echo $line | cut -d '=' -f1)"
+  unset $(echo $line | cut -d '=' -f1)
+done
+
+# 3. bootstrap
 code "$@"
