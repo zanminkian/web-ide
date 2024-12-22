@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.17.1
+
+### Patch Changes
+
+- 3b6cd5c: feat(code-server): upgrade code-server to v4.96.2
+
 ## 0.17.0
 
 ### Minor Changes
