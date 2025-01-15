@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.17.2
+
+### Patch Changes
+
+- 45c2fab: chore: refresh. no significant changes
+
 ## 0.17.1
 
 ### Patch Changes
