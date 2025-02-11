@@ -18,9 +18,6 @@ eval "$(fnm env --shell=zsh)"
 fnm install 18
 fnm install 20
 fnm install 22
-corepack enable
-corepack install -g pnpm
-corepack install -g yarn
 
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli
 npm i -g ts-node
@@ -29,6 +26,12 @@ npm i -g del-cli
 npm i -g @antfu/ni
 npm i -g http-server
 npm i -g degit
+
+# TODO: Remove the installation and enabling when corepack is stable
+npm i -g corepack # update corepack
+corepack enable
+corepack install -g pnpm
+corepack install -g yarn
 
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
