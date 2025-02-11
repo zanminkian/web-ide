@@ -16,13 +16,13 @@
     "test": "node --test \"**/*.spec.js\" && fenge"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.11",
-    "@types/node": "22.10.6",
-    "fenge": "0.4.0"
+    "@changesets/cli": "2.27.12",
+    "@types/node": "22.13.1",
+    "fenge": "0.5.1"
   },
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@10.3.0",
   "engines": {
     "node": ">=22",
-    "pnpm": "^9.0.0"
+    "pnpm": "^10.0.0"
   }
 }
