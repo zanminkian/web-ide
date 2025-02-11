@@ -8,9 +8,9 @@ else
   ARCH="arm64"
 fi
 
-curl -L https://github.com/voidint/g/releases/download/v1.6.0/g1.6.0.linux-$ARCH.tar.gz -o /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz
-tar -xf /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz -C /usr/local/bin
-rm -rf /usr/local/bin/g1.6.0.linux-$ARCH.tar.gz
+curl -L https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.linux-$ARCH.tar.gz -o /usr/local/bin/g1.7.0.linux-$ARCH.tar.gz
+tar -xf /usr/local/bin/g1.7.0.linux-$ARCH.tar.gz -C /usr/local/bin
+rm -rf /usr/local/bin/g1.7.0.linux-$ARCH.tar.gz
 mv /usr/local/bin/g /usr/local/bin/gvm
 
 gvm install 1.19.9

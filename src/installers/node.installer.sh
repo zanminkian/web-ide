@@ -27,8 +27,7 @@ npm i -g @antfu/ni
 npm i -g http-server
 npm i -g degit
 
-# TODO: Remove the installation and enabling when corepack is stable
-npm i -g corepack # update corepack
+# TODO: Remove the enabling when corepack is stable
 corepack enable
 corepack install -g pnpm
 corepack install -g yarn
