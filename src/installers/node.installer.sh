@@ -15,9 +15,9 @@ rm -rf /usr/local/bin/fnm-$ARCH.zip
 chmod +x /usr/local/bin/fnm
 eval "$(fnm env --shell=zsh)"
 
-fnm install 18
-fnm install 20
 fnm install 22
+fnm install 20
+fnm install 18
 
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli
 npm i -g ts-node
