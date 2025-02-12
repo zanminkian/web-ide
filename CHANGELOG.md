@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.17.4-beta.0
+
+### Patch Changes
+
+- ccbb3b8: chore: upgrade gvm and code-server
+- a439228: feat(node): node version defaults to 22
+
 ## 0.17.3
 
 ### Patch Changes
