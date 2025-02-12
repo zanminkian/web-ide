@@ -29,15 +29,10 @@ npm i -g degit
 
 # TODO: Remove the enabling when corepack is stable
 corepack enable
-corepack install -g pnpm
-corepack install -g yarn
 
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
 export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line when https://github.com/nodejs/corepack/issues/540 is closed
-alias cnpx="npx --registry=https://registry.npmmirror.com"
-alias cnpm="npm --registry=https://registry.npmmirror.com"
-alias cpnpm="pnpm --registry=https://registry.npmmirror.com"
 ' >> ~/.zshrc
 
 if which code >/dev/null 2>&1; then
