@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.17.4-beta.1
+
+### Patch Changes
+
+- 9f1bd6d: feat(node): don't install pnpm and yarn globally by corepack
+
 ## 0.17.4-beta.0
 
 ### Patch Changes
