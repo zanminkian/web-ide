@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.17.4-beta.2
+
+### Patch Changes
+
+- 91cb458: chore: no significant changes
+
 ## 0.17.4-beta.1
 
 ### Patch Changes
