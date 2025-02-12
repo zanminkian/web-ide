@@ -1,5 +1,13 @@
 # web-ide
 
+## 0.17.4
+
+### Patch Changes
+
+- ccbb3b8: chore: upgrade gvm and code-server
+- a439228: feat(node): node version defaults to 22
+- e96e25d: feat(node): don't install pnpm and yarn globally by corepack
+
 ## 0.17.3
 
 ### Patch Changes
