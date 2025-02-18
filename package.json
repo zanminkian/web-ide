@@ -1,6 +1,6 @@
 {
   "name": "web-ide",
-  "version": "0.17.4",
+  "version": "0.17.5-beta.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zanminkian/web-ide.git"

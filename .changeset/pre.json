@@ -4,5 +4,5 @@
   "initialVersions": {
     "web-ide": "0.17.4"
   },
-  "changesets": []
+  "changesets": ["shaggy-swans-bet", "whole-weeks-rescue"]
 }
