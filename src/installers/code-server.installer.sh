@@ -19,7 +19,7 @@ echo "#!/usr/bin/env sh
 if [ \"\$*\" = \"-v\" ] || [ \"\$*\" = \"--version\" ]; then
   echo \"Web-IDE v$VERSION\"
 fi
-EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' CODESPACES='true' /usr/lib/code-server/bin/code-server \"\$@\"
+EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' /usr/lib/code-server/bin/code-server \"\$@\"
 " > /usr/bin/code
 chmod +x /usr/bin/code
 

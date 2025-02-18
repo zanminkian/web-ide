@@ -28,6 +28,7 @@ export GOPATH="$HOME/go"
 export GO111MODULE="on"
 export GOPROXY="https://goproxy.cn,direct"
 export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+export CODESPACES="true" # To depress golang vscode extension welcome page.
 ' >> ~/.zshrc
 
 if which code >/dev/null 2>&1; then
