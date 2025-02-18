@@ -14,12 +14,11 @@ tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
 mv /usr/lib/code-server-$CODE_SERVER_VERSION-linux-$ARCH /usr/lib/code-server
 # Custom marketplace. Refer https://coder.com/docs/code-server/latest/FAQ#how-do-i-use-my-own-extensions-marketplace.
-# Setting `CODESPACES` for disabling golang extension's welcome page. Refer https://github.com/golang/vscode-go/issues/1246.
 echo "#!/usr/bin/env sh
 if [ \"\$*\" = \"-v\" ] || [ \"\$*\" = \"--version\" ]; then
   echo \"Web-IDE v$VERSION\"
 fi
-EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' CODESPACES='true' /usr/lib/code-server/bin/code-server \"\$@\"
+EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis/public/gallery\"}' /usr/lib/code-server/bin/code-server \"\$@\"
 " > /usr/bin/code
 chmod +x /usr/bin/code
 
