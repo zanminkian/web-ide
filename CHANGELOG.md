@@ -1,5 +1,16 @@
 # web-ide
 
+## 0.18.0
+
+### Minor Changes
+
+- 68e69a8: chore(code-server): upgrade code-server to 4.97.2
+
+### Patch Changes
+
+- c8c9e1a: feat(code-server): install tongyi-lingma
+- 8b634a6: feat(code-server): install coplilot
+
 ## 0.17.4
 
 ### Patch Changes
