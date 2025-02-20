@@ -23,7 +23,7 @@ EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis
 chmod +x /usr/bin/code
 
 # common
-code --install-extension mhutchie.git-graph@1.30.0 # not perfect. remove it one day
+code --install-extension mhutchie.git-graph@1.30.0 # imperfect.
 code --install-extension ryu1kn.partial-diff
 code --install-extension christian-kohler.path-intellisense
 code --install-extension streetsidesoftware.code-spell-checker@3.0.1
@@ -31,7 +31,7 @@ code --install-extension wmaurer.change-case
 code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
-code --install-extension humao.rest-client # not perfect
+code --install-extension humao.rest-client # imperfect
 # syntax
 code --install-extension IronGeek.vscode-env
 code --install-extension GraphQL.vscode-graphql-syntax
@@ -39,7 +39,8 @@ code --install-extension pbkit.vscode-pbkit
 code --install-extension mrkou47.thrift-syntax-support
 # tools
 code --install-extension hediet.vscode-drawio
-code --install-extension alibaba-cloud.tongyi-lingma
+code --install-extension github.copilot
+code --install-extension alibaba-cloud.tongyi-lingma # imperfect
 # removed
 # code --install-extension oderwat.indent-rainbow # not significant
 # code --install-extension usernamehw.errorlens # too noisy
