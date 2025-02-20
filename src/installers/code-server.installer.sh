@@ -8,7 +8,7 @@ else
   ARCH="arm64"
 fi
 
-CODE_SERVER_VERSION=4.96.4
+CODE_SERVER_VERSION=4.97.2
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
