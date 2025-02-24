@@ -59,7 +59,7 @@ echo '{
     "**/go.sum": true,
   },
   // editor
-  // "editor.linkedEditing": true, // There are some bugs in tsx file when enabling this. Use `Auto Rename Tag` extension intead.
+  "editor.linkedEditing": true,
   "editor.guides.bracketPairs": true,
   "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",

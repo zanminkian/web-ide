@@ -37,5 +37,5 @@ export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line
 
 if which code >/dev/null 2>&1; then
   code --install-extension bradlc.vscode-tailwindcss
-  code --install-extension formulahendry.auto-rename-tag
+  # code --install-extension formulahendry.auto-rename-tag # Prefer enabling vscode built-in conifg `editor.linkedEditing`
 fi
