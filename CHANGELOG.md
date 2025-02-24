@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.1
+
+### Patch Changes
+
+- 2c0ae95: chore(code-server): remove auto-rename-tag extension
+
 ## 0.18.0
 
 ### Minor Changes
