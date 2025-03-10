@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.18.2
+
+### Patch Changes
+
+- 66fab3c: fix(node): improve pnpm compatibility with virtiofs mount type
+- 4484e3e: chore(node): remove ts-node
+
 ## 0.18.1
 
 ### Patch Changes
