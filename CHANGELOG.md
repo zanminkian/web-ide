@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.3
+
+### Patch Changes
+
+- 883743c: fix(node): improve pnpm compatibility with virtiofs mount type
+
 ## 0.18.2
 
 ### Patch Changes
