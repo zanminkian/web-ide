@@ -29,8 +29,6 @@ After running the command, open `http://127.0.0.1:8080` in your browser, enter y
 
 > Note: 中国用户因为 Docker Hub 被墙，如果不能拉取镜像，可以从 [Github Releases](https://github.com/zanminkian/web-ide/releases) 页面下载镜像文件，然后使用 `docker load -i xxx.tgz` 命令加载镜像。如果 Github Releases 页面下载也很慢，推荐：`https://ghp.ci`。
 
-> Note: If you are using macOS, mounting volume will be unstable to use pnpm. Check [this issue](https://github.com/pnpm/pnpm/issues/5803). The workaround is setting the container file sharing to `gRPC FUSE` implementation. Check [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
-
 ## Advanced Usage
 
 - Add more CLI options for `web-ide` at the end of the command.
@@ -63,6 +61,14 @@ A: Probably, the remote server does not support the `rsa` algorithm due to secur
 
 - Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
 - Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
+
+> Q: Running `pnpm install` failed with `ENOENT: no such file or directory`.
+
+A: If you are using macOS, mounting volume in `virtiofs` mount type will be unstable to use pnpm. Here are 3 workarounds:
+
+- Set the container file sharing to `gRPC FUSE` implementation. Refer [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
+- Add `store-dir=${HOME}/.local/share/pnpm/store` to the `~/.npmrc` file.
+- Add `ackage-import-method=clone-or-copy` to the `~/.npmrc` file.
 
 ## Show your support
 

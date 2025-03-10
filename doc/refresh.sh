@@ -7,8 +7,7 @@ touch $HOME/web-ide-root/.zsh_history
 docker stop web-ide
 docker container rm -v web-ide
 docker run -itd \
-  -p 3000:3000 \
-  -p 8080:8080 \
+  --network host \
   -e PASSWORD="MY_PASSWORD" \
   -e WI_SSH_ID_ED25519_PUB="MY_PUBLICK_KEY" \
   -e WI_SSH_ID_ED25519="MY_PRIVATE_KEY" \
