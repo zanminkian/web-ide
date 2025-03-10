@@ -67,8 +67,8 @@ A: Probably, the remote server does not support the `rsa` algorithm due to secur
 A: If you are using macOS, mounting volume in `virtiofs` mount type will be unstable to use pnpm. Here are 3 workarounds:
 
 - Set the container file sharing to `gRPC FUSE` implementation. Refer [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
+- Add `package-import-method=clone-or-copy` to the `~/.npmrc` file.
 - Add `store-dir=${HOME}/.local/share/pnpm/store` to the `~/.npmrc` file.
-- Add `ackage-import-method=clone-or-copy` to the `~/.npmrc` file.
 
 ## Show your support
 

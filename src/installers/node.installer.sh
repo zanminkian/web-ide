@@ -30,9 +30,9 @@ npm i -g degit
 corepack enable
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
-# Refer: https://github.com/pnpm/pnpm/issues/5803#issuecomment-2710571371.
-# Another solution: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
-echo 'store-dir=${HOME}/.local/share/pnpm/store' >> ~/.npmrc
+# Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
+# Another solution: https://github.com/pnpm/pnpm/issues/5803#issuecomment-2710571371.
+echo 'package-import-method=clone-or-copy' >> ~/.npmrc
 
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
