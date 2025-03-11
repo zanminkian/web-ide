@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.4
+
+### Patch Changes
+
+- eeb5ce3: feat(node): install `npm-check-updates`
+
 ## 0.18.3
 
 ### Patch Changes
