@@ -12,7 +12,7 @@ docker run -itd \
   -e WI_SSH_ID_ED25519_PUB="MY_PUBLICK_KEY" \
   -e WI_SSH_ID_ED25519="MY_PRIVATE_KEY" \
   -e WI_SSH_KEYSCAN="github.com" \
-  -e WI_GIT_CONFIG="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n" \
+  -e WI_GIT_CONFIG="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n[safe]\n\tdirectory = *\n" \
   -e WI_INIT_CMD="echo 'registry=https://registry.npmmirror.com' >> ~/.npmrc" \
   -v $HOME/web-ide-root/projects:/root/projects \
   -v $HOME/web-ide-root/go/src:/root/go/src \
