@@ -20,10 +20,11 @@ fnm install 20
 fnm install 18
 
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli
-npm i -g tsx
+npm i -g tsx # TODO: Remove this when Node 24 is stable.
 npm i -g del-cli
 npm i -g @antfu/ni
 npm i -g http-server
+npm i -g npm-check-updates
 npm i -g degit
 
 # TODO: Remove the enabling when corepack is stable
