@@ -35,9 +35,10 @@ corepack enable
 # Another solution: https://github.com/pnpm/pnpm/issues/5803#issuecomment-2710571371.
 echo 'package-import-method=clone-or-copy' >> ~/.npmrc
 
+# Temporarily remove the export below. Some projects including `devEngines` will fail.
+# export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line when https://github.com/nodejs/corepack/issues/540 is closed
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
-export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line when https://github.com/nodejs/corepack/issues/540 is closed
 ' >> ~/.zshrc
 
 if which code >/dev/null 2>&1; then
