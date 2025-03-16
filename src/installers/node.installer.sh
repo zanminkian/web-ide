@@ -27,9 +27,6 @@ npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
 
-# TODO: Remove the enabling when corepack is stable
-corepack enable
-
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
 # Another solution: https://github.com/pnpm/pnpm/issues/5803#issuecomment-2710571371.
@@ -39,6 +36,12 @@ echo 'package-import-method=clone-or-copy' >> ~/.npmrc
 # export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line when https://github.com/nodejs/corepack/issues/540 is closed
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
+alias yarn="corepack yarn"
+alias yarnpkg="corepack yarnpkg"
+alias pnpm="corepack pnpm"
+alias pnpx="corepack pnpx"
+alias npm="corepack npm"
+alias npx="corepack npx"
 ' >> ~/.zshrc
 
 if which code >/dev/null 2>&1; then
