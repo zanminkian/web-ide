@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.6
+
+### Patch Changes
+
+- 7181afd: feat(node): intercept npm by corepack
+
 ## 0.18.5
 
 ### Patch Changes
