@@ -43,11 +43,15 @@ After running the command, open `http://127.0.0.1:8080` in your browser, enter y
 
 ## FAQ
 
-> Q: Some shortcuts conflict between web-vscode and the browser. How can I avoid this?
+<details>
+<summary>Q: Some shortcuts conflict between web-vscode and the browser. How can I avoid this?</summary>
 
 A: Convert this web vscode into a Progressive Web App (PWA).
 
-> Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I solve this problem?
+</details>
+
+<details>
+<summary>Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I solve this problem?</summary>
 
 A: This issue occurs when you access vscode in the browser with a website address that is not `localhost` and a protocol that is not `https`. Here are some solutions:
 
@@ -55,20 +59,28 @@ A: This issue occurs when you access vscode in the browser with a website addres
 - Open `chrome://flags/#unsafely-treat-insecure-origin-as-secure` in your browser to trust insecure origins. Then access vscode via `http://some-ip-or-domain:8080`.
 - Use an `https` protocol instead of `http`.
 
-> Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?
+</details>
+
+<details>
+<summary>Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?</summary>
 
 A: Probably, the remote server does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
 
 - Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
 - Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
 
-> Q: Running `pnpm install` failed with `ENOENT: no such file or directory`.
+</details>
+
+<details>
+<summary>Q: Running `pnpm install` failed with `ENOENT: no such file or directory`.</summary>
 
 A: If you are using macOS, mounting volume in `virtiofs` mount type will be unstable to use pnpm. Here are 3 workarounds:
 
 - Set the container file sharing to `gRPC FUSE` implementation. Refer [this comment](https://github.com/pnpm/pnpm/issues/5803#issuecomment-1694241533).
 - Add `package-import-method=clone-or-copy` to the `~/.npmrc` file.
 - Add `store-dir=${HOME}/.local/share/pnpm/store` to the `~/.npmrc` file.
+
+</details>
 
 ## Show your support
 
