@@ -20,9 +20,14 @@
     "@types/node": "22.13.10",
     "fenge": "0.6.0"
   },
-  "packageManager": "pnpm@10.6.2",
   "engines": {
     "node": ">=22.14.0",
     "pnpm": "^10.0.0"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "10.6.2"
+    }
   }
 }
