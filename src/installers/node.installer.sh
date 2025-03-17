@@ -36,6 +36,7 @@ echo 'package-import-method=clone-or-copy' >> ~/.npmrc
 # export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line when https://github.com/nodejs/corepack/issues/540 is closed
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
+export COREPACK_ENABLE_AUTO_PIN=0
 alias yarn="corepack yarn"
 alias yarnpkg="corepack yarnpkg"
 alias pnpm="corepack pnpm"
