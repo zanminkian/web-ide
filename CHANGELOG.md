@@ -1,5 +1,13 @@
 # web-ide
 
+## 0.18.7
+
+### Patch Changes
+
+- 9b72a64: feat(node): upgrade corepack
+- ad2640d: feat(node): no more automatically insert packageManager field
+- 02cf436: chore(node): remove `@antfu/ni`
+
 ## 0.18.6
 
 ### Patch Changes
