@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.8
+
+### Patch Changes
+
+- c2b11b6: fix(node): resolve npm warning
+
 ## 0.18.7
 
 ### Patch Changes
