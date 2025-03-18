@@ -31,9 +31,13 @@ fnm use 18 && npm i -g corepack && corepack disable
 fnm use 20 && npm i -g corepack && corepack disable
 fnm use 22 && npm i -g corepack && corepack disable
 
-corepack npm -v
-corepack pnpm -v
-corepack yarn -v
+fnm use 18 && corepack enable npm pnpm yarn
+fnm use 20 && corepack enable npm pnpm yarn
+fnm use 22 && corepack enable npm pnpm yarn
+
+npm -v
+pnpm -v
+yarn -v
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
@@ -46,12 +50,6 @@ echo 'package-import-method=clone-or-copy' >> ~/.config/pnpm/rc
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
 export COREPACK_ENABLE_AUTO_PIN=0
-alias yarn="corepack yarn"
-alias yarnpkg="corepack yarnpkg"
-alias pnpm="corepack pnpm"
-alias pnpx="corepack pnpx"
-alias npm="corepack npm"
-alias npx="corepack npx"
 ' >> ~/.zshrc
 
 if which code >/dev/null 2>&1; then
