@@ -19,12 +19,13 @@ fnm install 22
 fnm install 20
 fnm install 18
 
-# @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli @antfu/ni
+# @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli
 npm i -g tsx # TODO: Remove this when Node 24 is stable.
 npm i -g del-cli
 npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
+npm i -g @antfu/ni
 
 # TODO: Refresh. Remove this if corepack is >= 0.32.0 in all lts versions.
 fnm use 18 && npm i -g corepack && corepack disable
