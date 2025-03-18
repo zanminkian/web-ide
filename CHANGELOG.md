@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.18.9
+
+### Patch Changes
+
+- d9efa4b: fix(node): fix corepack problem
+- c59a861: feat(node): install `@antfu/ni` back
+
 ## 0.18.8
 
 ### Patch Changes
