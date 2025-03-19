@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.10
+
+### Patch Changes
+
+- ccb6de1: chore(node): remove del-cli
+
 ## 0.18.9
 
 ### Patch Changes
