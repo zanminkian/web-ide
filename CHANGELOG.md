@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.11
+
+### Patch Changes
+
+- 09fe6da: chore(node): remove `@antfu/ni`
+
 ## 0.18.10
 
 ### Patch Changes
