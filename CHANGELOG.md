@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.12
+
+### Patch Changes
+
+- aec2e1a: feat(node): remove corepack and use @rnm/pm
+
 ## 0.18.11
 
 ### Patch Changes
