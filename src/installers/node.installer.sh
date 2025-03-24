@@ -24,19 +24,7 @@ npm i -g tsx # TODO: Remove this when Node 24 is stable.
 npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
-
-# TODO: Refresh. Remove this if corepack is >= 0.32.0 in all lts versions.
-fnm use 18 && npm i -g corepack && corepack disable
-fnm use 20 && npm i -g corepack && corepack disable
-fnm use 22 && npm i -g corepack && corepack disable
-
-fnm use 18 && corepack enable npm pnpm yarn
-fnm use 20 && corepack enable npm pnpm yarn
-fnm use 22 && corepack enable npm pnpm yarn
-
-npm -v
-pnpm -v
-yarn -v
+npm i -g @rnm/pm
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
@@ -44,12 +32,8 @@ yarn -v
 mkdir -p ~/.config/pnpm
 echo 'package-import-method=clone-or-copy' >> ~/.config/pnpm/rc
 
-# TODO: We temporarily remove the export below now, because npm command not works if enabling corepack for npm in other pm projects.
-# export COREPACK_NPM_REGISTRY=$(npm config get registry) # TODO: remove this line when https://github.com/nodejs/corepack/issues/540 is closed
-# TODO: Remove `export COREPACK_ENABLE_AUTO_PIN=0` when corepack is widely used.
 echo '# node
 eval "$(fnm env --shell=zsh --use-on-cd --version-file-strategy=recursive)" # for fnm
-export COREPACK_ENABLE_AUTO_PIN=0
 ' >> ~/.zshrc
 
 if which code >/dev/null 2>&1; then
