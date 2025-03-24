@@ -13,18 +13,21 @@
     "release": "./release.sh && changeset tag",
     "style": "fenge",
     "style:update": "fenge -u",
-    "test": "node --test \"**/*.spec.js\" && fenge"
+    "test": "node --test && fenge"
   },
   "devDependencies": {
     "@changesets/cli": "2.28.1",
-    "@types/node": "22.13.10",
-    "fenge": "0.6.0"
+    "@types/node": "22.13.13",
+    "fenge": "0.7.0"
   },
   "engines": {
-    "node": ">=22.14.0",
-    "pnpm": "^10.0.0"
+    "node": ">=22.14.0"
   },
   "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": ">=22.14.0"
+    },
     "packageManager": {
       "name": "pnpm",
       "version": "10.6.5"
