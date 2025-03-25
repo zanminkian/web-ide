@@ -13,7 +13,8 @@ jobs:
       id-token: write
       pull-requests: write
     uses: zanminkian/github-actions/.github/workflows/release.yml@main
-    secrets: inherit
+    secrets:
+      TOKENS: ${{ secrets.TOKENS }}
   upload-assets:
     permissions:
       contents: write
@@ -25,15 +26,6 @@ jobs:
           version=$(echo '${{ needs.release.outputs.publishedPackages }}' | jq -r '.[0].version')
           echo "version is $version"
           # 1. pull tar files by tag (ref name)
-          curl -fLsS https://get.docker.com/ | sh
-          # pull amd
-          docker pull --platform=linux/amd64 zengmingjian/web-ide:$version
-          docker save zengmingjian/web-ide:$version | gzip > web-ide-$version-linux-amd64.tgz
-          docker image rm zengmingjian/web-ide:$version
-          # pull arm
-          docker pull --platform=linux/arm64 zengmingjian/web-ide:$version
-          docker save zengmingjian/web-ide:$version | gzip > web-ide-$version-linux-arm64.tgz
-          docker image rm zengmingjian/web-ide:$version
           ls -alh
           # 2. upload tar files
           release_id=$(
