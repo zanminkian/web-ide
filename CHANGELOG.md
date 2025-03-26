@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.16
+
+### Patch Changes
+
+- c90a344: chore: refresh. no significant changes
+
 ## 0.18.15
 
 ### Patch Changes
