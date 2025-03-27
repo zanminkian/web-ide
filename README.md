@@ -21,13 +21,12 @@ Web-IDE is a comprehensive web-based integrated development environment (IDE) th
 
 ## Usage
 
+Download images from [Github Releases](https://github.com/zanminkian/web-ide/releases). Then run commands below:
+
 ```sh
+docker load -i your-downloaded-image.tgz
 docker run -itd -p 8080:8080 -e PASSWORD=your_password --name web-ide zengmingjian/web-ide
 ```
-
-After running the command, open `http://127.0.0.1:8080` in your browser, enter your password and start coding!
-
-> Note: 中国用户因为 Docker Hub 被墙，如果不能拉取镜像，可以从 [Github Releases](https://github.com/zanminkian/web-ide/releases) 页面下载镜像文件，然后使用 `docker load -i xxx.tgz` 命令加载镜像。如果 Github Releases 页面下载也很慢，推荐：`https://ghp.ci`。
 
 ## Advanced Usage
 
