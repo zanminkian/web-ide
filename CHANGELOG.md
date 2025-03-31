@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.18.18
+
+### Patch Changes
+
+- 17f3989: feat(node): globally install `fenge`
+
 ## 0.18.17
 
 ### Patch Changes
