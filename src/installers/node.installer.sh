@@ -25,6 +25,7 @@ npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
 npm i -g @rnm/pm
+npm i -g fenge
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
