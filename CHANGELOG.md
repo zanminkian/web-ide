@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.19.0
+
+### Minor Changes
+
+- ca4c6ac: chore(code-server): upgrade code-server to v4.98.2
+
 ## 0.18.19
 
 ### Patch Changes
