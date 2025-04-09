@@ -10,7 +10,7 @@
   "type": "module",
   "scripts": {
     "prepare": "fenge install",
-    "release": "./release.sh && changeset tag",
+    "release": "./release.sh",
     "style": "fenge",
     "style:update": "fenge -u",
     "test": "node --test && fenge"
