@@ -8,7 +8,7 @@ else
   ARCH="arm64"
 fi
 
-CODE_SERVER_VERSION=4.98.2
+CODE_SERVER_VERSION=4.100.0
 curl -L https://github.com/coder/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-$ARCH.tar.gz -o /usr/lib/code-server.tgz
 tar -xf /usr/lib/code-server.tgz -C /usr/lib
 rm -rf /usr/lib/code-server.tgz
@@ -33,7 +33,6 @@ code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
 code --install-extension humao.rest-client # imperfect
 # syntax
-code --install-extension IronGeek.vscode-env
 code --install-extension GraphQL.vscode-graphql-syntax
 code --install-extension pbkit.vscode-pbkit
 code --install-extension mrkou47.thrift-syntax-support
@@ -48,6 +47,7 @@ code --install-extension alibaba-cloud.tongyi-lingma # imperfect
 # code --install-extension steoates.autoimport # it seems that it have some bugs
 # code --install-extension SantaCodes.santacodes-region-viewer # code 1.88 built-in support it
 # code --install-extension formulahendry.code-runner
+# code --install-extension IronGeek.vscode-env
 
 # vscode setting
 echo '{
