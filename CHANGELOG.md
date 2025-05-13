@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.20.0
+
+### Minor Changes
+
+- 3ccc1e6: chore(code-server): upgrade code-server to v4.100.0
+
 ## 0.19.1
 
 ### Patch Changes
