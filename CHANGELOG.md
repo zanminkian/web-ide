@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.20.2
+
+### Patch Changes
+
+- 8b54184: chore: upgrade code-server
+
 ## 0.20.1
 
 ### Patch Changes
