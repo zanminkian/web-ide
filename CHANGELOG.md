@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.21.1
+
+### Patch Changes
+
+- 7a35947: feat: install `build-essential`
+
 ## 0.21.0
 
 ### Minor Changes
