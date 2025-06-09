@@ -26,7 +26,7 @@ chmod +x /usr/bin/code
 code --install-extension mhutchie.git-graph@1.30.0 # imperfect.
 code --install-extension ryu1kn.partial-diff
 code --install-extension christian-kohler.path-intellisense
-code --install-extension streetsidesoftware.code-spell-checker@3.0.1
+code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension wmaurer.change-case
 code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align

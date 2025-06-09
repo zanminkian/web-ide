@@ -15,7 +15,7 @@ Web-IDE is a comprehensive web-based integrated development environment (IDE) th
 - Access IDE through your browser and code from any machine, anywhere.
 - A wealth of pre-installed development tools for an out-of-the-box coding experience:
   - [x] Node (Frontend)
-  - [x] Go
+  - [ ] Go
   - [ ] Python
   - [ ] Java
 
