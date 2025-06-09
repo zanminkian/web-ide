@@ -6,5 +6,4 @@ set -e
 # chmod +x /usr/local/bin/ttyd
 
 ## install tools via apt
-apt install -y mysql-client redis-tools
-# apt install -y nginx
+apt install -y mysql-client redis-tools build-essential # `build-essential` is required for some c/c++ libraries
