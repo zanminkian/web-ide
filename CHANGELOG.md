@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.21.0
+
+### Minor Changes
+
+- 6f14774: change!: remove go integration
+
 ## 0.20.2
 
 ### Patch Changes
