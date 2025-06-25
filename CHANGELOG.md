@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.22.0
+
+### Minor Changes
+
+- 0b507f5: chore: remove Node 18
+
 ## 0.21.1
 
 ### Patch Changes
