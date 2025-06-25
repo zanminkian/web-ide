@@ -17,7 +17,15 @@ eval "$(fnm env --shell=zsh)"
 
 fnm install 22
 fnm install 20
-fnm install 18
+
+# TODO: Remove Node v20 once Node v20 is EOL.
+fnm use 20
+npm i npm@10 -g
+node -v
+npm -v
+fnm use 22
+node -v
+npm -v
 
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli del-cli
 npm i -g tsx # TODO: Remove this when Node 24 is stable.
