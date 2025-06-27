@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.22.1
+
+### Patch Changes
+
+- b278847: feat(code-server): set `cSpell.diagnosticLevel` to `Hint`
+
 ## 0.22.0
 
 ### Minor Changes
