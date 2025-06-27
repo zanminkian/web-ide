@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # set -ex
 
-mkdir -p $HOME/web-ide-root/projects $HOME/web-ide-root/go/src
+mkdir -p $HOME/web-ide-root/projects
 touch $HOME/web-ide-root/.zsh_history
 
 docker stop web-ide
@@ -15,7 +15,6 @@ docker run -itd \
   -e WI_GIT_CONFIG="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n[safe]\n\tdirectory = *\n" \
   -e WI_INIT_CMD="echo 'registry=https://registry.npmmirror.com' >> ~/.npmrc" \
   -v $HOME/web-ide-root/projects:/root/projects \
-  -v $HOME/web-ide-root/go/src:/root/go/src \
   -v $HOME/web-ide-root/.zsh_history:/root/.zsh_history \
   --restart always \
   --name web-ide \
