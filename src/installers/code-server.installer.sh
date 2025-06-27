@@ -83,6 +83,7 @@ echo '{
   // security
   "security.workspace.trust.enabled": false,
   // third-party
+  "cSpell.diagnosticLevel": "Hint",
   "rest-client.rememberCookiesForSubsequentRequests": false,
   "Lingma.methodQuickOperation": false,
 }' > ~/.local/share/code-server/User/settings.json
