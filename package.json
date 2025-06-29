@@ -18,16 +18,16 @@
   },
   "devDependencies": {
     "@changesets/cli": "2.29.5",
-    "@types/node": "24.0.4",
-    "fenge": "0.9.1"
+    "@types/node": "22.16.0",
+    "fenge": "0.9.4"
   },
   "engines": {
-    "node": ">=22.14.0"
+    "node": ">=22.16.0"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": ">=22.14.0"
+      "version": ">=22.16.0"
     },
     "packageManager": {
       "name": "pnpm",
