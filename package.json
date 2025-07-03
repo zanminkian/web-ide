@@ -19,7 +19,7 @@
   "devDependencies": {
     "@changesets/cli": "2.29.5",
     "@types/node": "22.16.0",
-    "fenge": "0.9.4"
+    "fenge": "0.9.5"
   },
   "engines": {
     "node": ">=22.16.0"
