@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.22.2
+
+### Patch Changes
+
+- 00f4195: chore: refresh. no significant changes
+
 ## 0.22.1
 
 ### Patch Changes
