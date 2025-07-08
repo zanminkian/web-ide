@@ -51,13 +51,6 @@ code --install-extension alibaba-cloud.tongyi-lingma # imperfect
 
 # vscode setting
 echo '{
-  // file readonly
-  "files.readonlyFromPermissions": true,
-  "files.readonlyInclude": {
-    "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
-    "**/node_modules/**/*": true,
-    "**/go.sum": true,
-  },
   // editor
   "editor.linkedEditing": true,
   "editor.guides.bracketPairs": true,
@@ -67,21 +60,27 @@ echo '{
   "editor.quickSuggestions": { // For tailwind extension. https://github.com/tailwindlabs/tailwindcss-intellisense
     "strings": "on"
   },
-  // language
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.parameterNames.enabled": "all",
-
   // appearance
   "debug.toolBarLocation": "docked",
   "window.title": "${rootName}",
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.startupEditor": "none",
+  // file readonly
+  "files.readonlyFromPermissions": true,
+  "files.readonlyInclude": {
+    "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
+    "**/node_modules/**/*": true,
+    "**/go.sum": true,
+  },
+  // language
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  // security
+  "security.workspace.trust.enabled": false,
   // update
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
   "update.mode": "none",
-  // security
-  "security.workspace.trust.enabled": false,
   // third-party
   "cSpell.diagnosticLevel": "Hint",
   "rest-client.rememberCookiesForSubsequentRequests": false,
