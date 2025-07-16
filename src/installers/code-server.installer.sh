@@ -38,7 +38,7 @@ code --install-extension pbkit.vscode-pbkit
 code --install-extension mrkou47.thrift-syntax-support
 # tools
 code --install-extension hediet.vscode-drawio
-code --install-extension github.copilot
+# code --install-extension github.copilot
 code --install-extension alibaba-cloud.tongyi-lingma # imperfect
 # removed
 # code --install-extension oderwat.indent-rainbow # not significant
