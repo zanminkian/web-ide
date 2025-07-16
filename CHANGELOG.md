@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.23.1
+
+### Patch Changes
+
+- 8760c38: chore(code-server)!: temporarily remove github copilot as it not works
+
 ## 0.23.0
 
 ### Minor Changes
