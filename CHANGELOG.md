@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.24.2
+
+### Patch Changes
+
+- b4b64e3: chore: refresh. no significant changes.
+
 ## 0.24.1
 
 ### Patch Changes
