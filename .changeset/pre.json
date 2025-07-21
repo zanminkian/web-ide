@@ -4,5 +4,5 @@
   "initialVersions": {
     "web-ide": "0.24.2"
   },
-  "changesets": []
+  "changesets": ["new-donkeys-count"]
 }
