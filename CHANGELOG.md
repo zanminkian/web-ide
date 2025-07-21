@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.25.0-beta.0
+
+### Minor Changes
+
+- 94e5e21: feat: change to `debian`
+
 ## 0.24.2
 
 ### Patch Changes
