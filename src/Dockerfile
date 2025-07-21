@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM debian
 
 ARG VERSION
 ENV VERSION=${VERSION}
