@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.24.1
+
+### Patch Changes
+
+- a01f97a: feat: support electron
+
 ## 0.24.0
 
 ### Minor Changes
