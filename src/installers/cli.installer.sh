@@ -16,4 +16,8 @@ apt install -y --no-install-recommends \
     libgtk-3-0 \
     libnss3 \
     libgbm1 \
-    libasound2
+    libasound2 \
+    xvfb
+
+# Install fonts to be able display Chinese.
+apt install -y --no-install-recommends fonts-noto-cjk fonts-noto-color-emoji
