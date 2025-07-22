@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.25.1
+
+### Patch Changes
+
+- 7ab0fcc: fix: solve the problem that cannot run electron app
+
 ## 0.25.0
 
 ### Minor Changes
