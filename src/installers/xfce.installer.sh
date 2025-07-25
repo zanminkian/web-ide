@@ -3,7 +3,7 @@ set -e
 
 # `dbus-x11`` is required for xfce4. Otherwise it will crash.
 # `fonts-noto-cjk` and `fonts-noto-color-emoji` is for displaying Chinese.
-apt install --no-install-recommends -y xfce4 dbus-x11 xfce4-terminal tigervnc-standalone-server fonts-noto-cjk fonts-noto-color-emoji
+apt install --no-install-recommends -y xfce4 dbus-x11 xfce4-terminal chromium tigervnc-standalone-server fonts-noto-cjk fonts-noto-color-emoji
 git clone https://github.com/novnc/noVNC.git /usr/lib/noVNC --depth=1
 git clone https://github.com/novnc/websockify.git /usr/lib/noVNC/utils/websockify --depth=1
 ln -s /usr/lib/noVNC/utils/novnc_proxy /usr/bin/novnc_proxy
