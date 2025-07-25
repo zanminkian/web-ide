@@ -40,14 +40,7 @@ docker run -itd -p 8080:8080 -e PASSWORD=your_password --name web-ide zengmingji
 
 - To check the environment configuration, run `cat ~/.zshrc` inside a container. Feel free to edit it.
 
-## Running GUI App via X11
-
-1. Run docker container (`docker run`) with option `-e DISPLAY=host.docker.internal:0`.
-2. Install [XQuartz](https://www.xquartz.org/) on Mac.
-3. Open XQuartz -> Preferences -> Security. Make sure to enable `Allow connections from network clients`.
-4. Run `xhost + localhost` in host (Mac) terminal.
-5. Run `apt update && apt install -y gedit && gedit foo.txt` in Web-IDE terminal.
-6. `gedit` should be opened on Mac.
+- Run `start-desktop` and visit `http://localhost:6080` to visit a xfce desktop environment.
 
 ## FAQ
 
