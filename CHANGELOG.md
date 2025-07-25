@@ -1,5 +1,15 @@
 # web-ide
 
+## 0.26.0
+
+### Minor Changes
+
+- 56abeca: feat: add a xfce desktop environment
+
+### Patch Changes
+
+- b37f5da: chore: upgrade code-server
+
 ## 0.25.1
 
 ### Patch Changes
