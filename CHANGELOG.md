@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.26.1
+
+### Patch Changes
+
+- 551e801: feat: install chromium into it
+
 ## 0.26.0
 
 ### Minor Changes
