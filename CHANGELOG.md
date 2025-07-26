@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.26.2
+
+### Patch Changes
+
+- 774e9d9: perf: --no-install-recommends
+
 ## 0.26.1
 
 ### Patch Changes
