@@ -2,7 +2,6 @@
 
 ![cover](https://raw.githubusercontent.com/zanminkian/static/main/web-ide/cover.jpeg)
 
-[![Docker](https://img.shields.io/docker/v/zengmingjian/web-ide)](https://hub.docker.com/r/zengmingjian/web-ide)
 [![GitHub license](https://img.shields.io/github/license/zanminkian/web-ide)](https://github.com/zanminkian/web-ide/blob/main/LICENSE)
 
 ## What is it?
@@ -33,14 +32,14 @@ docker run -itd -p 8080:8080 -e PASSWORD=your_password --name web-ide zengmingji
 - Add more CLI options for `web-ide` at the end of the command.
 
   ```sh
-  docker run -itd --net host -e PASSWORD=your_password --name web-ide zengmingjian/web-ide --bind-addr 0.0.0.0:9090
+  docker run -itd --network host -e PASSWORD=your_password --name web-ide zengmingjian/web-ide --bind-addr 0.0.0.0:9090
   ```
 
 - Run `docker run -it --rm zengmingjian/web-ide --help` for more information.
 
-- To check the environment configuration, run `cat ~/.zshrc` inside a container. Feel free to edit it.
+- To check the environment configuration, run `cat ~/.zshrc` inside the container. Feel free to edit it.
 
-- Run `start-desktop` and visit `http://localhost:6080` to visit a xfce desktop environment.
+- Run `start-desktop` inside the container and visit `http://localhost:6080/vnc.html` to visit a xfce desktop environment.
 
 ## FAQ
 

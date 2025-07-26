@@ -6,8 +6,8 @@ set -e
 # chmod +x /usr/local/bin/ttyd
 
 # Install tools via apt
-# apt install -y mysql-client
-apt install -y redis-tools
+# apt install --no-install-recommends -y mysql-client
+apt install --no-install-recommends -y redis-tools
 
 # `build-essential` is required for some c/c++ libraries. Some Node projects (like some sub-libs of midway.js) using c++ needs this.
-apt install -y --no-install-recommends build-essential
+apt install --no-install-recommends -y build-essential

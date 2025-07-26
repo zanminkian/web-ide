@@ -7,7 +7,6 @@ docker stop web-ide
 docker container rm -v web-ide
 docker run -itd \
   --network host \
-  -e DISPLAY=host.docker.internal:0 \
   -e PASSWORD="MY_PASSWORD" \
   -e WI_SSH_ID_ED25519_PUB="MY_PUBLIC_KEY" \
   -e WI_SSH_ID_ED25519="MY_PRIVATE_KEY" \
@@ -17,7 +16,7 @@ docker run -itd \
   -v $HOME/web-ide-root/projects:/root/projects \
   --restart always \
   --name web-ide \
-  zengmingjian/web-ide:0.22.2
+  zengmingjian/web-ide:0.26.2
 
 echo '============================='
 docker ps -a
