@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.26.3
+
+### Patch Changes
+
+- 60bbe10: feat: allow passing `--password` to `start-desktop`
+
 ## 0.26.2
 
 ### Patch Changes
