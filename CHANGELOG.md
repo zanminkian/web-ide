@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.26.5
+
+### Patch Changes
+
+- 9ee1dc6: fix: pass `--no-sandbox` to chromium to prevent crash
+
 ## 0.26.4
 
 ### Patch Changes
