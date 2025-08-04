@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.26.6
+
+### Patch Changes
+
+- 7bf9976: fix: fix chromuim crash
+
 ## 0.26.5
 
 ### Patch Changes
