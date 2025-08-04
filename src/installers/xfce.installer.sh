@@ -56,3 +56,4 @@ apt install --no-install-recommends -y chromium
 echo '#!/usr/bin/env bash
 /usr/bin/chromium --no-sandbox "$@"
 ' > /usr/local/bin/chromium
+chmod +x /usr/local/bin/chromium
