@@ -23,8 +23,15 @@ npm i -g tsx # TODO: Remove this when Node 24 is stable.
 npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
-npm i -g @rnm/pm
 npm i -g fenge
+
+fnm use 20
+npm i -g @rnm/pm
+enable-pm-shim
+
+fnm use 22
+npm i -g @rnm/pm
+enable-pm-shim
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
