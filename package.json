@@ -17,21 +17,21 @@
     "test": "node --test && fenge"
   },
   "devDependencies": {
-    "@changesets/cli": "2.29.5",
-    "@types/node": "22.17.0",
-    "fenge": "0.9.9"
+    "@changesets/cli": "2.29.6",
+    "@types/node": "22.17.2",
+    "fenge": "0.10.0"
   },
   "engines": {
-    "node": ">=22.17.0"
+    "node": ">=22.18.0"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": ">=22.17.0"
+      "version": ">=22.18.0"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "10.13.1"
+      "version": "10.15.0"
     }
   }
 }
