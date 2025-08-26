@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.27.2
+
+### Patch Changes
+
+- 688b642: feat: upgrade code-server
+
 ## 0.27.1
 
 ### Patch Changes
