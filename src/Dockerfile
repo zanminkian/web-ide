@@ -1,5 +1,7 @@
 FROM debian
 
+SHELL ["/usr/bin/zsh", "-c"]
+
 ARG VERSION
 ENV VERSION=${VERSION}
 ENV LANG="C.utf8"
@@ -9,7 +11,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
   && apt update \
   && apt install -y zsh curl git vim unzip \
   && chsh -s /usr/bin/zsh
-SHELL ["/usr/bin/zsh", "-c"]
 
 # 2. install
 COPY installers /tmp/installers
