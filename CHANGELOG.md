@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.28.0
+
+### Minor Changes
+
+- 27e103e: chore: remove `alibaba-cloud.tongyi-lingma` extension
+
 ## 0.27.2
 
 ### Patch Changes
