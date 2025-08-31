@@ -35,6 +35,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 mkdir -p ~/.vnc
+mkdir -p ~/.config/tigervnc
 if [ "$password_provided" = false ]; then
     vncserver -SecurityTypes None :1
 else
