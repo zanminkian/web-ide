@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.28.0
+
+### Minor Changes
+
+- adbc512: feat: launch in a non-root user named web-ide
+- aa04dc4: chore: remove `alibaba-cloud.tongyi-lingma` extension
+
 ## 0.27.2
 
 ### Patch Changes
