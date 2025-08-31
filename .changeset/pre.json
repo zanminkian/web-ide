@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "web-ide": "0.27.2"
+  },
+  "changesets": []
+}
