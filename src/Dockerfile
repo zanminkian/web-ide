@@ -24,6 +24,7 @@ COPY --chown=web-ide settings /tmp/settings
 COPY --chown=web-ide setup.sh /tmp/setup.sh
 RUN /tmp/setup.sh
 RUN rm -rf /tmp/settings /tmp/setup.sh
+USER root
 
 # 4. entry & init
 COPY scripts /usr/bin

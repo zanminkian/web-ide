@@ -1,14 +1,20 @@
 #!/usr/bin/env zsh
 
 # 1. init
-web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
+sudo -E -u web-ide web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
 
 # 2. remove environment variables
-printenv | grep '^WI_' | while read line
-do
-  # echo "unset $(echo $line | cut -d '=' -f1)"
-  unset $(echo $line | cut -d '=' -f1)
-done
+# We don't pass -E to `code` command, so we don't need to remove environment variables now.
+# printenv | grep '^WI_' | while read line
+# do
+#   # echo "unset $(echo $line | cut -d '=' -f1)"
+#   unset $(echo $line | cut -d '=' -f1)
+# done
+
+# 2. setup password for user named web-ide
+if [ -n "$PASSWORD" ]; then
+  echo "web-ide:$PASSWORD" | chpasswd
+fi
 
 # 3. bootstrap
-code "$@"
+sudo -u web-ide PASSWORD="$PASSWORD" code "$@"
