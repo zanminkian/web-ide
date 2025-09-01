@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.28.2
+
+### Patch Changes
+
+- 10b8e8e: fix: fix web-ide-init not work
+
 ## 0.28.1
 
 ### Patch Changes
