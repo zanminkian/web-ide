@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.28.1
+
+### Patch Changes
+
+- b1a729e: fix: remove `web-ide-init` after starting and setup web-ide password
+
 ## 0.28.0
 
 ### Minor Changes
