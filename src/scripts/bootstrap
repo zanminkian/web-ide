@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # 1. init
-sudo -E -u web-ide web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
+sudo -u web-ide "$(env | grep -E '^WI[^=]+=')" web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
 
 # 2. remove environment variables
 # We don't pass -E to `code` command, so we don't need to remove environment variables now.
