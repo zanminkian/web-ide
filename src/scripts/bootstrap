@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 # 1. init
-# If there is no WI_* environment variables, the web-ide-init will be executed and removed.
-sudo -u web-ide "$(env | grep -E '^WI_[^=]+=')" web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
+# If there is no WI_* environment variables, this line of code should not throw an error.
+sudo --preserve-env=$(env | grep '^WI_' | cut -d= -f1 | tr '\n' ',' | sed 's/,$//') -u web-ide web-ide-init >/dev/null 2>&1 && rm -f $(which web-ide-init) || true
 
 # 2. remove environment variables
 # We don't pass -E to `code` command, so we don't need to remove environment variables now.

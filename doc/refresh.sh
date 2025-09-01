@@ -16,7 +16,7 @@ docker run -itd \
   -v $HOME/web-ide-root/projects:/home/web-ide/projects \
   --restart always \
   --name web-ide \
-  zengmingjian/web-ide:0.28.2
+  zengmingjian/web-ide:0.28.3
 
 echo '============================='
 docker ps -a
