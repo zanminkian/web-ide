@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.28.4
+
+### Patch Changes
+
+- 685bf8f: feat: make xfce4 looks prettier, close #190
+
 ## 0.28.3
 
 ### Patch Changes
