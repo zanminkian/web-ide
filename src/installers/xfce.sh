@@ -2,8 +2,10 @@
 set -e
 
 # `dbus-x11`` is required for xfce4. Otherwise it will crash.
-# `fonts-noto-cjk` and `fonts-noto-color-emoji` is for displaying Chinese.
 apt install --no-install-recommends -y xfce4 dbus-x11 xfce4-terminal
+# TODO: Try to remove it in the future if xfece4 works well without it, currently it is required. Otherwise xfce4 will looks ugly.
+apt install --no-install-recommends -y desktop-base
+# `fonts-noto-cjk` and `fonts-noto-color-emoji` is for displaying Chinese.
 apt install --no-install-recommends -y fonts-noto-cjk fonts-noto-color-emoji
 apt install --no-install-recommends -y tigervnc-standalone-server tigervnc-tools
 git clone https://github.com/novnc/noVNC.git /usr/lib/noVNC --depth=1
