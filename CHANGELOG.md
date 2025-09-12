@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.28.5
+
+### Patch Changes
+
+- e2d3fd6: fix: `start-desktop --password` command should not ask password now. close #201
+
 ## 0.28.4
 
 ### Patch Changes
