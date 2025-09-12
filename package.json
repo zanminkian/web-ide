@@ -17,7 +17,7 @@
     "test": "node --test && fenge"
   },
   "devDependencies": {
-    "@changesets/cli": "2.29.6",
+    "@changesets/cli": "2.29.7",
     "@types/node": "22.18.1",
     "fenge": "0.10.3"
   },
@@ -31,7 +31,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "10.15.0"
+      "version": "10.15.1"
     }
   }
 }

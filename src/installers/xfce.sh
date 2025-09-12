@@ -43,7 +43,7 @@ if [ "$password_provided" = false ]; then
 else
     echo -e "$password\n$password" | vncpasswd -f > ~/.vnc/passwd
     chmod 600 ~/.vnc/passwd
-    vncserver :1
+    vncserver -rfbauth ~/.vnc/passwd :1
 fi
 nohup novnc_proxy --vnc localhost:5901 > /dev/null 2>&1 &
 sleep 1
