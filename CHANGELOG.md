@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.29.0
+
+### Minor Changes
+
+- f33330e: chore: upgrade code-server to 4.104.0
+
 ## 0.28.5
 
 ### Patch Changes
