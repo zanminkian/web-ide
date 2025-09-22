@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.29.1
+
+### Patch Changes
+
+- a01cea1: chore: upgrade code-server to v0.29.1
+
 ## 0.29.0
 
 ### Minor Changes
