@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.29.2
+
+### Patch Changes
+
+- 40a54e7: chore: upgrade code-server to v4.104.3
+
 ## 0.29.1
 
 ### Patch Changes
