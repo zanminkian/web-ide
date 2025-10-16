@@ -71,6 +71,16 @@ A: Probably, the remote server does not support the `rsa` algorithm due to secur
 
 </details>
 
+<details>
+<summary>Q: Running `apt update` or `apt install` is slow. How to speed up?</summary>
+A: Run `sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list.d/debian.sources` to change the apt source. It's useful for Chinese users.
+</details>
+
+<details>
+<summary>Q: After running `start-desktop`, how to input Chinese characters in xfce4 desktop?</summary>
+A: Run `sudo apt update && sudo apt install -y fcitx5 fcitx5-pinyin`. Then run `stop-desktop` and `start-desktop` again. Finally, right click the keyboard icon in the top right corner to select `Configure` and add `Pinyin` to `Input Method`.
+</details>
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
