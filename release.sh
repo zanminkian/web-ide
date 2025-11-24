@@ -1,6 +1,12 @@
 #!/bin/sh
 set -e
-curl -fLsS https://get.docker.com/ | sh
+
+if ! command -v docker >/dev/null 2>&1; then
+  echo "Docker not found, installing..."
+  curl -fLsS https://get.docker.com/ | sh
+else
+  echo "Docker is already installed, skipping installation."
+fi
 
 VERSION=$(node -e 'console.log(require("./package.json").version)')
 TAG=$(node -e 'console.log(require("./package.json").version.match(/^[0-9]+\.[0-9]+\.[0-9]+-(.+)\.[0-9]+$/)?.[1] || "latest")')
