@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.30.3
+
+### Patch Changes
+
+- dce9435: chore: no significant changes, refresh
+
 ## 0.30.2
 
 ### Patch Changes
