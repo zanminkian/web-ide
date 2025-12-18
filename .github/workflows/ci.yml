@@ -11,7 +11,5 @@ jobs:
       id-token: write
       pull-requests: write
     uses: zanminkian/github-actions/.github/workflows/all-in-one.yml@main
-    secrets:
-      TOKENS: ${{ secrets.TOKENS }}
     with:
       assets: "assets"
