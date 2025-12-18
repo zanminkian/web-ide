@@ -9,6 +9,7 @@ else
 fi
 
 VERSION=$(node -e 'console.log(require("./package.json").version)')
+echo "NPM_CONFIG_TAG: $NPM_CONFIG_TAG"
 
 docker buildx create --use --name mybuilder
 docker buildx inspect mybuilder --bootstrap
