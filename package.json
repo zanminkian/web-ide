@@ -1,6 +1,6 @@
 {
   "name": "web-ide",
-  "version": "0.30.3",
+  "version": "0.30.4-beta.0",
   "private": true,
   "repository": {
     "type": "git",
