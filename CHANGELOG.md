@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.30.4
+
+### Patch Changes
+
+- 72c2d81: feat: enable `git` plugin for omz
+
 ## 0.30.3
 
 ### Patch Changes
