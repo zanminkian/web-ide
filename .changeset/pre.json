@@ -4,5 +4,5 @@
   "initialVersions": {
     "web-ide": "0.30.4"
   },
-  "changesets": []
+  "changesets": ["ten-swans-greet"]
 }
