@@ -7,7 +7,7 @@ set -e
 
 # Install tools via apt
 # apt install --no-install-recommends -y mysql-client
-apt install --no-install-recommends -y redis-tools
+# apt install --no-install-recommends -y redis-tools
 
 # Install essential libs
 # `build-essential` is required for some c/c++ libraries. Some Node projects (like some sub-libs of midway.js) using c++ needs this.

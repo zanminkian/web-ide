@@ -7,7 +7,6 @@ fnm install 22
 fnm install 20
 
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli del-cli
-npm i -g tsx # TODO: Remove this when Node 24 is stable.
 npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
