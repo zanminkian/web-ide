@@ -17,11 +17,13 @@ docker buildx build --build-arg VERSION=$VERSION --platform linux/amd64 --load -
 docker images -a
 docker save zengmingjian/web-ide:$VERSION | gzip > web-ide-$VERSION-linux-amd64.tgz
 docker image rm zengmingjian/web-ide:$VERSION
+docker image rm zengmingjian/web-ide:$NPM_CONFIG_TAG
 
 docker buildx build --build-arg VERSION=$VERSION --platform linux/arm64 --load -f src/Dockerfile -t zengmingjian/web-ide:$NPM_CONFIG_TAG -t zengmingjian/web-ide:$VERSION src
 docker images -a
 docker save zengmingjian/web-ide:$VERSION | gzip > web-ide-$VERSION-linux-arm64.tgz
 docker image rm zengmingjian/web-ide:$VERSION
+docker image rm zengmingjian/web-ide:$NPM_CONFIG_TAG
 
 ls -alh
 mkdir assets
