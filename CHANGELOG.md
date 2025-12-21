@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.31.0
+
+### Minor Changes
+
+- cd1c2ed: chore: remove `tsx` and `redis-tools`
+
 ## 0.30.4
 
 ### Patch Changes
