@@ -11,6 +11,7 @@ npm i -g http-server
 npm i -g npm-check-updates
 npm i -g degit
 npm i -g fenge
+npm i -g @rnm/gpp
 
 fnm use 20
 npm i -g @rnm/pm
