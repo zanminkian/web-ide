@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.31.1
+
+### Patch Changes
+
+- a5f14f9: chore: rename `code-server` cli name to `code`
+- 004e8c2: feat(node): add `@rnm/gpp`
+
 ## 0.31.0
 
 ### Minor Changes
