@@ -3,6 +3,13 @@
 
 mkdir -p $HOME/web-ide-root/projects
 
+LATEST_VERSION=$(docker images zengmingjian/web-ide --format "table {{.Tag}}" | grep -v "TAG" | grep -v "latest" | sort -V | tail -1)
+if [ -z "$LATEST_VERSION" ]; then
+  echo "Error: No zengmingjian/web-ide image found locally. Please pull or load the image first."
+  exit 1
+fi
+echo "Using image version: $LATEST_VERSION"
+
 docker stop web-ide
 docker container rm -v web-ide
 docker run -itd \
@@ -16,7 +23,7 @@ docker run -itd \
   -v $HOME/web-ide-root/projects:/home/web-ide/projects \
   --restart always \
   --name web-ide \
-  zengmingjian/web-ide:0.28.3
+  zengmingjian/web-ide:$LATEST_VERSION
 
 echo '============================='
 docker ps -a
