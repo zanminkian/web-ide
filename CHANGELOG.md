@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.32.0
+
+### Minor Changes
+
+- 8b6abf4: feat: use jrm and remove git
+
 ## 0.31.1
 
 ### Patch Changes
