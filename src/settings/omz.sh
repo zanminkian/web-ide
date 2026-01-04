@@ -17,6 +17,6 @@ echo '# omz
 export ZSH="$HOME/.oh-my-zsh"
 DISABLE_AUTO_UPDATE="true" # https://stackoverflow.com/questions/11378607/oh-my-zsh-disable-would-you-like-to-check-for-updates-prompt
 ZSH_THEME="simple-robbyrussell"
-plugins=(zsh-autosuggestions zsh-syntax-highlighting git)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 ' >> ~/.zshrc
