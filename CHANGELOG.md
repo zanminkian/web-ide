@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.32.2
+
+### Patch Changes
+
+- 06a12f1: chore: refresh, no significant changes
+
 ## 0.32.1
 
 ### Patch Changes
