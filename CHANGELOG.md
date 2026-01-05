@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.32.3
+
+### Patch Changes
+
+- dcac808: chore: refresh, no significant changes
+
 ## 0.32.2
 
 ### Patch Changes
