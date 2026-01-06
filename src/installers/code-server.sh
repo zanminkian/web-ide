@@ -23,7 +23,14 @@ EXTENSIONS_GALLERY='{\"serviceUrl\":\"https://marketplace.visualstudio.com/_apis
 " > /usr/bin/code
 chmod +x /usr/bin/code
 
-# Rename code-server to code
-if [ -f /usr/lib/code-server/lib/vscode/bin/remote-cli/code-server ]; then
-  mv /usr/lib/code-server/lib/vscode/bin/remote-cli/code-server /usr/lib/code-server/lib/vscode/bin/remote-cli/code
+# Create code wrapper script
+if [ -f /usr/lib/code-server/lib/vscode/bin/remote-cli/code-linux.sh ]; then
+  echo "#!/usr/bin/env sh
+if [ \"\$*\" = \"-v\" ] || [ \"\$*\" = \"--version\" ]; then
+  echo \"Web-IDE v$VERSION\"
+fi
+/usr/lib/code-server/lib/vscode/bin/remote-cli/code-linux.sh \"\$@\"
+" > /usr/lib/code-server/lib/vscode/bin/remote-cli/code
+  chmod +x /usr/lib/code-server/lib/vscode/bin/remote-cli/code
+  rm -f /usr/lib/code-server/lib/vscode/bin/remote-cli/code-server
 fi
