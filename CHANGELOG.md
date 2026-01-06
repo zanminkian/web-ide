@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.32.4
+
+### Patch Changes
+
+- bc899b5: chore: print WEB-IDE version when calling `code -v`
+
 ## 0.32.3
 
 ### Patch Changes
