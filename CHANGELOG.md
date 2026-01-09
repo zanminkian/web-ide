@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.33.0
+
+### Minor Changes
+
+- be39fb1: chore: upgrade code-server to `4.106.3`
+
 ## 0.32.6
 
 ### Patch Changes
