@@ -19,7 +19,7 @@
   "devDependencies": {
     "@changesets/cli": "2.29.8",
     "@types/node": "22.19.3",
-    "fenge": "0.12.6"
+    "fenge": "0.12.7"
   },
   "devEngines": {
     "runtime": {
