@@ -15,10 +15,30 @@ ln -s /usr/lib/noVNC/utils/novnc_proxy /usr/bin/novnc_proxy
 echo '#!/usr/bin/env bash
 set -e
 
+show_help() {
+    echo "Usage: start-desktop [OPTIONS]"
+    echo ""
+    echo "Start the XFCE4 desktop environment with VNC and noVNC."
+    echo ""
+    echo "Options:"
+    echo "  --password[=PASSWORD]  Set VNC password for authentication."
+    echo "                         If PASSWORD is not provided, you will be prompted."
+    echo "  -h, --help             Show this help message and exit."
+    echo ""
+    echo "Examples:"
+    echo "  start-desktop                    # Start without password (no authentication)"
+    echo "  start-desktop --password=mypass  # Start with password"
+    echo "  start-desktop --password         # Start with empty password"
+    exit 0
+}
+
 password=""
 password_provided=false
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        -h|--help)
+            show_help
+            ;;
         --password)
             password_provided=true
             if [[ $# -gt 1 && $2 != --* ]]; then
@@ -50,11 +70,31 @@ sleep 1
 ' > /usr/bin/start-desktop
 chmod +x /usr/bin/start-desktop
 
-echo "#!/usr/bin/env bash
+echo '#!/usr/bin/env bash
 set -e
+
+show_help() {
+    echo "Usage: stop-desktop [OPTIONS]"
+    echo ""
+    echo "Stop the XFCE4 desktop environment (VNC server and noVNC proxy)."
+    echo ""
+    echo "Options:"
+    echo "  -h, --help  Show this help message and exit."
+    exit 0
+}
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -h|--help)
+            show_help
+            ;;
+    esac
+    shift
+done
+
 vncserver -kill :1
-kill -15 \$(ps -ef | grep 'novnc_proxy --vnc localhost:5901' | grep -v grep | awk '{print \$2}')
-" > /usr/bin/stop-desktop
+kill -15 $(ps -ef | grep "novnc_proxy --vnc localhost:5901" | grep -v grep | awk "{print \$2}")
+' > /usr/bin/stop-desktop
 chmod +x /usr/bin/stop-desktop
 
 apt install --no-install-recommends -y chromium
