@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.33.2
+
+### Patch Changes
+
+- 9d6d6e7: feat: print help for `start-desktop` and `stop-desktop` command
+
 ## 0.33.1
 
 ### Patch Changes
