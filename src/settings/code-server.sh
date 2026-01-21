@@ -61,6 +61,7 @@ echo '{
   "extensions.autoUpdate": false,
   "update.mode": "none",
   // third-party
+  "chat.disableAIFeatures": true,
   "cSpell.diagnosticLevel": "Hint",
   "rest-client.rememberCookiesForSubsequentRequests": false,
 }' > ~/.local/share/code-server/User/settings.json
