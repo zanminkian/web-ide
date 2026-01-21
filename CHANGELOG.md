@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.34.0
+
+### Minor Changes
+
+- acd7050: chore!: disable ai features
+
 ## 0.33.2
 
 ### Patch Changes
