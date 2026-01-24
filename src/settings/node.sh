@@ -16,11 +16,11 @@ npm i -g @rnm/gpp
 
 jrm use node@20
 npm i -g @rnm/pm
-pm-cli enable-shim
+pm-util enable-shim
 
 jrm use node@22
 npm i -g @rnm/pm
-pm-cli enable-shim
+pm-util enable-shim
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
