@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.34.1
+
+### Patch Changes
+
+- ade0c5b: chore: refresh
+
 ## 0.34.0
 
 ### Minor Changes
