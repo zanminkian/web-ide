@@ -27,6 +27,8 @@ docker load -i your-downloaded-image.tgz
 docker run -itd -p 8080:8080 -e PASSWORD=your_password --name web-ide zengmingjian/web-ide
 ```
 
+Then visit `http://localhost:8080` in your browser.
+
 ## Advanced Usage
 
 - Add more CLI options for `web-ide` at the end of the command.

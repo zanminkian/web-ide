@@ -13,6 +13,7 @@ npm i -g npm-check-updates
 npm i -g degit
 npm i -g fenge
 npm i -g @rnm/gpp
+npm i -g @anthropic-ai/claude-code
 
 jrm use node@20
 npm i -g @rnm/pm
