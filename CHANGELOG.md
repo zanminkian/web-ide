@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.35.0
+
+### Minor Changes
+
+- 7d94312: chore: upgrade code-server to 1.109.5 and install claude-code
+
 ## 0.34.2
 
 ### Patch Changes
