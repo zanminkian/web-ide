@@ -19,7 +19,10 @@ docker run -itd \
   -e WI_SSH_ID_ED25519="MY_PRIVATE_KEY" \
   -e WI_SSH_KEYSCAN="github.com" \
   -e WI_GIT_CONFIG="[user]\n\tname = zanminkian\n\temail = hellozmj@qq.com\n[safe]\n\tdirectory = *\n" \
-  -e WI_INIT_CMD="echo 'registry=https://registry.npmmirror.com' >> ~/.npmrc; echo 'HISTFILE=~/projects/.zsh_history' >> ~/.zshrc" \
+  -e WI_INIT_CMD="\
+    echo 'registry=https://registry.npmmirror.com' >> ~/.npmrc; \
+    echo 'HISTFILE=~/projects/.zsh_history' >> ~/.zshrc; \
+  " \
   -v $HOME/web-ide-root/projects:/home/web-ide/projects \
   --restart always \
   --name web-ide \
