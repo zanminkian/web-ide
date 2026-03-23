@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.35.1
+
+### Patch Changes
+
+- 2d16e62: feat: don't install vscode extension for claude code
+
 ## 0.35.0
 
 ### Minor Changes
