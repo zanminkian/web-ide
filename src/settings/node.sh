@@ -33,10 +33,9 @@ fi
 # @arethetypeswrong/cli loadtest cloc pm2 npm-check-updates tree-cli del-cli
 npm i -g http-server
 npm i -g npm-check-updates
-npm i -g degit
 npm i -g fenge
 npm i -g @rnm/gpp
 
 # Install & configure Claude Code
+echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.jsons
 npm i -g @anthropic-ai/claude-code
-echo '{"autoInstallIdeExtension":false}' > ~/.claude.json
