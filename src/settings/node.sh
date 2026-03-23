@@ -37,5 +37,5 @@ npm i -g fenge
 npm i -g @rnm/gpp
 
 # Install & configure Claude Code
-echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.jsons
+echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.json
 npm i -g @anthropic-ai/claude-code
