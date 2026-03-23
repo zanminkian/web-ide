@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.35.2
+
+### Patch Changes
+
+- 59eb3b9: chore: remove `degit`
+
 ## 0.35.1
 
 ### Patch Changes
