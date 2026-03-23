@@ -4,5 +4,5 @@
   "initialVersions": {
     "web-ide": "0.35.2"
   },
-  "changesets": []
+  "changesets": ["rare-parts-move"]
 }

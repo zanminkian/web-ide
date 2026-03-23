@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.0-beta.0
+
+### Minor Changes
+
+- e920299: chore: upgrade code-server to 4.110.0
+
 ## 0.35.2
 
 ### Patch Changes
