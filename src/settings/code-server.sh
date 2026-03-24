@@ -36,7 +36,7 @@ echo '{
   "editor.showFoldingControls": "always",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
-  "editor.quickSuggestions": { // For tailwind extension. https://github.com/tailwindlabs/tailwindcss-intellisense
+  "editor.quickSuggestions": { // For tailwind extension. https://github.com/tailwindlabs/tailwindcss-intellisense#editorquicksuggestions
     "strings": "on"
   },
   // appearance
@@ -52,8 +52,7 @@ echo '{
     "**/go.sum": true,
   },
   // language
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.parameterNames.enabled": "all",
+  "js/ts.inlayHints.parameterNames.enabled": "all",
   // security
   "security.workspace.trust.enabled": false,
   // update
