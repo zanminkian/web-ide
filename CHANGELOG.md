@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.0-beta.1
+
+### Patch Changes
+
+- 12059b0: refactor: use new vscode language config
+
 ## 0.36.0-beta.0
 
 ### Minor Changes
