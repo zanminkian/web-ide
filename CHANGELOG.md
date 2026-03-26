@@ -1,5 +1,16 @@
 # web-ide
 
+## 0.36.0
+
+### Minor Changes
+
+- e920299: chore: upgrade code-server to 4.110.0
+- 67ebb70: chore: upgrade code-server to v4.112.0
+
+### Patch Changes
+
+- 12059b0: refactor: use new vscode language config
+
 ## 0.35.2
 
 ### Patch Changes
