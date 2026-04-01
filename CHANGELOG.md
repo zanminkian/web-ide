@@ -1,5 +1,12 @@
 # web-ide
 
+## 0.36.2-dev.0
+
+### Patch Changes
+
+- 8d74e03: chore: refresh
+- 2f22179: chore: remove xfce
+
 ## 0.36.1
 
 ### Patch Changes

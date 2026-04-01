@@ -4,5 +4,5 @@
   "initialVersions": {
     "web-ide": "0.36.1"
   },
-  "changesets": []
+  "changesets": ["cool-owls-attack", "fair-files-sniff", "two-sheep-sing"]
 }
