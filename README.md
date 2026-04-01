@@ -53,34 +53,34 @@ A: Convert this web vscode into a Progressive Web App (PWA).
 </details>
 
 <details>
-<summary>Q: Some extensions, which use iframes to render their UI, don't work properly, like `git graph`. How can I solve this problem?</summary>
+<summary>Q: Some extensions, which use iframes to render their UI, don't work properly, like <code>git graph</code>. How can I solve this problem?</summary>
 
-A: This issue occurs when you access vscode in the browser with a website address that is not `localhost` and a protocol that is not `https`. Here are some solutions:
+A: This issue occurs when you access vscode in the browser with a website address that is not <code>localhost</code> and a protocol that is not <code>https</code>. Here are some solutions:
 
-- Set up a forward proxy with the command `ssh -CqTnNfL 8080:127.0.0.1:8080 my-remote-server`. Then access vscode via `http://localhost:8080`.
-- Open `chrome://flags/#unsafely-treat-insecure-origin-as-secure` in your browser to trust insecure origins. Then access vscode via `http://some-ip-or-domain:8080`.
-- Use an `https` protocol instead of `http`.
+- Set up a forward proxy with the command <code>ssh -CqTnNfL 8080:127.0.0.1:8080 my-remote-server</code>. Then access vscode via <code>http://localhost:8080</code>.
+- Open <code>chrome://flags/#unsafely-treat-insecure-origin-as-secure</code> in your browser to trust insecure origins. Then access vscode via <code>http://some-ip-or-domain:8080</code>.
+- Use an <code>https</code> protocol instead of <code>http</code>.
 
 </details>
 
 <details>
 <summary>Q: This Docker container is unable to log in to another remote server via SSH. What could be the cause, and how can it be resolved?</summary>
 
-A: Probably, the remote server does not support the `rsa` algorithm due to security concerns. Here are two alternatives:
+A: Probably, the remote server does not support the <code>rsa</code> algorithm due to security concerns. Here are two alternatives:
 
-- Generate your SSH key using the `ed25519` algorithm, with `ssh-keygen -t ed25519`.
-- Add `HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa` to `~/.ssh/config`. For example: `Hostname user@your-ip.com\n    HostkeyAlgorithms +ssh-rsa\n    PubkeyAcceptedAlgorithms +ssh-rsa\n    PubkeyAcceptedKeyTypes +ssh-rsa\n`
+- Generate your SSH key using the <code>ed25519</code> algorithm, with <code>ssh-keygen -t ed25519</code>.
+- Add <code>HostkeyAlgorithms +ssh-rsa\n PubkeyAcceptedAlgorithms +ssh-rsa\n PubkeyAcceptedKeyTypes +ssh-rsa</code> to <code>~/.ssh/config</code>. For example: <code>Hostname user@your-ip.com\n HostkeyAlgorithms +ssh-rsa\n PubkeyAcceptedAlgorithms +ssh-rsa\n PubkeyAcceptedKeyTypes +ssh-rsa\n</code>
 
 </details>
 
 <details>
-<summary>Q: Running `apt update` or `apt install` is slow. How to speed up?</summary>
-A: Run `sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list.d/debian.sources` to change the apt source. It's useful for Chinese users.
+<summary>Q: Running <code>apt update</code> or <code>apt install</code> is slow. How to speed up?</summary>
+A: Run <code>sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list.d/debian.sources</code> to change the apt source. It's useful for Chinese users.
 </details>
 
 <details>
-<summary>Q: After running `start-desktop`, how to input Chinese characters in xfce4 desktop?</summary>
-A: Run `sudo apt update && sudo apt install -y fcitx5 fcitx5-pinyin`. Then run `stop-desktop` and `start-desktop` again. Finally, right click the keyboard icon in the top right corner to select `Configure` and add `Pinyin` to `Input Method`.
+<summary>Q: After running <code>start-desktop</code>, how to input Chinese characters in xfce4 desktop?</summary>
+A: Run <code>sudo apt update && sudo apt install -y fcitx5 fcitx5-pinyin</code>. Then run <code>stop-desktop</code> and <code>start-desktop</code> again. Finally, right click the keyboard icon in the top right corner to select <code>Configure</code> and add <code>Pinyin</code> to <code>Input Method</code>.
 </details>
 
 ## Show your support
