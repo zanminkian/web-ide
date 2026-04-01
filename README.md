@@ -41,7 +41,7 @@ Then visit `http://localhost:8080` in your browser.
 
 - To check the environment configuration, run `cat ~/.zshrc` inside the container. Feel free to edit it.
 
-- Run `start-desktop` inside the container and visit `http://localhost:6080/vnc.html` to visit a xfce desktop environment.
+- Run `start-desktop` inside the container and visit `http://localhost:6080/vnc.html` to visit a LXQt desktop environment.
 
 ## FAQ
 
@@ -79,7 +79,7 @@ A: Run `sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/s
 </details>
 
 <details>
-<summary>Q: After running `start-desktop`, how to input Chinese characters in xfce4 desktop?</summary>
+<summary>Q: After running `start-desktop`, how to input Chinese characters in LXQt desktop?</summary>
 A: Run `sudo apt update && sudo apt install -y fcitx5 fcitx5-pinyin`. Then run `stop-desktop` and `start-desktop` again. Finally, right click the keyboard icon in the top right corner to select `Configure` and add `Pinyin` to `Input Method`.
 </details>
 

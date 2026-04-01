@@ -1,9 +1,10 @@
 #!/usr/bin/env zsh
 set -e
 
-# `dbus-x11` is required for xfce4. Otherwise it will crash.
-apt install --no-install-recommends -y xfce4 dbus-x11 xfce4-terminal
-# TODO: Try to remove it in the future if xfece4 works well without it, currently it is required. Otherwise xfce4 will looks ugly.
+# `dbus-x11` is required for lxqt. Otherwise it will crash.
+apt install --no-install-recommends -y lxqt-core dbus-x11 qterminal
+# `desktop-base` provides default themes and artwork for Debian desktop environments.
+# It's optional for LXQt but recommended for better visual appearance.
 apt install --no-install-recommends -y desktop-base
 # `fonts-noto-cjk` and `fonts-noto-color-emoji` is for displaying Chinese.
 apt install --no-install-recommends -y fonts-noto-cjk fonts-noto-color-emoji
@@ -18,7 +19,7 @@ set -e
 show_help() {
     echo "Usage: start-desktop [OPTIONS]"
     echo ""
-    echo "Start the XFCE4 desktop environment with VNC and noVNC."
+    echo "Start the LXQt desktop environment with VNC and noVNC."
     echo ""
     echo "Options:"
     echo "  --password[=PASSWORD]  Set VNC password for authentication."
@@ -76,7 +77,7 @@ set -e
 show_help() {
     echo "Usage: stop-desktop [OPTIONS]"
     echo ""
-    echo "Stop the XFCE4 desktop environment (VNC server and noVNC proxy)."
+    echo "Stop the LXQt desktop environment (VNC server and noVNC proxy)."
     echo ""
     echo "Options:"
     echo "  -h, --help  Show this help message and exit."
