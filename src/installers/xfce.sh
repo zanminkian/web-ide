@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -e
 
-# `dbus-x11`` is required for xfce4. Otherwise it will crash.
+# `dbus-x11` is required for xfce4. Otherwise it will crash.
 apt install --no-install-recommends -y xfce4 dbus-x11 xfce4-terminal
 # TODO: Try to remove it in the future if xfece4 works well without it, currently it is required. Otherwise xfce4 will looks ugly.
 apt install --no-install-recommends -y desktop-base
