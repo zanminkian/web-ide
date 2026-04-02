@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.3
+
+### Patch Changes
+
+- 15c523f: build: dynamic install lts versions
+
 ## 0.36.2
 
 ### Patch Changes
