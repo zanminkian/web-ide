@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.5-beta.0
+
+### Patch Changes
+
+- 08869bb: chore: refresh
+
 ## 0.36.4
 
 ### Patch Changes
