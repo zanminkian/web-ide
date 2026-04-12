@@ -4,5 +4,9 @@
   "initialVersions": {
     "web-ide": "0.36.4"
   },
-  "changesets": ["small-webs-carry", "some-experts-write"]
+  "changesets": [
+    "small-webs-carry",
+    "some-experts-write",
+    "strict-zebras-learn"
+  ]
 }
