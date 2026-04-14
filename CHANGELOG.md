@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.5
+
+### Patch Changes
+
+- 4814ed7: feat: use new jrm
+
 ## 0.36.4
 
 ### Patch Changes
