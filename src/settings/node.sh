@@ -45,19 +45,14 @@ echo "Detected maintaining LTS versions: ${lts_versions[@]}"
 
 eval "$(jrm env)"
 
-# Install each version
-for version in "${lts_versions[@]}"; do
+# Install each version (from oldest to newest)
+for version in "${(Oa)lts_versions[@]}"; do
   echo "Installing Node.js $version..."
-  jrm install node@$version
+  jrm use -y node@$version
 done
 
-# Configure each installed version (in reverse order, from oldest to newest)
-for version in "${(Oa)lts_versions[@]}"; do
-  echo "Configuring Node.js $version..."
-  jrm use node@$version
-  npm i -g @rnm/pm
-  pm-util enable-shim
-done
+# Install npm
+jrm use -y 'npm@*'
 
 # TODO: Remove this if this [issue](https://github.com/pnpm/pnpm/issues/5803) is solved.
 # Refer: https://github.com/pnpm/pnpm/issues/7024#issuecomment-1740740451.
@@ -80,6 +75,7 @@ npm i -g http-server
 npm i -g npm-check-updates
 npm i -g fenge
 npm i -g @rnm/gpp
+npm i -g @rnm/pm
 
 # Install & configure Claude Code
 echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.json
