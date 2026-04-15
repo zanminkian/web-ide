@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@changesets/cli": "2.31.0",
-    "@types/node": "22.19.15",
-    "fenge": "0.13.2"
+    "@types/node": "22.19.17",
+    "fenge": "0.13.3"
   },
   "devEngines": {
     "runtime": {
