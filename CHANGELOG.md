@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.6
+
+### Patch Changes
+
+- cae663b: chore: refresh
+
 ## 0.36.5
 
 ### Patch Changes
