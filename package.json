@@ -17,9 +17,9 @@
     "test": "node --test && fenge"
   },
   "devDependencies": {
-    "@changesets/cli": "2.30.0",
+    "@changesets/cli": "2.31.0",
     "@types/node": "22.19.15",
-    "fenge": "0.12.11"
+    "fenge": "0.13.2"
   },
   "devEngines": {
     "runtime": {
