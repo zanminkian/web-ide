@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.11
+
+### Patch Changes
+
+- 8967ce0: feat: add claude commit plugin
+
 ## 0.36.10
 
 ### Patch Changes
