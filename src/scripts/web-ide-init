@@ -20,7 +20,7 @@ if [ ! -f "$HOME/.ssh/id_rsa.pub" ] && [ "$WI_SSH_ID_RSA_PUB" != "" ]; then
   echo $WI_SSH_ID_RSA_PUB > $HOME/.ssh/id_rsa.pub
 fi
 
-if [ ! -f "$HOME/.ssh/known_hosts" ] && [ "$WI_SSH_KEYSCAN" != "" ]; then # Host names seperated by comma. eg `github.com,gitee.com`
+if [ ! -f "$HOME/.ssh/known_hosts" ] && [ "$WI_SSH_KEYSCAN" != "" ]; then # Host names separated by comma. eg `github.com,gitee.com`
   for host in $(echo $WI_SSH_KEYSCAN | tr ',' ' ' | tr ' ', '\n'); do
     ssh-keyscan $host >> $HOME/.ssh/known_hosts || true # This line may break if there is network problem. Ignore the error
   done
