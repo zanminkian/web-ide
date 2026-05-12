@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.13
+
+### Patch Changes
+
+- e7a3541: fix: prepend omz config to .zshrc instead of appending
+
 ## 0.36.12
 
 ### Patch Changes
