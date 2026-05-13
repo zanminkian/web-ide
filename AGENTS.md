@@ -15,13 +15,13 @@ pnpm run style:update  # fenge auto-fix
 The Docker image is built in four stages (see `src/Dockerfile`):
 
 1. **Base** — Debian with zsh, curl, git, vim, sudo installed.
-2. **Installers** (`src/installers/`) — Run as **root**. Each `*.sh` file installs a tool. Executed in alphabetical order by `install.sh`:
+2. **Install** (`src/install/`) — Run as **root**. Each `*.sh` file installs a tool. Executed in alphabetical order by `install.sh`:
    - `cli.sh` — build-essential and other apt packages
    - `code-server.sh` — code-server binary + `/usr/bin/code` wrapper with custom marketplace URL
    - `node.sh` — [jrm](https://github.com/rnmjs/jrm) runtime manager (used later to install Node LTS versions)
    - `python.sh` — Python 3
    - `xfce.sh` — Xfce4 desktop, TigerVNC, noVNC, Chromium, `start-desktop`/`stop-desktop` scripts
-3. **Settings** (`src/settings/`) — Run as the **web-ide user**. Each `*.sh` configures the user environment. Executed in alphabetical order by `setup.sh`:
+3. **Setup** (`src/setup/`) — Run as the **web-ide user**. Each `*.sh` configures the user environment. Executed in alphabetical order by `setup.sh`:
    - `code-server.sh` — VS Code extensions + settings.json + code-server config
    - `node.sh` — installs all maintaining Node LTS versions via jrm, global npm packages, Claude Code
    - `omz.sh` — **Must run last** (validated by test). Installs Oh My Zsh, prepends its config to `~/.zshrc`, then appends the previous `.zshrc` content.
