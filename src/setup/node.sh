@@ -82,4 +82,3 @@ echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.clau
 npm i -g @anthropic-ai/claude-code
 claude plugin marketplace add anthropics/claude-plugins-official
 claude plugin install commit-commands
-claude plugin install superpowers
