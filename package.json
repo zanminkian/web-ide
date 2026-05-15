@@ -10,8 +10,9 @@
   "author": "hellozmj@qq.com",
   "type": "module",
   "scripts": {
+    "build": "./build.sh",
     "prepare": "fenge install",
-    "release": "./release.sh",
+    "release": "echo 'No npm publish; release assets are produced by build matrix and uploaded via GitHub Release.'",
     "style": "fenge",
     "style:update": "fenge -u",
     "test": "node --test && fenge"

@@ -13,3 +13,4 @@ jobs:
     uses: zanminkian/github-actions/.github/workflows/all-in-one.yml@main
     with:
       assets: "assets"
+      builds-on: '["ubuntu-latest", "ubuntu-24.04-arm"]'
