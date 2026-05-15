@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.15
+
+### Patch Changes
+
+- 455a823: feat: install superpowers
+
 ## 0.36.14
 
 ### Patch Changes
