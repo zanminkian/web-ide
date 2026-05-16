@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.16
+
+### Patch Changes
+
+- 7359568: feat: remove superpowers
+
 ## 0.36.15
 
 ### Patch Changes
