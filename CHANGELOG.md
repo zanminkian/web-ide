@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.19
+
+### Patch Changes
+
+- dfc951a: feat: install superpowers but disable it
+
 ## 0.36.18
 
 ### Patch Changes
