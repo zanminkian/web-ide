@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.17
+
+### Patch Changes
+
+- d7aa396: feat: disable claude auto updating
+
 ## 0.36.16
 
 ### Patch Changes
