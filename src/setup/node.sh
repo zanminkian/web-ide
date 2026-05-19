@@ -79,6 +79,8 @@ npm i -g @rnm/pm
 
 # Install & configure Claude Code
 echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.json
+mkdir -p ~/.claude
+echo '{"env":{"DISABLE_AUTOUPDATER":"1"}}' > ~/.claude/settings.json
 npm i -g @anthropic-ai/claude-code
 claude plugin marketplace add anthropics/claude-plugins-official
 claude plugin install commit-commands
