@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.18
+
+### Patch Changes
+
+- 4f5f34f: feat: add extension shd101wyy.markdown-preview-enhanced
+
 ## 0.36.17
 
 ### Patch Changes
