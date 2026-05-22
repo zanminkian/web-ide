@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.36.20
+
+### Patch Changes
+
+- 0b71b75: feat: install frontend-design but disable it
+
 ## 0.36.19
 
 ### Patch Changes
