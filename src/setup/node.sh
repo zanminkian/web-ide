@@ -86,3 +86,5 @@ claude plugin marketplace add anthropics/claude-plugins-official
 claude plugin install commit-commands
 claude plugin install superpowers
 claude plugin disable superpowers
+claude plugin install frontend-design
+claude plugin disable frontend-design
