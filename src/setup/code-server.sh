@@ -11,7 +11,7 @@ code --install-extension shardulm94.trailing-spaces
 code --install-extension wwm.better-align
 code --install-extension njzy.stats-bar
 code --install-extension humao.rest-client # imperfect
-code --install-extension shd101wyy.markdown-preview-enhanced # Preview markdown. Supports digraph, mermaid.
+# code --install-extension shd101wyy.markdown-preview-enhanced # Preview markdown. Supports digraph, mermaid.
 # syntax
 code --install-extension GraphQL.vscode-graphql-syntax
 code --install-extension pbkit.vscode-pbkit
