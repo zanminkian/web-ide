@@ -1,5 +1,15 @@
 # web-ide
 
+## 0.37.0
+
+### Minor Changes
+
+- f5f942a: feat!: update code-server to 4.121.0
+
+### Patch Changes
+
+- d11519e: feat: disable claude attribution in commits and PRs
+
 ## 0.36.20
 
 ### Patch Changes
