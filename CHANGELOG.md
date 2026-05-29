@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.1
+
+### Patch Changes
+
+- 96fa36d: feat: install jq
+
 ## 0.37.0
 
 ### Minor Changes
