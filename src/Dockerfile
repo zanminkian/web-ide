@@ -7,7 +7,7 @@ ENV LANG="C.utf8"
 # 1. install common
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt update \
-  && apt install -y zsh curl git vim sudo \
+  && apt install -y zsh curl git vim sudo jq \
   && chsh -s /usr/bin/zsh
 SHELL ["/usr/bin/zsh", "-c"]
 
