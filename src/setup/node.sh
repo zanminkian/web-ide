@@ -76,6 +76,7 @@ npm i -g npm-check-updates
 npm i -g fenge
 npm i -g @rnm/gpp
 npm i -g @rnm/pm
+npm i -g @qoder-ai/qodercli
 
 # Install & configure Claude Code
 echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.json
