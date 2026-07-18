@@ -50,7 +50,7 @@ echo '{
   "files.readonlyInclude": {
     "**/{package-lock.json,pnpm-lock.yaml,yarn.lock}": true,
     "**/node_modules/**/*": true,
-    "**/go.sum": true
+    "**/go.sum": true,
   },
   // language
   "js/ts.inlayHints.parameterNames.enabled": "all",
@@ -63,7 +63,7 @@ echo '{
   // third-party
   "chat.disableAIFeatures": true,
   "cSpell.diagnosticLevel": "Hint",
-  "rest-client.rememberCookiesForSubsequentRequests": false
+  "rest-client.rememberCookiesForSubsequentRequests": false,
 }' > ~/.local/share/code-server/User/settings.json
 
 # code-server config
