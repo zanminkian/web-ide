@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.2
+
+### Patch Changes
+
+- 6328da5: feat: add qoder
+
 ## 0.37.1
 
 ### Patch Changes

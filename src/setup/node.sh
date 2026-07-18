@@ -76,16 +76,20 @@ npm i -g npm-check-updates
 npm i -g fenge
 npm i -g @rnm/gpp
 npm i -g @rnm/pm
-npm i -g @qoder-ai/qodercli
 
 # Install & configure Claude Code
 echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.json
 mkdir -p ~/.claude
 echo '{"env":{"DISABLE_AUTOUPDATER":"1"},"attribution":{"commit":"","pr":""}}' > ~/.claude/settings.json
-npm i -g @anthropic-ai/claude-code
+# TODO: Remove --allow-scripts
+npm i -g --allow-scripts=@anthropic-ai/claude-code @anthropic-ai/claude-code
 claude plugin marketplace add anthropics/claude-plugins-official
 claude plugin install commit-commands
 claude plugin install superpowers
 claude plugin disable superpowers
 claude plugin install frontend-design
 claude plugin disable frontend-design
+
+## Install Qoder
+# TODO: Remove --allow-scripts. At least, remove sharp
+npm i -g --allow-scripts=@qoder-ai/qodercli,sharp @qoder-ai/qodercli
