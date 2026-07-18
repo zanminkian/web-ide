@@ -58,7 +58,7 @@ echo '{
   "security.workspace.trust.enabled": false,
   // update
   "extensions.autoCheckUpdates": false,
-  "extensions.autoUpdate": false,
+  "extensions.autoUpdate": "off",
   "update.mode": "none",
   // third-party
   "chat.disableAIFeatures": true,
