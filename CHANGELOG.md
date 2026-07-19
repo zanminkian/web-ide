@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.3
+
+### Patch Changes
+
+- 7b1abf1: feat: add mattpocock skills plugin
+
 ## 0.37.2
 
 ### Patch Changes
