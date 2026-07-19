@@ -84,11 +84,18 @@ echo '{"env":{"DISABLE_AUTOUPDATER":"1"},"attribution":{"commit":"","pr":""}}' >
 # TODO: Remove --allow-scripts
 npm i -g --allow-scripts=@anthropic-ai/claude-code @anthropic-ai/claude-code
 claude plugin marketplace add anthropics/claude-plugins-official
+# commit-commands
 claude plugin install commit-commands
+# superpowers
 claude plugin install superpowers
 claude plugin disable superpowers
+# frontend-design
 claude plugin install frontend-design
 claude plugin disable frontend-design
+# mattpocock
+claude plugin marketplace add mattpocock/skills
+claude plugin install mattpocock-skills@mattpocock
+claude plugin disable mattpocock-skills
 
 ## Install Qoder
 # TODO: Remove --allow-scripts. At least, remove sharp
