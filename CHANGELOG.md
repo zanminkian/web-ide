@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.5
+
+### Patch Changes
+
+- 957089e: chore: do nothing, just refresh
+
 ## 0.37.4
 
 ### Patch Changes
