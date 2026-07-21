@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.4
+
+### Patch Changes
+
+- 17d84ee: feat: qoder install matt pocock skill
+
 ## 0.37.3
 
 ### Patch Changes
