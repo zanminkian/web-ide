@@ -95,8 +95,12 @@ claude plugin disable frontend-design
 # mattpocock
 claude plugin marketplace add mattpocock/skills
 claude plugin install mattpocock-skills@mattpocock
-claude plugin disable mattpocock-skills
+claude plugin disable mattpocock-skills@mattpocock
 
 ## Install Qoder
 # TODO: Remove --allow-scripts. At least, remove sharp
 npm i -g --allow-scripts=@qoder-ai/qodercli,sharp @qoder-ai/qodercli
+# mattpocock
+qodercli plugins marketplace add https://github.com/mattpocock/skills.git
+qodercli plugins install mattpocock-skills@mattpocock
+qodercli plugins disable mattpocock-skills@mattpocock
