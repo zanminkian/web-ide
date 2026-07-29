@@ -93,9 +93,8 @@ claude plugin disable superpowers
 claude plugin install frontend-design
 claude plugin disable frontend-design
 # mattpocock
-claude plugin marketplace add mattpocock/skills
-claude plugin install mattpocock-skills@mattpocock
-claude plugin disable mattpocock-skills@mattpocock
+claude plugin install mattpocock-skills
+claude plugin disable mattpocock-skills
 
 ## Install Qoder
 # TODO: Remove --allow-scripts. At least, remove sharp
