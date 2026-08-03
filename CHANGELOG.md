@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.7
+
+### Patch Changes
+
+- 54213f1: feat: disallow auto updating qoder cli
+
 ## 0.37.6
 
 ### Patch Changes
