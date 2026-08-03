@@ -96,7 +96,9 @@ claude plugin disable frontend-design
 claude plugin install mattpocock-skills
 claude plugin disable mattpocock-skills
 
-## Install Qoder
+## Install & configure Qoder
+mkdir -p ~/.qoder
+echo '{"general":{"enableAutoUpdate":false}}' > ~/.qoder/settings.json
 # TODO: Remove --allow-scripts. At least, remove sharp
 npm i -g --allow-scripts=@qoder-ai/qodercli,sharp @qoder-ai/qodercli
 # mattpocock
