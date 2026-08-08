@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.8
+
+### Patch Changes
+
+- 4a89b9a: chore: upgrade deps
+
 ## 0.37.7
 
 ### Patch Changes
