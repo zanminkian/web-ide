@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.9
+
+### Patch Changes
+
+- 7c3efb7: chore: remove commit-commands and superpowers
+
 ## 0.37.8
 
 ### Patch Changes
