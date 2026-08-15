@@ -75,7 +75,6 @@ npm i -g http-server
 npm i -g npm-check-updates
 npm i -g fenge
 npm i -g @rnm/gpp
-npm i -g @rnm/pm
 
 # Install & configure Claude Code
 echo '{"autoInstallIdeExtension":false,"hasCompletedOnboarding":true}' > ~/.claude.json
@@ -84,11 +83,6 @@ echo '{"env":{"DISABLE_AUTOUPDATER":"1"},"attribution":{"commit":"","pr":""}}' >
 # TODO: Remove --allow-scripts
 npm i -g --allow-scripts=@anthropic-ai/claude-code @anthropic-ai/claude-code
 claude plugin marketplace add anthropics/claude-plugins-official
-# commit-commands
-claude plugin install commit-commands
-# superpowers
-claude plugin install superpowers
-claude plugin disable superpowers
 # frontend-design
 claude plugin install frontend-design
 claude plugin disable frontend-design
