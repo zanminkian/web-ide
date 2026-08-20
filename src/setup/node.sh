@@ -99,3 +99,9 @@ npm i -g --allow-scripts=@qoder-ai/qodercli,sharp @qoder-ai/qodercli
 qodercli plugins marketplace add https://github.com/mattpocock/skills.git
 qodercli plugins install mattpocock-skills@mattpocock
 qodercli plugins disable mattpocock-skills@mattpocock
+
+## Install & configure Codex
+npm i -g @openai/codex
+# mattpocock
+# TODO migrate to codex plugin when mattpocock support it
+npx -y skills@latest add mattpocock/skills --skill '*' --agent codex --global --yes

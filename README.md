@@ -46,6 +46,13 @@ Then open `http://localhost:8080` in your browser.
 ## FAQ
 
 <details>
+<summary>Q: How do I use Codex inside the container?</summary>
+
+A: Codex is pre-installed. Because the Docker container already provides an isolation boundary, it is recommended to run Codex with `codex --sandbox danger-full-access` to avoid issues with its nested Linux sandbox.
+
+</details>
+
+<details>
 <summary>Q: Some shortcuts conflict between web-vscode and the browser. How can I avoid this?</summary>
 
 A: Convert the web vscode into a Progressive Web App (PWA).
