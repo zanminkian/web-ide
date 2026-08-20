@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.10
+
+### Patch Changes
+
+- b6f3670: feat: install and configure Codex
+
 ## 0.37.9
 
 ### Patch Changes
