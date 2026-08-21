@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.11
+
+### Patch Changes
+
+- c2557b1: fix: disable Codex update checks
+
 ## 0.37.10
 
 ### Patch Changes
