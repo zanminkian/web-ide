@@ -101,6 +101,8 @@ qodercli plugins install mattpocock-skills@mattpocock
 qodercli plugins disable mattpocock-skills@mattpocock
 
 ## Install & configure Codex
+mkdir -p ~/.codex
+echo 'check_for_update_on_startup = false' > ~/.codex/config.toml
 npm i -g @openai/codex
 # mattpocock
 # TODO migrate to codex plugin when mattpocock support it
