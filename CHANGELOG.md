@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.37.12
+
+### Patch Changes
+
+- bc6d885: feat: install pi
+
 ## 0.37.11
 
 ### Patch Changes
