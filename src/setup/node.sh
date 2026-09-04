@@ -108,5 +108,7 @@ npm i -g @openai/codex
 # TODO migrate to codex plugin when mattpocock support it
 npx -y skills@latest add mattpocock/skills --skill '*' --agent codex --global --yes
 
-## Install Pi
+## Install & configure Pi
 npm i -g @earendil-works/pi-coding-agent
+pi install npm:pi-subagents
+pi install npm:pi-mcp-adapter
