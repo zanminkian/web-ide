@@ -12,3 +12,6 @@ set -e
 # Install essential libs
 # `build-essential` is required for some c/c++ libraries. Some Node projects (like some sub-libs of midway.js) using c++ needs this.
 apt install --no-install-recommends -y build-essential
+
+# Install fd and ripgrep so Pi can find files and search file contents without downloading them at runtime.
+apt install --no-install-recommends -y fd-find ripgrep
