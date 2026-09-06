@@ -1,5 +1,13 @@
 # web-ide
 
+## 0.37.13
+
+### Patch Changes
+
+- 7763fe2: feat: install fd and ripgrep
+- 44dd712: fix: expose fd command on Debian
+- a06c5b0: feat: install Pi subagent and MCP extensions
+
 ## 0.37.12
 
 ### Patch Changes
