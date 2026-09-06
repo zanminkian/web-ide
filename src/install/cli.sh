@@ -15,3 +15,4 @@ apt install --no-install-recommends -y build-essential
 
 # Install fd and ripgrep so Pi can find files and search file contents without downloading them at runtime.
 apt install --no-install-recommends -y fd-find ripgrep
+ln -s $(which fdfind) /usr/bin/fd
