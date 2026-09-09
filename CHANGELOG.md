@@ -1,5 +1,15 @@
 # web-ide
 
+## 0.38.0
+
+### Minor Changes
+
+- 6fe1e47: feat!: update code-server to 4.130.0
+
+### Patch Changes
+
+- 7cf10e7: feat: configure Pi retry attempts
+
 ## 0.37.13
 
 ### Patch Changes
