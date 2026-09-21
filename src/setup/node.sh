@@ -86,27 +86,28 @@ claude plugin marketplace add anthropics/claude-plugins-official
 # frontend-design
 claude plugin install frontend-design
 claude plugin disable frontend-design
-# mattpocock
-claude plugin install mattpocock-skills
-claude plugin disable mattpocock-skills
+# zanminkian
+claude plugin marketplace add zanminkian/skills
+claude plugin install zanminkian-skills@zanminkian
+claude plugin disable zanminkian-skills@zanminkian
 
 ## Install & configure Qoder
 mkdir -p ~/.qoder
 echo '{"general":{"enableAutoUpdate":false}}' > ~/.qoder/settings.json
 # TODO: Remove --allow-scripts. At least, remove sharp
 npm i -g --allow-scripts=@qoder-ai/qodercli,sharp @qoder-ai/qodercli
-# mattpocock
-qodercli plugins marketplace add https://github.com/mattpocock/skills.git
-qodercli plugins install mattpocock-skills@mattpocock
-qodercli plugins disable mattpocock-skills@mattpocock
+# zanminkian
+qodercli plugins marketplace add https://github.com/zanminkian/skills.git
+qodercli plugins install zanminkian-skills@zanminkian
+qodercli plugins disable zanminkian-skills@zanminkian
 
 ## Install & configure Codex
 mkdir -p ~/.codex
 echo 'check_for_update_on_startup = false' > ~/.codex/config.toml
 npm i -g @openai/codex
-# mattpocock
-# TODO migrate to codex plugin when mattpocock support it
-npx -y skills@latest add mattpocock/skills --skill '*' --agent codex --global --yes
+# zanminkian
+# TODO: Migrate to a Codex plugin when supported.
+npx -y skills@latest add zanminkian/skills --skill '*' --agent codex --global --yes
 
 ## Install & configure Pi
 npm i -g @earendil-works/pi-coding-agent
