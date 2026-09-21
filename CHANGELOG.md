@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.38.1
+
+### Patch Changes
+
+- 273a2ec: feat: install zanminkian rather than matt
+
 ## 0.38.0
 
 ### Minor Changes
