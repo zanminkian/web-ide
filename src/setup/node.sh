@@ -114,4 +114,3 @@ npm i -g @earendil-works/pi-coding-agent
 mkdir -p ~/.pi/agent
 echo '{"retry":{"maxRetries":10}}' > ~/.pi/agent/settings.json
 pi install npm:pi-subagents
-pi install npm:pi-mcp-adapter
