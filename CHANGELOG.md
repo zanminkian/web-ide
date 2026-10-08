@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.38.2
+
+### Patch Changes
+
+- d95a359: chore: upgrade
+
 ## 0.38.1
 
 ### Patch Changes
