@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.38.3
+
+### Patch Changes
+
+- f978142: feat: require explicit requests to load Pi skills
+
 ## 0.38.2
 
 ### Patch Changes
