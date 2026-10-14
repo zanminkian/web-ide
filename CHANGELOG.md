@@ -1,5 +1,11 @@
 # web-ide
 
+## 0.38.4
+
+### Patch Changes
+
+- 89040bf: fix: revert the explicit-request restriction on loading Pi skills
+
 ## 0.38.3
 
 ### Patch Changes
