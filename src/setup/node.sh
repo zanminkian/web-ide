@@ -113,7 +113,4 @@ npx -y skills@latest add zanminkian/skills --skill '*' --agent codex --global --
 npm i -g @earendil-works/pi-coding-agent
 mkdir -p ~/.pi/agent
 echo '{"retry":{"maxRetries":10}}' > ~/.pi/agent/settings.json
-cat > ~/.pi/agent/AGENTS.md <<'EOF'
-Do not load or use a skill merely because the user's request matches its description or trigger phrases. Load and use a skill only when the user explicitly asks you to use that specific skill, or when a skill already authorized by the user explicitly requires another skill. Otherwise, handle the request without loading skills.
-EOF
 pi install npm:pi-subagents
