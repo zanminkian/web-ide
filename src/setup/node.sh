@@ -83,9 +83,6 @@ echo '{"env":{"DISABLE_AUTOUPDATER":"1"},"attribution":{"commit":"","pr":""}}' >
 # TODO: Remove --allow-scripts
 npm i -g --allow-scripts=@anthropic-ai/claude-code @anthropic-ai/claude-code
 claude plugin marketplace add anthropics/claude-plugins-official
-# frontend-design
-claude plugin install frontend-design
-claude plugin disable frontend-design
 # zanminkian
 claude plugin marketplace add zanminkian/skills
 claude plugin install zanminkian-skills@zanminkian
